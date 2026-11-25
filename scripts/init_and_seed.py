@@ -27,7 +27,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 EXCEL_PATH = os.path.join(DATA_DIR, "LMSxAI.xlsx")
 TRANSCRIPT_DIR = os.path.join(DATA_DIR, "Transcript_data")
-SCHEMA_SQL_PATH = os.path.join(BASE_DIR, "plan", "schema.sql")
+SCHEMA_SQL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "schema.sql")
 
 DB_HOST = os.environ.get("POSTGRES_HOST", "localhost")
 DB_PORT = int(os.environ.get("POSTGRES_PORT", 5432))
@@ -424,14 +424,8 @@ def main():
 
     print("Building unified migration and seed SQL...")
     full_sql = build_full_migration_sql(lectures)
-    
-    # Save a reproducible copy in scripts/seed_data.sql
-    out_sql = os.path.join(BASE_DIR, "scripts", "seed_data.sql")
-    with open(out_sql, "w", encoding="utf-8") as f:
-        f.write(full_sql)
-    print(f"Generated unified SQL script: {out_sql} ({len(full_sql)} bytes)")
 
-    # Execute into database
+    # Execute directly into running PostgreSQL container
     execute_via_docker(full_sql)
     print("=================================================================")
     print("Your PostgreSQL database is fully initialized and enriched.")
