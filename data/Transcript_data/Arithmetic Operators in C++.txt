@@ -1,0 +1,257 @@
+00:00 Hello everyone, welcome to Nesso
+Academy. We have completed chapter
+00:05 number two, basics of C++. Now we are in
+this chapter, chapter number three and
+00:11 the name of this chapter is operators in
+C++. In this chapter we will understand
+00:18 different types of operators we have in
+C++.
+00:22 We are starting with arithmetic
+operators and this is the first lecture
+00:28 of this chapter. In this lecture we will
+understand arithmetic operators in
+00:34 details. So without any further delay
+let's get started with this lecture and
+00:39 let's see what are the topics.
+The first topic is introduction to
+00:44 arithmetic operators. First I will
+introduce you to arithmetic operators.
+00:49 Then we will move to the next topic
+where we will understand unary
+00:54 arithmetic operators. After this we will
+understand binary arithmetic operators
+00:59 and then finally I will give you some
+important points associated with
+01:04 arithmetic operators.
+So these are all the topics. Let's start
+01:09 with the first one that is introduction
+to arithmetic operators.
+01:14 So what are arithmetic operators?
+Arithmetic operators are used to perform
+01:20 basic mathematical operations. So with
+the help of arithmetic operators we can
+01:26 perform basic mathematical operations
+such as addition, subtraction,
+01:31 multiplication, division etc.
+Also an arithmetic operator mainly works
+01:39 with numeric types like int, float and
+double.
+01:45 We know with the help of arithmetic
+operators we can perform basic
+01:49 mathematical operations. Now in order to
+perform basic mathematical operations
+01:55 data must be of numeric type like int,
+float and double. I hope this point is
+02:01 also clear to you. Now I would like to
+mention that there are two types of
+02:06 arithmetic operators. We have unary
+arithmetic operators and we have binary
+02:13 arithmetic operators.
+Now we will discuss these two operators
+02:19 properly. But for now we are done with
+the introduction to arithmetic
+02:23 operators. This means we are done with
+the first topic.
+02:28 Let's move to the second topic and let's
+understand unary arithmetic operators
+02:33 properly.
+So what is a unary arithmetic operator?
+02:41 Unary arithmetic operator is the
+operator that needs one operent.
+02:49 So it can perform operation on one
+operent or a single value. Operant
+02:56 represents a value. That's why the name
+unary arithmetic operators. Here this
+03:03 word unary means one. I hope this is
+clear to you.
+03:08 There are two types of unary arithmetic
+operators. We have unary plus and unary
+03:14 minus. Now let's understand how to use
+these operators in C++ programs. For
+03:22 this purpose, we will take a simple
+example program in C++.
+03:28 Here I have included the IO stream
+header file because I want to use stdc
+03:33 out in this function. I have defined the
+main function and in this main function
+03:39 I have defined this variable val of type
+int. This means this variable can hold
+03:45 an integer value. I have initialized
+this variable with value minus4. This is
+03:51 an integer value. Therefore this
+statement is valid. Then after this with
+03:56 the help of stdc out I want to display
+the result of plus val.
+04:03 Now here to this variable I have applied
+this unary plus operator.
+04:10 This means I have specified the sign of
+this variable.
+04:15 We know that val is the variable which
+is holding this value minus4. So clearly
+04:22 this variable will be replaced by minus4
+at the time of execution.
+04:27 Now we have + -4.
+We know that plus will not affect the
+04:34 value. We will get -4 as the result
+because + -4 is same as minus4 in
+04:42 mathematics.
+So clearly in this case we will get
+04:46 minus4 as the result.
+You can observe this is the unary plus
+04:51 operator because this operator is
+applied on just one operand. I hope this
+04:58 is clear to you.
+So we know that after execution of this
+05:02 line we will get minus4 on the screen
+and after this because of std end l we
+05:09 will move to the next line and in the
+next line the result of std see out will
+05:15 be displayed which is written over here.
+So here we have this std see out line
+05:21 and here I have specified minus 12.
+Now we know what happens in this case.
+05:27 We know that at execution time this
+variable will be replaced by -4. Now we
+05:33 have - -4.
+We know what is the result of -4.
+05:40 This minus sign will change the sign of
+the original value. We will get +4.
+05:47 So - -4 is same as +4. We will get the
+result as +4. So when we execute this
+05:54 program we will get the output as minus4
+and four where four is same as +4. I
+06:01 hope this is clear to you. We are
+getting these outputs in two lines
+06:07 because of std and l. Now I would like
+to mention that unary plus operator is
+06:14 not that useful in programming because
+it does not affect anything in the
+06:19 program. So clearly if we remove this
+plus sign from here we will get the same
+06:25 output.
+So I would recommend not to use unary
+06:30 plus operator although you can use unary
+minus operator based on your needs.
+06:36 So with this we have understood unary
+arithmetic operators properly. This
+06:41 means we are done with the second topic
+also.
+06:45 Now let's move to the third topic where
+we will understand binary arithmetic
+06:50 operators.
+So what is a binary arithmetic operator?
+06:56 Binary arithmetic operator is an
+operator which can operate on two
+07:03 operants.
+So it needs two operants. Here we have
+07:08 the word binary. Binary represents two.
+I hope this is clear to you. Now I would
+07:15 like to list down all the binary
+arithmetic operators we have in C++.
+07:20 Here I will list down the operations. I
+will provide for each operation the
+07:25 symbol, example and result. The first
+operation is addition. Symbol is plus
+07:32 and simple example is 10 + 3. We will
+get 13 as the result of this expression.
+07:40 The second operation is subtraction.
+symbol is minus. Example is 10 minus 3.
+07:45 We will get seven in this case.
+The third operation is multiplication.
+07:50 Symbol is asterisk. We use asterisk for
+multiplication. Example is 10 * 3. We
+07:57 will get 30 as the result.
+Then we have the fourth operation
+08:03 division. Symbol is backslash. Example
+is 10 / 3. we will get three. In this
+08:12 case, we are getting integer value
+because the operants are integers. You
+08:17 will get to know about this in a moment.
+Finally, the fifth operation is modulus.
+08:24 It is represented with the help of
+percentage symbol.
+08:29 With the help of this symbol, we would
+be able to divide two numbers and we
+08:34 will get the remainder as the result.
+For example, if we divide 10 by 3, we
+08:40 will get one as the remainder. So in
+this case, we will get one as the
+08:45 result. I hope this is clear to you.
+So these are all the binary arithmetic
+08:51 operators we have in C++ programming
+language. I hope this is clear. This
+08:57 means we are done with the third topic
+also.
+09:01 Now let's move to the fourth topic where
+we will discuss some important points
+09:06 about arithmetic operators. Here is the
+first point. Result of division is
+09:12 floating point if either or both the
+operants are floating point.
+09:20 Always remember this. If one of the
+operants or both the operants are
+09:26 floating point values, then the result
+of division will also be a floatingoint
+09:31 value. For example, in this specific
+case, I have this expression 12 / 5.0.
+09:40 Here we have this floating point value
+as the operand. Clearly, we will get the
+09:44 result as 2.4. We are getting a floating
+point value here. If we have 12.0 0 in
+09:51 place of 12 and five in place of 5.0
+then also we'll get the same result. If
+09:57 we have both the operants as floating
+point then also we will get the same
+10:01 result that is 2.4. I hope this is
+completely clear.
+10:06 Now let's move to the second point.
+Result of division is integer if both
+10:11 the operants are integers.
+When both the operants are inteious then
+10:17 the result of division is integer.
+So here in this example we have these
+10:23 two operants which are integers. In this
+case we will get an integer value as the
+10:28 result. I hope this is making sense to
+you. We are getting two not 2.4 because
+10:34 we have two integer operants here. Now
+here comes the third point. Division by
+10:41 0 causes runtime error.
+Remember if we divide a number by zero
+10:48 then we will get execution time error.
+Maybe our program correctly compiles but
+10:53 at the time of execution we will get
+error. For example, if we try to divide
+10:59 12 by 0 and if we display the result
+then of course we will get error. I hope
+11:05 this is clear to you. Now here comes the
+fourth point. Division by 0.0 0 gives
+11:12 either INF or N.
+INF represents infinity and N A N
+11:21 represents not a number.
+We will get either of these two when we
+11:26 divide a number by 0.0.
+For example, in this case, I'm trying to
+11:32 print the result of 12 / 0.0.
+In my case, I got IF as the result.
+11:41 Maybe you will get N.
+This depends on the system.
+11:47 Also remember that if the system is
+following ILE E 754 representation for
+11:54 floating point numbers then only we will
+get result as INF or N. If some other
+12:02 representation is used then it is
+possible that we will get error at
+12:07 execution time. This totally depends on
+this system.
+12:13 Although I would like to mention that do
+not divide a number by 0 or 0.0.
+12:20 So with this we have covered these
+important points and this means we are
+12:24 done with the fourth topic also and we
+are done with this lecture.
+12:30 Okay friends, this is it for now. Thank
+you for watching this lecture. I will
+12:35 see you in the next one.
+[Applause]
+12:39 [Music]

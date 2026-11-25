@@ -1,0 +1,643 @@
+00:01 foreign
+00:07 
+
+00:07 we will understand a few string
+00:10 
+
+00:10 operators in Python so without any
+00:12 
+
+00:12 further delay let's get started and
+00:15 
+
+00:15 let's see what are the different topics
+00:17 
+
+00:17 we will understand in this presentation
+00:20 
+
+00:20 the first topic we need to understand is
+00:22 
+
+00:22 string concatenate operator and the
+00:25 
+
+00:25 second topic is string repetition
+00:27 
+
+00:27 operator in this presentation we will
+00:30 
+
+00:30 understand these two operators one by
+00:32 
+
+00:32 one let's first start with string
+00:35 
+
+00:35 concatenate operator
+00:37 
+
+00:37 what is the meaning of string
+00:39 
+
+00:39 concatenate operator and what it does
+00:42 
+
+00:42 string concatenate operator or plus
+00:46 
+
+00:46 concatenates two strings at a time
+00:49 
+
+00:49 so string concatenate operator can help
+00:52 
+
+00:52 us in concatenating two strings at a
+00:55 
+
+00:55 time
+00:56 
+
+00:56 concatenation means combining so
+00:59 
+
+00:59 concatenate operator can combine strings
+01:02 
+
+01:02 for us
+01:04 
+
+01:04 plus operator in context with strings is
+01:07 
+
+01:07 called concatenate operator and plus
+01:09 
+
+01:09 operator in context with numbers is
+01:12 
+
+01:12 called the arithmetic plus operator
+01:14 
+
+01:14 which we are well familiar with
+01:16 
+
+01:16 now let's consider one example to
+01:19 
+
+01:19 understand how we can concatenate two or
+01:21 
+
+01:21 more strings in Python
+01:25 
+
+01:25 now I am in my command prompt and I have
+01:28 
+
+01:28 activated the interactive shell as well
+01:30 
+
+01:30 we need to type Python and we need to
+01:33 
+
+01:33 hit enter in order to activate the
+01:35 
+
+01:35 interactive shell now here let's type
+01:38 
+
+01:38 this command
+01:40 
+
+01:40 a plus b plus c
+01:43 
+
+01:43 here I have used two concatenate
+01:45 
+
+01:45 operators to combine these three strings
+01:49 
+
+01:49 the result will be a b c as expected we
+01:54 
+
+01:54 have total three strings with one
+01:56 
+
+01:56 character each in these strings if we
+01:59 
+
+01:59 use plus operators between them we'd be
+02:02 
+
+02:02 able to concatenate these strings we
+02:04 
+
+02:04 would be able to combine these strings
+02:06 
+
+02:06 in other words
+02:07 
+
+02:07 when we hit enter we will get this
+02:09 
+
+02:09 string as a result we'll get a b c as a
+02:13 
+
+02:13 result
+02:13 
+
+02:14 so if you are interested in combining
+02:16 
+
+02:16 three strings at a time we need to use
+02:18 
+
+02:18 two concatenate operators if let's say
+02:21 
+
+02:21 we are interested in combining 10
+02:23 
+
+02:23 different strings at a time we need to
+02:26 
+
+02:26 use nine concatenate operators right now
+02:29 
+
+02:29 we are interested in combining these
+02:31 
+
+02:31 three characters that is why we have
+02:33 
+
+02:33 used two concatenate operators but note
+02:36 
+
+02:36 that one concatenate operator can
+02:39 
+
+02:39 combine only two strings
+02:41 
+
+02:41 now let's type this command x equal to I
+02:45 
+
+02:45 so we are providing this name x to the
+02:48 
+
+02:48 string with just one character I
+02:51 
+
+02:51 now if we hit enter we'll not get any
+02:54 
+
+02:54 error message of course let's type y
+02:57 
+
+02:57 equal to m
+02:58 
+
+02:58 so we have another string and we have
+03:01 
+
+03:01 variable y pointing to the string
+03:03 
+
+03:03 now let's hit enter and let's type Z
+03:06 
+
+03:06 equal to Just Breathe
+03:08 
+
+03:08 we need to add this full stop also
+03:11 
+
+03:11 so we have total three variables x y and
+03:14 
+
+03:14 z x is pointing to the string Y is
+03:17 
+
+03:17 pointing to the string and Z is pointing
+03:20 
+
+03:20 to the string
+03:21 
+
+03:21 now in place of these three strings we
+03:23 
+
+03:23 can use these three variables
+03:25 
+
+03:25 so let's hit enter and let's type X Plus
+03:29 
+
+03:29 y plus Z
+03:31 
+
+03:31 now if you hit enter we will get this
+03:33 
+
+03:33 string
+03:34 
+
+03:34 as expected because X is pointing to the
+03:38 
+
+03:38 string hence at run time this will get
+03:42 
+
+03:42 replaced by the string
+03:43 
+
+03:44 Y is pointing to this string containing
+03:46 
+
+03:46 two characters A and M at runtime y will
+03:50 
+
+03:50 get replaced by the string
+03:52 
+
+03:52 at runtime Z will get replaced by this
+03:55 
+
+03:55 string
+03:56 
+
+03:56 if we hit enter after typing this
+03:58 
+
+03:58 command we will get I am just breathe
+04:01 
+
+04:01 with full stop as a result and note that
+04:04 
+
+04:04 the string that we will get as a result
+04:06 
+
+04:06 will always be wrapped within single
+04:09 
+
+04:09 quotes
+04:09 
+
+04:09 this is how python produces results
+04:12 
+
+04:12 I hope this is clear so this is the
+04:15 
+
+04:15 exact idea on how to concatenate two or
+04:18 
+
+04:18 more strings in Python
+04:20 
+
+04:20 note that if you are interested in
+04:22 
+
+04:22 adding spaces between I am and am just
+04:26 
+
+04:26 breathe then we need to add space after
+04:29 
+
+04:29 I and we need to add space after M here
+04:33 
+
+04:33 or alternatively we can add space before
+04:37 
+
+04:37 M and space before just breathe that way
+04:41 
+
+04:41 also we can create a string with spaces
+04:45 
+
+04:45 between these two strings and these two
+04:47 
+
+04:47 strings so this is all we need to
+04:50 
+
+04:50 understand about string concatenate
+04:52 
+
+04:52 operator let's move on to the next topic
+04:54 
+
+04:54 that is string repetition operator
+04:58 
+
+04:58 so what is string repetition operator
+05:02 
+
+05:02 string repetition operator Star as name
+05:06 
+
+05:06 itself suggest creates multiple copies
+05:10 
+
+05:10 of the string so string repetition
+05:12 
+
+05:12 operator helps us in creating multiple
+05:15 
+
+05:15 copies of the string
+05:17 
+
+05:17 for this we need to provide some value
+05:20 
+
+05:20 to it
+05:21 
+
+05:21 along with the string we need to provide
+05:24 
+
+05:24 some value in order to create multiple
+05:26 
+
+05:26 copies of the string
+05:28 
+
+05:28 for example if n is an integer and S is
+05:33 
+
+05:33 a string then n star S and S star n will
+05:37 
+
+05:37 yield the same result
+05:39 
+
+05:39 note that n is that integer which helps
+05:42 
+
+05:42 us in creating multiple copies of s so
+05:46 
+
+05:46 with n we can decide how many copies of
+05:48 
+
+05:48 s we want
+05:50 
+
+05:50 so we can write n star s or S star n
+05:53 
+
+05:53 order does not matter
+05:56 
+
+05:56 both will create n copies of s
+05:59 
+
+05:59 so let's say if we have n equal to 3
+06:02 
+
+06:02 then in that case 3 star s will create
+06:05 
+
+06:05 three copies of s and similarly s star 3
+06:10 
+
+06:11 also create three copies of s and in
+06:14 
+
+06:14 order to make it more clear let's
+06:16 
+
+06:16 consider one specific example
+06:19 
+
+06:19 right now I am in my interactive shell
+06:21 
+
+06:21 and I am ready to type in the command so
+06:24 
+
+06:24 let's type
+06:25 
+
+06:25 3 star Just Breathe
+06:28 
+
+06:28 here n is 3 and S is the string Just
+06:32 
+
+06:32 Breathe
+06:33 
+
+06:33 so 3 star just preet will create three
+06:37 
+
+06:37 copies of jasprit but we will not get
+06:40 
+
+06:40 separate copies of the string we'll get
+06:42 
+
+06:42 the concatenated result
+06:45 
+
+06:45 we'll get this result if we hit enter
+06:48 
+
+06:48 we will get just pre just preach just
+06:50 
+
+06:50 breathe concatenate it together
+06:53 
+
+06:53 so this is the final result we will get
+06:56 
+
+06:56 now if we type just preach star 3 and if
+07:00 
+
+07:00 we hit enter we will get this string on
+07:03 
+
+07:03 the screen again we'll get the same
+07:04 
+
+07:04 string it does not matter in which order
+07:07 
+
+07:07 we will write we can write n star s or
+07:10 
+
+07:10 we can write s tauren here we have
+07:13 
+
+07:13 followed this format of n star s here we
+07:16 
+
+07:16 are following this format s star n
+07:19 
+
+07:19 in both the cases we'll get this string
+07:23 
+
+07:23 now let's consider few more examples to
+07:26 
+
+07:26 make this concept more concrete
+07:29 
+
+07:29 what happens if we write 0 star Just
+07:32 
+
+07:32 Breathe
+07:33 
+
+07:33 it makes sense to provide positive
+07:35 
+
+07:35 values to n to create some copies of s
+07:39 
+
+07:39 if we are interested in creating let's
+07:41 
+
+07:41 say 10 copies we can provide 10 to n
+07:45 
+
+07:45 but what if we provide 0 to n
+07:50 
+
+07:50 0 means we are not interested in
+07:53 
+
+07:53 receiving any copies of the string which
+07:57 
+
+07:57 means we will get an empty string as a
+07:59 
+
+07:59 result
+07:60 
+
+07:60 so if we hit enter we will get empty
+08:03 
+
+08:03 string 0 means no copies now what if we
+08:07 
+
+08:07 provide a negative value in place
+08:09 
+
+08:09 we can write s star n or n star s it
+08:13 
+
+08:13 does not matter in place of n we have
+08:16 
+
+08:16 minus 4. it does not make any sense to
+08:20 
+
+08:20 create minus four copies of Just Breathe
+08:23 
+
+08:23 python will not throw any error in this
+08:26 
+
+08:26 case but it will give you an empty
+08:28 
+
+08:28 string
+08:29 
+
+08:29 so if we provide negative value to n or
+08:32 
+
+08:32 if we provide 0 to n in both the cases
+08:36 
+
+08:36 we will get an empty string
+08:39 
+
+08:39 so this is all about string repetition
+08:42 
+
+08:42 operator string repetition operator
+08:44 
+
+08:44 always helps us in creating multiple
+08:47 
+
+08:47 copies of the string we need to provide
+08:50 
+
+08:50 some value to n and in this way we'd be
+08:53 
+
+08:53 able to create multiple copies of s so n
+08:57 
+
+08:57 star s will create n copies of s
+09:00 
+
+09:01 similarly s star n also creates n copies
+09:05 
+
+09:05 of s
+09:06 
+
+09:06 so how many copies we will get of s well
+09:10 
+
+09:10 totally depends on the value of n
+09:14 
+
+09:14 okay this means we are done with this
+09:16 
+
+09:16 topic also that a string repetition
+09:18 
+
+09:18 operator we have learned what is string
+09:21 
+
+09:21 concatenate operator we have understood
+09:23 
+
+09:23 how it can help us in concatenating two
+09:26 
+
+09:26 or more strings also we have learned
+09:28 
+
+09:29 what is string repetition operator which
+09:31 
+
+09:31 helps us in creating multiple copies of
+09:33 
+
+09:33 a string
+09:34 
+
+09:34 so this means we are done with this
+09:36 
+
+09:36 lecture okay friends this is it for now
+09:39 
+
+09:39 thank you for watching this presentation
+09:40 
+
+09:41 I'll see you in the next one
+09:43 
+
+09:43 [Music]
+09:43 
+
+09:43 [Applause]
+09:45 
+
+09:45 [Music]

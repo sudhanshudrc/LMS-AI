@@ -1,0 +1,1267 @@
+00:01 Hello everyone, welcome to Nesso
+00:03 
+
+00:03 Academy. Till now we have understood
+00:06 
+
+00:06 some important terminologies of machine
+00:08 
+
+00:08 learning under the topics data set
+00:11 
+
+00:11 fundamentals, data splitting, and
+00:14 
+
+00:14 performance concepts. Now in this
+00:16 
+
+00:16 lecture, that is machine learning
+00:18 
+
+00:18 pipeline, we are going to understand the
+00:21 
+
+00:21 complete journey of a machine learning
+00:23 
+
+00:23 model from problem to prediction.
+00:26 
+
+00:26 Machine learning pipeline is also known
+00:29 
+
+00:29 by its alternative names like designing
+00:33 
+
+00:33 a machine learning system or steps to
+00:35 
+
+00:35 build a machine learning model. So the
+00:38 
+
+00:38 topic for this lecture is
+00:41 
+
+00:41 machine learning pipeline. Let's get
+00:43 
+
+00:43 started.
+00:45 
+
+00:45 Machine learning pipeline is a
+00:47 
+
+00:47 step-by-step process followed to build a
+00:50 
+
+00:50 machine learning model.
+00:52 
+
+00:52 What does that mean?
+00:54 
+
+00:54 It means
+00:55 
+
+00:55 to build a machine learning model, we
+00:58 
+
+00:58 need to follow a step-by-step process.
+01:01 
+
+01:01 And that step-by-step process is known
+01:04 
+
+01:04 as machine learning pipeline.
+01:07 
+
+01:07 For example, when we cook food, we
+01:10 
+
+01:10 follow some steps. When we solve a
+01:12 
+
+01:12 mathematical problem, we follow some
+01:15 
+
+01:15 steps. Similarly, in machine learning
+01:18 
+
+01:18 also, we follow a proper sequence of
+01:21 
+
+01:21 steps to build a machine learning model.
+01:24 
+
+01:24 We don't directly give data to the
+01:26 
+
+01:26 machine learning model.
+01:28 
+
+01:28 First, we need to understand the problem
+01:30 
+
+01:30 statement. Then we need to collect the
+01:33 
+
+01:33 data relevant to that problem. Then we
+01:36 
+
+01:36 have to clean and prepare that data.
+01:39 
+
+01:39 After that, we train our machine
+01:40 
+
+01:40 learning model. Then we test our machine
+01:43 
+
+01:43 learning model. And then we can use the
+01:45 
+
+01:45 machine learning model to make
+01:47 
+
+01:47 predictions. That means we cannot use
+01:50 
+
+01:50 machine learning model directly for
+01:52 
+
+01:52 making predictions.
+01:54 
+
+01:54 First, we need to follow some steps. And
+01:57 
+
+01:57 after completion of all the steps, then
+01:59 
+
+01:59 we can expect our machine learning model
+02:01 
+
+02:01 to make predictions about the data.
+02:04 
+
+02:04 And in this lecture, we are going to
+02:06 
+
+02:06 understand the flow of complete machine
+02:09 
+
+02:09 learning pipeline.
+02:10 
+
+02:10 From the upcoming lectures, we will
+02:12 
+
+02:12 understand each of the steps of this ML
+02:15 
+
+02:15 pipeline in much more details. So, the
+02:18 
+
+02:18 very first step in machine learning
+02:20 
+
+02:20 pipeline is
+02:22 
+
+02:22 problem definition.
+02:24 
+
+02:24 Yes. Problem definition is the very
+02:27 
+
+02:27 first step in building a machine
+02:29 
+
+02:29 learning model.
+02:30 
+
+02:30 That means, before building a machine
+02:33 
+
+02:33 learning model, we must clearly
+02:35 
+
+02:35 understand the problem statement that we
+02:38 
+
+02:38 are trying to solve.
+02:40 
+
+02:40 This is a very important step because if
+02:43 
+
+02:43 problem is not clear, then the whole
+02:45 
+
+02:45 machine learning process will go in
+02:47 
+
+02:47 wrong direction.
+02:49 
+
+02:49 For example, in house price prediction,
+02:52 
+
+02:52 what is the problem statement?
+02:54 
+
+02:54 Obviously, the problem statement is to
+02:57 
+
+02:57 predict the prices of the houses on the
+02:59 
+
+02:59 basis of features of the houses, like
+03:03 
+
+03:03 house size, number of bedrooms, age of
+03:06 
+
+03:06 the house, location of the house, and so
+03:08 
+
+03:08 on.
+03:09 
+
+03:09 So, in the first step, we define problem
+03:12 
+
+03:12 statement, and we also identify the
+03:14 
+
+03:14 three components of a well-defined
+03:17 
+
+03:17 learning problem, that are
+03:19 
+
+03:19 performance measure, experience, and
+03:22 
+
+03:22 task.
+03:23 
+
+03:23 So, after defining the problem
+03:26 
+
+03:26 statement, the second step is
+03:29 
+
+03:29 data collection.
+03:31 
+
+03:31 Obviously, after defining the problem
+03:33 
+
+03:33 statement, we need to collect data for
+03:36 
+
+03:36 the machine learning model because
+03:38 
+
+03:38 machine learning model learns patterns,
+03:40 
+
+03:40 features, and relationships from the
+03:43 
+
+03:43 data. That is why we collect data from
+03:46 
+
+03:46 different sources.
+03:48 
+
+03:48 What can be the different sources?
+03:50 
+
+03:50 Like companies' databases, surveys,
+03:54 
+
+03:54 sensors, and so on.
+03:56 
+
+03:56 Now, in this particular step, that is
+03:59 
+
+03:59 data collection, the quality of data
+04:02 
+
+04:02 influence directly the performance of
+04:04 
+
+04:04 the machine learning model. That means
+04:07 
+
+04:07 if the quality of data is very good,
+04:10 
+
+04:10 that means the performance of the
+04:12 
+
+04:12 machine learning model is also very
+04:13 
+
+04:13 good. But, if the quality of data is
+04:16 
+
+04:16 bad, then the performance of machine
+04:19 
+
+04:19 learning model will also be very poor.
+04:21 
+
+04:21 So, the data that we need to collect
+04:25 
+
+04:25 should be relevant to the problem
+04:26 
+
+04:26 statement.
+04:28 
+
+04:28 Machine learning model cannot learn from
+04:31 
+
+04:31 less or incomplete data.
+04:34 
+
+04:34 So, I hope second step is now clear to
+04:36 
+
+04:36 you.
+04:37 
+
+04:37 After data collection, tell me, should
+04:40 
+
+04:40 we give this data directly to our
+04:42 
+
+04:42 machine learning model?
+04:44 
+
+04:44 No, not at all.
+04:46 
+
+04:46 First, we need to remove some problems
+04:49 
+
+04:49 from this data. Because the raw data
+04:52 
+
+04:52 that we collect is very messy,
+04:54 
+
+04:54 unstructured, unformatted, and
+04:56 
+
+04:56 inconsistent. That is why we need to
+04:59 
+
+04:59 perform basic data cleaning. So, the
+05:02 
+
+05:02 third step of machine learning pipeline
+05:05 
+
+05:05 is basic data cleaning.
+05:08 
+
+05:08 What do you mean by basic data cleaning?
+05:10 
+
+05:10 It means to remove some obvious problems
+05:13 
+
+05:13 or errors from the data that we have
+05:16 
+
+05:16 collected. Now, what can be the problems
+05:18 
+
+05:18 in this data set? There can be some
+05:21 
+
+05:21 duplicate rows. There can be some
+05:23 
+
+05:23 irrelevant columns. There can be some
+05:25 
+
+05:25 missing values. So, all such problems
+05:29 
+
+05:29 are handled in this particular step,
+05:31 
+
+05:31 that is basic data cleaning. For
+05:33 
+
+05:33 example, in case of house price data
+05:36 
+
+05:36 set, there is a column called as house
+05:39 
+
+05:39 size. Now, if that column contains some
+05:42 
+
+05:42 negative values, then it is an error
+05:45 
+
+05:45 because size of the house can never be
+05:46 
+
+05:46 negative.
+05:47 
+
+05:47 Also, there can be some missing values
+05:49 
+
+05:49 in that data set. There can be some
+05:51 
+
+05:51 spelling mistakes. There can be some
+05:54 
+
+05:54 unformatted text. All these problems are
+05:57 
+
+05:57 removed in basic data cleaning.
+05:60 
+
+05:60 Now, after basic data cleaning, the
+06:02 
+
+06:02 fourth step is data splitting.
+06:06 
+
+06:06 In the previous lectures, I have already
+06:08 
+
+06:08 explained you very well the meaning of
+06:10 
+
+06:10 data splitting.
+06:12 
+
+06:12 Data splitting, or we can say train test
+06:15 
+
+06:15 split, is the process of dividing the
+06:18 
+
+06:18 total available data into two parts.
+06:22 
+
+06:22 The first part is the training data. The
+06:24 
+
+06:24 second part is the testing data.
+06:27 
+
+06:27 Training data is used by the machine
+06:29 
+
+06:29 learning model to learn patterns and
+06:31 
+
+06:31 features.
+06:32 
+
+06:32 And testing data is used to evaluate the
+06:35 
+
+06:35 performance of the machine learning
+06:36 
+
+06:36 model because it is an unseen data.
+06:40 
+
+06:40 Now, the training data is usually larger
+06:43 
+
+06:43 than the testing data.
+06:45 
+
+06:45 Why?
+06:45 
+
+06:45 Because training data is used by the
+06:47 
+
+06:47 machine learning model to learn patterns
+06:49 
+
+06:49 and features. That is why it is required
+06:52 
+
+06:52 by machine learning model in larger
+06:54 
+
+06:54 amounts.
+06:56 
+
+06:56 But, testing data is used to evaluate
+06:58 
+
+06:58 the performance of the machine learning
+06:60 
+
+06:60 model. That is why it can be less.
+07:03 
+
+07:03 So, the standard data splitting ratio is
+07:06 
+
+07:06 80:20.
+07:08 
+
+07:08 That means 80% of the total available
+07:11 
+
+07:11 data is training data, and 20% of the
+07:14 
+
+07:14 total available data is used as testing
+07:17 
+
+07:17 data.
+07:19 
+
+07:19 Now, there is a one important point that
+07:21 
+
+07:21 you should note.
+07:23 
+
+07:23 Before performing the data splitting,
+07:25 
+
+07:25 that is, before dividing the data into
+07:28 
+
+07:28 training data and testing data, we must
+07:31 
+
+07:31 first separate the features and labels.
+07:34 
+
+07:34 For example, in case of house price data
+07:37 
+
+07:37 set, we must separate the house details
+07:40 
+
+07:40 from the house price.
+07:42 
+
+07:42 So, the house details like size of the
+07:45 
+
+07:45 house, age of the house, number of
+07:47 
+
+07:47 bedrooms of the house, location of the
+07:49 
+
+07:49 house must be separated from the actual
+07:52 
+
+07:52 price of the house.
+07:54 
+
+07:54 Only after that we can perform data
+07:57 
+
+07:57 splitting, that is dividing the data
+07:59 
+
+07:59 into training data and testing data.
+08:03 
+
+08:03 So, I hope data splitting is now clear
+08:05 
+
+08:05 to you.
+08:06 
+
+08:06 After that, the fifth step is data
+08:10 
+
+08:10 preprocessing and feature engineering.
+08:13 
+
+08:13 So, after data splitting, we need to
+08:16 
+
+08:16 prepare the data. Now, data preparation
+08:18 
+
+08:18 includes data preprocessing and feature
+08:22 
+
+08:22 engineering. Let's first talk about what
+08:25 
+
+08:25 is data preprocessing.
+08:27 
+
+08:27 Data preprocessing is the process of
+08:29 
+
+08:29 converting the data into a format that
+08:32 
+
+08:32 machine learning algorithm can
+08:34 
+
+08:34 understand.
+08:35 
+
+08:35 So, in data preprocessing, we convert
+08:39 
+
+08:39 our data into a format that is
+08:41 
+
+08:41 understandable by machine learning
+08:43 
+
+08:43 algorithm. For example, a machine
+08:46 
+
+08:46 learning algorithm understands numeric
+08:49 
+
+08:49 data better than textual data.
+08:52 
+
+08:52 Now, suppose there is a column in a data
+08:54 
+
+08:54 set known as location, which contains
+08:57 
+
+08:57 the values like Chennai, Mumbai, Agra,
+09:01 
+
+09:01 and so on.
+09:02 
+
+09:02 Now, these textual values needs to be
+09:05 
+
+09:05 converted into numerical values, so that
+09:08 
+
+09:08 our machine learning algorithm can
+09:10 
+
+09:10 understand them.
+09:11 
+
+09:11 This is one of the examples of data
+09:14 
+
+09:14 preprocessing. But, data preprocessing
+09:17 
+
+09:17 is a very vast field.
+09:19 
+
+09:19 It includes categorical encoding,
+09:23 
+
+09:23 handling missing values, handling
+09:25 
+
+09:25 outliers, feature scaling, data
+09:28 
+
+09:28 transformation, and so on.
+09:30 
+
+09:30 Don't worry, I will explain you each of
+09:33 
+
+09:33 these terms when we will understand data
+09:35 
+
+09:35 preprocessing in details.
+09:38 
+
+09:38 Now, the second one is feature
+09:40 
+
+09:40 engineering.
+09:42 
+
+09:42 What is feature engineering?
+09:44 
+
+09:44 It is the process of creating new
+09:46 
+
+09:46 features from the existing features.
+09:49 
+
+09:49 For example, there is a data set which
+09:51 
+
+09:51 contains a column known as date of
+09:53 
+
+09:53 birth.
+09:54 
+
+09:54 Now, if we create a new column called as
+09:57 
+
+09:57 age from date of birth, then this is
+10:00 
+
+10:00 known as feature engineering.
+10:02 
+
+10:02 Obviously, age can be easily derived
+10:05 
+
+10:05 from date of birth. So, we have created
+10:07 
+
+10:07 a new feature that is age from the
+10:09 
+
+10:09 existing feature that is date of birth.
+10:12 
+
+10:12 So, this is feature engineering.
+10:14 
+
+10:14 And why feature engineering is
+10:15 
+
+10:15 important?
+10:17 
+
+10:17 Because it makes the data more
+10:18 
+
+10:18 meaningful for the machine learning
+10:20 
+
+10:20 algorithm.
+10:22 
+
+10:22 So, now I hope you have a basic
+10:23 
+
+10:23 understanding about data pre-processing
+10:26 
+
+10:26 and feature engineering.
+10:28 
+
+10:28 After that, the sixth step is selecting
+10:31 
+
+10:31 algorithm. That means we need to select
+10:34 
+
+10:34 an appropriate machine learning
+10:36 
+
+10:36 algorithm for the machine learning
+10:38 
+
+10:38 model.
+10:39 
+
+10:39 So, what is a machine learning
+10:40 
+
+10:40 algorithm?
+10:42 
+
+10:42 Machine learning algorithm is the method
+10:45 
+
+10:45 or approach used by machine learning
+10:47 
+
+10:47 model to learn patterns from the data.
+10:50 
+
+10:50 I have explained you that machine
+10:52 
+
+10:52 learning model learns patterns and
+10:55 
+
+10:55 features from the data.
+10:57 
+
+10:57 So, the approach or method used by the
+10:59 
+
+10:59 machine learning model to learn patterns
+11:01 
+
+11:01 from the data, that approach or method
+11:04 
+
+11:04 is known as machine learning algorithm.
+11:07 
+
+11:07 Now, the choice of machine learning
+11:09 
+
+11:09 algorithm depends on the type of
+11:11 
+
+11:11 problem.
+11:13 
+
+11:13 For example, in case of house price
+11:15 
+
+11:15 prediction,
+11:16 
+
+11:16 we need to predict the prices of the
+11:18 
+
+11:18 houses, and price is a numerical value.
+11:22 
+
+11:22 That is why we choose a regression
+11:24 
+
+11:24 algorithm like linear regression.
+11:27 
+
+11:27 If we choose a wrong machine learning
+11:28 
+
+11:28 algorithm, the machine learning model
+11:31 
+
+11:31 will give poor results
+11:33 
+
+11:33 even if the quality of data is very
+11:35 
+
+11:35 nice.
+11:36 
+
+11:36 So, this was the step number six, that
+11:38 
+
+11:38 is selecting a machine learning
+11:40 
+
+11:40 algorithm.
+11:41 
+
+11:41 So, till now we have defined the problem
+11:43 
+
+11:43 statement, we have collected the data,
+11:47 
+
+11:47 we have applied basic data cleaning,
+11:49 
+
+11:49 after that we have splitted the data
+11:51 
+
+11:51 into two parts, training and testing.
+11:54 
+
+11:54 After that we have prepared the data,
+11:56 
+
+11:56 that is data pre-processing and feature
+11:58 
+
+11:58 engineering. And after that we have
+12:00 
+
+12:00 selected an appropriate machine learning
+12:03 
+
+12:03 algorithm.
+12:04 
+
+12:04 Now, it's time to train the machine
+12:06 
+
+12:06 learning model. So, the seventh step is
+12:09 
+
+12:09 model training. In this step, the
+12:12 
+
+12:12 machine learning model learns the
+12:14 
+
+12:14 patterns and features from the data.
+12:17 
+
+12:17 Machine learning model learns the
+12:19 
+
+12:19 relationships between the feature and
+12:21 
+
+12:21 target variable.
+12:23 
+
+12:23 For example, in a house price prediction
+12:25 
+
+12:25 system, the linear regression model will
+12:28 
+
+12:28 try to identify the relationships
+12:31 
+
+12:31 between the house features and the house
+12:33 
+
+12:33 price. For example, if the size of the
+12:36 
+
+12:36 house is bigger, the price would be
+12:39 
+
+12:39 higher. If the location of the house is
+12:41 
+
+12:41 better, the price would be higher. Like
+12:44 
+
+12:44 this. So, this is known as model
+12:46 
+
+12:46 training. Now, after model training, the
+12:49 
+
+12:49 eighth step is model evaluation and
+12:53 
+
+12:53 pipeline saving.
+12:55 
+
+12:55 So, what is model evaluation?
+12:57 
+
+12:57 Model evaluation means model testing.
+13:00 
+
+13:00 That means, after training the machine
+13:03 
+
+13:03 learning model, we test the performance
+13:06 
+
+13:06 of the machine learning model on unseen
+13:08 
+
+13:08 data.
+13:09 
+
+13:09 In this way, we evaluate our machine
+13:12 
+
+13:12 learning model, how well it is trained
+13:14 
+
+13:14 on the training data set. So, model
+13:17 
+
+13:17 training is done on the training data
+13:19 
+
+13:19 set and model evaluation, or we can say
+13:22 
+
+13:22 model testing, is done on the testing
+13:25 
+
+13:25 data set, which is unseen for the
+13:27 
+
+13:27 machine learning model.
+13:29 
+
+13:29 Now, after model evaluation, there is
+13:32 
+
+13:32 pipeline saving. What is the meaning of
+13:35 
+
+13:35 pipeline saving?
+13:37 
+
+13:37 Now, after the model is evaluated, if it
+13:40 
+
+13:40 has a good performance, then we need to
+13:42 
+
+13:42 save the machine learning model.
+13:45 
+
+13:45 Why to save the machine learning model?
+13:47 
+
+13:47 So that we don't need to retrain the
+13:49 
+
+13:49 machine learning model again and again
+13:52 
+
+13:52 from the beginning.
+13:53 
+
+13:53 This is known as saving a machine
+13:55 
+
+13:55 learning model, or I can also say saving
+13:58 
+
+13:58 the entire pipeline of machine learning.
+14:02 
+
+14:02 Now, after model evaluation and pipeline
+14:04 
+
+14:04 saving, the ninth step is making
+14:07 
+
+14:07 predictions.
+14:09 
+
+14:09 That means the trained, tested, and
+14:12 
+
+14:12 saved model is now used to make
+14:15 
+
+14:15 predictions on new data.
+14:18 
+
+14:18 And this is the actual practical use
+14:20 
+
+14:20 case of machine learning. All this we
+14:23 
+
+14:23 are doing just to ensure that we will
+14:26 
+
+14:26 make predictions on the new data.
+14:28 
+
+14:28 Suppose a user enters the details like
+14:31 
+
+14:31 size of the house, location of the
+14:33 
+
+14:33 house, age of the house, number of
+14:36 
+
+14:36 bedrooms of the house, and so on. And
+14:39 
+
+14:39 model predicts the price of the house.
+14:42 
+
+14:42 This is known as making predictions on
+14:45 
+
+14:45 new data. And this is the actual use
+14:48 
+
+14:48 case of machine learning.
+14:50 
+
+14:50 Now, after making predictions, the last
+14:53 
+
+14:53 step is monitor and iterate.
+14:56 
+
+14:56 What is the meaning of monitor and
+14:58 
+
+14:58 iterate?
+14:59 
+
+14:59 It is to be noted that this machine
+15:01 
+
+15:01 learning pipeline does not end after
+15:04 
+
+15:04 making predictions.
+15:06 
+
+15:06 After making predictions, we need to
+15:09 
+
+15:09 keep on checking the performance of the
+15:11 
+
+15:11 machine learning model over the regular
+15:13 
+
+15:13 intervals of time.
+15:15 
+
+15:15 So that we can check whether the machine
+15:18 
+
+15:18 learning model is still performing good
+15:20 
+
+15:20 or not.
+15:22 
+
+15:22 This is known as monitoring of a machine
+15:25 
+
+15:25 learning model.
+15:26 
+
+15:26 And what is the meaning of iterate?
+15:29 
+
+15:29 Iterate means to continuously improve
+15:32 
+
+15:32 the performance of the machine learning
+15:33 
+
+15:33 model.
+15:34 
+
+15:34 For example, the house prices may change
+15:38 
+
+15:38 after few months.
+15:39 
+
+15:39 That is why we need to collect the new
+15:41 
+
+15:41 data, then we need to retrain the
+15:43 
+
+15:43 machine learning model.
+15:45 
+
+15:45 This process is known as iteration. So,
+15:49 
+
+15:49 monitor and iterate means keep on
+15:52 
+
+15:52 checking the performance of the machine
+15:53 
+
+15:53 learning model and improving it wherever
+15:56 
+
+15:56 required.
+15:58 
+
+15:58 So, this is the entire machine learning
+16:00 
+
+16:00 pipeline that we have discussed.
+16:03 
+
+16:03 First, we define the problem statement,
+16:05 
+
+16:05 then we collect the data, then we clean
+16:08 
+
+16:08 the data, after that we split the data
+16:11 
+
+16:11 into training and testing data,
+16:13 
+
+16:13 after that we prepare the data, that is
+16:16 
+
+16:16 data pre-processing and feature
+16:17 
+
+16:17 engineering. After that, we select an
+16:20 
+
+16:20 appropriate machine learning algorithm.
+16:22 
+
+16:22 After that, we train the machine
+16:24 
+
+16:24 learning model, then we test and save
+16:27 
+
+16:27 the machine learning model. After that,
+16:29 
+
+16:29 we use the machine learning model to
+16:31 
+
+16:31 make predictions on new data, and we
+16:34 
+
+16:34 continuously monitor and iterate the
+16:36 
+
+16:36 performance of the machine learning
+16:38 
+
+16:38 model.
+16:39 
+
+16:39 In this way, we are done with our topic
+16:42 
+
+16:42 machine learning pipeline.
+16:44 
+
+16:44 In the upcoming lectures, we will
+16:46 
+
+16:46 understand each of the steps of this ML
+16:48 
+
+16:48 pipeline in more details.
+16:51 
+
+16:51 So, this was all from my side for this
+16:53 
+
+16:53 lecture. Thank you, and I'll see you in
+16:55 
+
+16:55 the next lecture.
+16:59 
+
+16:59 >> [music]

@@ -1,0 +1,234 @@
+00:01 Hello everyone, welcome to Nesso
+Academy. In the previous lecture, we
+00:05 have understood classes and objects. We
+learned how to define classes and how to
+00:12 define objects. Apart from this, we
+learned how to define data members and
+00:19 how to declare member functions within a
+class. We just learned how to declare
+00:25 member functions but we don't know how
+to define member functions of a specific
+00:32 class. In this lecture we will
+understand how to define member
+00:38 functions
+that do in different ways of a specific
+00:43 class. So without any further delay
+let's get started with this lecture and
+00:48 let's see what are the topics. The first
+topic is defining member functions
+00:55 outside the class definition. First we
+will learn how to define member
+00:60 functions outside the class definition.
+Then we will learn how to define member
+01:06 functions inside the class definition.
+So these are the topics we have for this
+01:12 lecture. Let's start with the first
+topic that is defining member functions
+01:18 outside the class definition.
+So how we can define member functions
+01:25 outside the class definition?
+We can define member functions outside
+01:30 the class with the help of scope
+resolution operator.
+01:37 We already know one use case of scope
+resolution operator. With the help of
+01:43 the scope resolution operator, we can
+access global variables within a
+01:49 function. And this is possible even if
+we define local variable with the same
+01:56 name as global variable.
+The second use case of scope resolution
+02:04 operator is to define member functions
+outside the class definition.
+02:12 We will now learn how to define member
+functions outside the class with the
+02:17 help of scope resolution operator. For
+this purpose, let's take the same
+02:23 example class we took in the last
+lecture that is the student class. Here
+02:30 is the student class with private
+members as role number and marks and
+02:36 public members as put data and display.
+Please note that these functions are
+02:43 declared in this class. They are not
+defined.
+02:49 Now we need to define these functions.
+We can define these functions outside
+02:55 the class with the help of scope
+resolution operator.
+03:00 Let's define the put data function
+outside this class like this. We first
+03:08 need to specify the return type of the
+function.
+03:13 Then we need to provide the name of the
+class which is student.
+03:18 And then after this we can provide the
+scope resolution operator. We know this
+03:24 is the scope resolution operator.
+Then after this we need to provide the
+03:29 name of the function and within
+parenthesis we can provide the
+03:33 parameters.
+So this is how we can define the put
+03:38 data function which is the member
+function of this class. Now here is the
+03:45 definition of this function.
+within braces I have written the code
+03:50 for this function that is role number
+equals a and marks equals b.
+03:58 So I want to store the value of variable
+a within the role number variable and I
+04:04 also want to store the value of variable
+b within marks variable.
+04:10 So whatever the values we receive in
+these parameters will be provided to the
+04:16 private members that is role number and
+marks. Now you might be thinking that
+04:23 these are private members.
+Therefore they must be accessible within
+04:28 the class only. How we can access these
+members within this function which is
+04:34 defined outside this class.
+we can access private members within the
+04:42 member functions that we define.
+This is true that we can access private
+04:48 members within the class but member
+functions can access the private members
+04:54 even if we define them outside the
+class. So we can think a member function
+05:01 as defined in the class and therefore
+the member function would be able to
+05:06 access the private members directly.
+That's why we can provide these private
+05:13 members directly within this function. I
+hope this idea is clear to you. Even
+05:19 though the member function is defined
+outside the class, it can still access
+05:24 the private members.
+Now let's define the display function as
+05:29 well in the same way using the scope
+resolution operator like this.
+05:35 Here I have defined the display function
+with the help of scope resolution
+05:39 operator and within braces I have
+provided these two std seeout statements
+05:45 to display role number and marks on the
+screen.
+05:50 Now here is the main function. Inside
+the main function, I have defined S1 as
+05:57 the object of student class. We learned
+how to define the object of a specific
+06:04 class in the last lecture.
+Now with the help of this object, we can
+06:11 access the public members of this class
+because this object is defined inside
+06:17 the main function. Now here I'm calling
+the put data function through the S1
+06:22 object and I am passing these values to
+the parameters of the put data function.
+06:31 Variable A will receive value 101 and
+variable B will receive value 75.
+06:40 101 is then provided to the variable
+role number which is the private
+06:46 variable
+and 75 is provided to the variable marks
+06:53 which is also the private variable.
+So we can say that s1 has provided
+07:02 values to these private variables
+indirectly.
+07:06 Now after this I am calling the display
+function through the S1 object.
+07:14 This means these stdcout statements will
+execute and because of these stdcout
+07:21 statements we will see the role number
+and marks on the screen. But which role
+07:27 number and marks will be displayed?
+That's the question. Here we are calling
+07:33 the display function with the help of
+the S1 object.
+07:38 Previously through S1 object we have
+provided these values indirectly to
+07:44 these variables. So clearly these values
+are associated with these variables
+07:53 through the S1 object.
+Now here we are calling the display
+07:58 function through the S1 object.
+So the role number and marks that are
+08:05 provided by the S1 object through the
+put data function are displayed on the
+08:12 screen. So in place of this role number
+we will get 101 and in place of this
+08:20 marks variable we will get 75.
+This is because we are calling the
+08:26 display function through the S1 object
+and S1 object has provided these values
+08:31 to these variables.
+Therefore, when we execute this program,
+08:36 we will get the output as role number
+101 marks 75. I hope this program is
+08:45 absolutely clear to you. Through this
+program, we learned how to define member
+08:51 functions outside the class with the
+help of scope resolution operator.
+08:59 This means we have understood the
+concept. Now we are done with the first
+09:04 topic. Let's move to the second topic to
+understand how to define member
+09:10 functions inside the class definition.
+We have learned how to define member
+09:16 functions outside the class definition.
+Now let's learn how to define member
+09:21 functions inside the class.
+We can easily do this just like we
+09:28 define normal functions. Before defining
+member functions, I want to mention this
+09:34 that functions defined inside the class
+are treated as inline functions.
+09:43 This means there is the possibility of
+optimization by the compiler to increase
+09:49 the performance.
+We already know what are inline
+09:53 functions. We have dedicated lecture for
+that. If you don't know about inline
+09:59 functions at this moment, then I would
+recommend you to watch the lecture on
+10:04 inline functions. Now we know exactly
+what are the member functions that are
+10:10 defined inside the class. They are
+treated as inline functions.
+10:17 Now here is the example program to
+demonstrate how to define member
+10:22 functions put data and display within
+the class student.
+10:30 Here I have defined these two functions
+put data and display. Just like normal
+10:36 functions, these functions are treated
+as inline functions.
+10:43 The code is same. Now we know that when
+we execute this program, we will get the
+10:49 output as role number 101 and marks 75.
+Here with the help of S1 object, we are
+10:58 calling put data and we are passing
+these values to these variables
+11:03 indirectly.
+And here with the help of S1 object we
+11:08 are calling the display function. The
+display function will display the role
+11:13 number 101 and mark 75 on the screen.
+So the program works exactly the same
+11:20 but here the functions are defined
+inside the class. That's the difference.
+11:28 So now we know two different ways to
+define member functions of the class. We
+11:33 can define member functions with the
+help of scope resolution operator or we
+11:38 can directly define member functions
+inside the class. So with this we have
+11:45 understood the second topic as well and
+this means we are done with this
+11:52 lecture.
+Okay friends this is it for now. Thank
+11:56 you for watching this lecture. I will
+see you in the next one.
+12:02 >> [music]
+12:07 [music]

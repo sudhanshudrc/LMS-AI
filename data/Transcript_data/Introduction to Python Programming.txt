@@ -1,0 +1,499 @@
+00:06 Welcome to this Python programming
+00:08 
+
+00:08 course. I am your teacher here to teach
+00:10 
+
+00:10 you the subject called Python
+00:12 
+
+00:12 programming. This is the first lecture
+00:14 
+
+00:14 of Python programming that is
+00:16 
+
+00:16 introduction. Under this lecture, we
+00:19 
+
+00:19 will cover few topics which we need to
+00:21 
+
+00:21 get started with Python programming
+00:23 
+
+00:23 language. I would like to list down
+00:26 
+
+00:26 those topics one by one. So let's see
+00:28 
+
+00:28 all the topics of this presentation one
+00:31 
+
+00:31 by one. Here comes the first topic that
+00:34 
+
+00:34 is why Python. We will learn why we need
+00:37 
+
+00:37 to learn Python under this topic. The
+00:40 
+
+00:40 second topic is the syllabus. We will
+00:43 
+
+00:43 see the entire syllabus of this course.
+00:45 
+
+00:45 In this topic, the third topic is the
+00:48 
+
+00:48 target audience. We will also see who is
+00:51 
+
+00:51 the target audience of this entire
+00:53 
+
+00:53 course. Let's see the first topic that
+00:56 
+
+00:56 is why Python.
+00:59 
+
+00:59 Why we need to learn Python as a
+01:01 
+
+01:01 beginner. You might have this question
+01:03 
+
+01:03 if you are a beginner. If you are a
+01:05 
+
+01:05 beginner and you want to get started
+01:07 
+
+01:07 with some programming language, then I
+01:10 
+
+01:10 would recommend you to start with Python
+01:12 
+
+01:12 because Python is very easy to
+01:14 
+
+01:14 understand language. If you are not from
+01:17 
+
+01:17 a computer science background, starting
+01:19 
+
+01:19 with Python would be an easier choice
+01:22 
+
+01:22 and would be the best choice for you. If
+01:24 
+
+01:24 you are from a computer science
+01:26 
+
+01:26 background, then also you can start with
+01:28 
+
+01:28 Python because not only Python is easy
+01:31 
+
+01:31 to understand, there are many other
+01:33 
+
+01:33 reasons why you should learn Python. And
+01:35 
+
+01:35 I would like to list down all those
+01:37 
+
+01:37 reasons one by one. The first very
+01:40 
+
+01:40 reason why you should learn Python is
+01:43 
+
+01:43 that Python is an open-source
+01:45 
+
+01:45 programming language. Which means when
+01:47 
+
+01:47 you write applications with Python, you
+01:50 
+
+01:50 don't have to pay even a single penny to
+01:53 
+
+01:53 write those applications. You don't have
+01:55 
+
+01:55 to pay anything. This is the meaning of
+01:58 
+
+01:58 opensource. The second reason is that
+02:01 
+
+02:01 Python has a huge community support
+02:04 
+
+02:04 which means that the community is quite
+02:07 
+
+02:07 wide out there. If you are stuck
+02:09 
+
+02:09 somewhere during the development
+02:10 
+
+02:10 process, then there is a community which
+02:13 
+
+02:13 can help you to get out of that phase.
+02:16 
+
+02:16 The third reason is that Python is a
+02:19 
+
+02:19 cross-platform programming language,
+02:21 
+
+02:21 which means that the applications that
+02:24 
+
+02:24 you write with Python can run on any
+02:27 
+
+02:27 machine. Any machine. It can be Mac, it
+02:31 
+
+02:31 can be Windows, it can be Linux, it
+02:34 
+
+02:34 doesn't really matter. You just have to
+02:36 
+
+02:36 worry about the development of the
+02:38 
+
+02:38 applications and you shouldn't worry
+02:40 
+
+02:40 about the platform. Python will take
+02:43 
+
+02:43 care of that. The fourth very reason why
+02:46 
+
+02:46 you should learn Python is that it has a
+02:48 
+
+02:48 huge set of libraries and tools. This
+02:52 
+
+02:52 means most of the job is already done.
+02:55 
+
+02:55 When you write applications with Python,
+02:57 
+
+02:57 you can include the code already written
+02:60 
+
+02:60 by someone to speed up the development
+03:02 
+
+03:02 process. There is a lot of code already
+03:04 
+
+03:04 available which you can use in your code
+03:07 
+
+03:07 to speed up the development process. So
+03:10 
+
+03:10 these are all the different reasons why
+03:12 
+
+03:12 you should learn Python as a beginner.
+03:15 
+
+03:15 After understanding why you should learn
+03:17 
+
+03:17 Python, let's see the entire syllabus of
+03:20 
+
+03:20 this course. I have divided the syllabus
+03:23 
+
+03:23 into three sections. The first section
+03:26 
+
+03:26 is basic Python. The second section is
+03:28 
+
+03:28 intermediate Python and the third
+03:30 
+
+03:30 section is advanced Python. Under this
+03:33 
+
+03:33 section we have total seven chapters. I
+03:36 
+
+03:36 would like to list down those chapters
+03:38 
+
+03:38 one by one. The first chapter is the
+03:41 
+
+03:41 introduction. This lecture is part of
+03:44 
+
+03:44 the introduction chapter. The second
+03:46 
+
+03:46 chapter is
+03:48 
+
+03:48 variables, expressions and statements.
+03:52 
+
+03:52 Don't worry about these names at this
+03:54 
+
+03:54 moment. You will learn each and
+03:55 
+
+03:55 everything under the chapters. I am just
+03:58 
+
+03:58 listing down the chapters right now to
+04:00 
+
+04:00 give you the idea what you can expect
+04:03 
+
+04:03 from this course. The third chapter is
+04:06 
+
+04:06 list, dictionary and tpple. The fourth
+04:09 
+
+04:09 chapter is conditionals and loops. The
+04:13 
+
+04:13 fifth chapter is functions. The sixth
+04:17 
+
+04:17 chapter is file handling. The seventh
+04:20 
+
+04:20 chapter is modules. So there are total
+04:24 
+
+04:24 seven chapters in this basic Python
+04:26 
+
+04:26 section. Now let's move to the second
+04:29 
+
+04:29 section that is intermediate Python and
+04:32 
+
+04:32 under intermediate Python we have total
+04:34 
+
+04:34 seven chapters. The first chapter is
+04:37 
+
+04:37 exception handling. Second chapter is
+04:41 
+
+04:41 debugging. The third chapter is classes
+04:45 
+
+04:45 and objects.
+04:47 
+
+04:47 Fourth chapter is inheritance. The fifth
+04:51 
+
+04:51 chapter is iterators and generators. The
+04:54 
+
+04:54 sixth chapter is list dictionary
+04:57 
+
+04:57 comprehensions. The seventh chapter that
+04:60 
+
+05:00 is the last chapter is sets and command
+05:03 
+
+05:03 line. So these are all the chapters in
+05:06 
+
+05:06 the intermediate Python section. After
+05:09 
+
+05:09 the completion of the intermediate
+05:10 
+
+05:10 Python section, we will move to the
+05:13 
+
+05:13 advanced Python section. Under the
+05:15 
+
+05:15 advanced Python section, we have total
+05:17 
+
+05:17 seven chapters. The first chapter is
+05:20 
+
+05:20 multipprocessing.
+05:22 
+
+05:22 The second chapter is multi-threading.
+05:26 
+
+05:26 The third chapter is unit testing. The
+05:30 
+
+05:30 fourth chapter is decorators. The fifth
+05:34 
+
+05:34 chapter is lambdas. The sixth chapter is
+05:38 
+
+05:38 regular expressions. And the last
+05:41 
+
+05:41 chapter that is the seventh chapter is
+05:44 
+
+05:44 context managers. These are all the
+05:47 
+
+05:47 chapters which we will learn in advanced
+05:49 
+
+05:49 Python section. So there are total 21
+05:52 
+
+05:52 chapters which we will cover in this
+05:55 
+
+05:55 entire course. Okay. After understanding
+05:59 
+
+05:59 what we can expect from this entire
+06:01 
+
+06:01 course, let's see the target audience.
+06:05 
+
+06:05 So who is the target audience for this
+06:07 
+
+06:07 course? If you are an absolute beginner
+06:10 
+
+06:10 then you are most welcome in this course
+06:12 
+
+06:12 because we will cover everything from
+06:15 
+
+06:15 scratch. We expect you to follow along
+06:17 
+
+06:17 with this course. That is the only
+06:18 
+
+06:18 thing. There are no prerequisites at all
+06:21 
+
+06:21 to get started with Python. If you are a
+06:24 
+
+06:24 professional programmer then also you
+06:26 
+
+06:26 can expect a lot of things to be covered
+06:28 
+
+06:28 in this course. As you have seen already
+06:30 
+
+06:30 that we have intermediate and advanced
+06:33 
+
+06:33 Python sections as well. If you are a
+06:36 
+
+06:36 professional programmer, you can select
+06:38 
+
+06:38 some topics from these sections
+06:39 
+
+06:39 according to your needs. If you are
+06:42 
+
+06:42 someone willing to learn Python, then
+06:45 
+
+06:45 also you are most welcome. If you want
+06:47 
+
+06:47 to explore this wonderful language, you
+06:50 
+
+06:50 are most welcome in this course. We will
+06:52 
+
+06:52 cover a lot of things from scratch.
+06:55 
+
+06:55 Okay, we have seen why we need to learn
+06:58 
+
+06:58 Python in this lecture. We have also
+07:00 
+
+07:00 seen the entire syllabus and we have
+07:02 
+
+07:02 seen the target audience as well. Now we
+07:06 
+
+07:06 are ready to dive into this course and
+07:08 
+
+07:08 we will learn a lot of things in this
+07:10 
+
+07:10 course as we proceed.
+07:12 
+
+07:12 Thank you for watching this lecture. I
+07:15 
+
+07:15 will see you in the next lecture.
+07:17 
+
+07:17 [Music]
+07:17 
+
+07:17 [Applause]
+07:19 
+
+07:19 [Music]

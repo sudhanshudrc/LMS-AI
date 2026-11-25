@@ -1,0 +1,107 @@
+00:00 In this presentation, we will discuss
+00:02 the formal definition of data structures
+00:05 and we also discuss some 
+of the advantages of it.
+00:08 So, let's get started.
+00:10 What is a data structure?
+00:12 From the previous lecture, 
+we get this information that
+00:15 a stack ADT can be implemented 
+using arrays or linked lists.
+00:21 Right? We can use these two data structures
+00:23 to implement a stack ADT. 
+These are my data structures.
+00:26 Right? Now, what information we get from this line?
+00:29 First of all, a data structure is 
+the organization of the data
+00:33 in a way so that it can be used efficiently.
+00:35 When I say efficiently, it means 
+in terms of time as well as space.
+00:39 From the previous lecture, 
+we got this information that
+00:42 a stack ADT is implemented 
+using arrays or linked lists.
+00:46 From that particular text we 
+get this information that,
+00:49 a data structure is used to implement an ADT.
+00:52 Isn't that so?
+00:53 We can say that, a data structure 
+is used to implement an ADT.
+00:58 We know from this example that,
+01:00 in order to implement stack ADT, we can use
+01:02 an array data structure or 
+linked list data structure.
+01:05 We can use any of these data 
+structures to implement this ADT.
+01:09 So, basically we can say that
+01:11 a data structure is used to implement an ADT.
+01:14 ADT tells us what is to be done and
+01:16 data structures tells us how to do it.
+01:19 So, data structures cares about how, not what.
+01:23 ADT just gives us the blue print,
+01:25 while data structures gives 
+us the implementation.
+01:28 But, how to know which data 
+structure to use for a particular ADT?
+01:33 That is the basic question.
+01:34 Obviously, this question immediately arises
+01:37 after knowing this point that, there are
+01:39 multiple data structures for a particular ADT.
+01:41 But, which data structure to use
+01:43 for a particular ADT is the question of concern.
+01:46 Let's tackle this question.
+01:48 Which data structure?
+01:49 In reality, different implementations of ADT
+01:52 are compared for time and space efficiency.
+01:55 For example, we know that stack ADT
+01:57 can be implemented using arrays or linked lists.
+02:00 We can compare these two data structures,
+02:04 for time and space efficiency.
+02:06 The one best suited according to the
+02:09 current requirement of the user will be selected.
+02:11 May be one data structure will lead to
+02:13 space efficiency while other data structure
+02:16 will lead to time efficiency.
+02:17 We will select the one according to
+02:19 the current requirement of the user.
+02:21 May be user wants to save space,
+02:23 then we can use a particular data structure
+02:25 which can save space. May be a 
+user wants run the programmer faster,
+02:29 then we will use the data structure,
+02:31 which will run faster.
+02:33 So, the one best suited according to the
+02:35 current requirement of the 
+user will get selected. Okay.
+02:38 So, it is depending upon the user.
+02:40 Now, let's discuss some of the 
+advantages of data structures.
+02:45 First advantage is efficiency.
+02:47 We know that, proper choice of data structure
+02:49 make program efficient in 
+terms of space and time.
+02:53 Proper choice of data 
+structure is very important
+02:55 This leads to space and time efficiency.
+02:58 Second advantage is reusability.
+03:01 One implementation can be 
+used by multiple client programs.
+03:05 Just one data structure can be 
+used by multiple client programs.
+03:09 So, re-usability is also provided 
+by data structures. Right?
+03:13 Apart from this, the one advantage 
+03:15 which we already know is abstraction.
+03:17 Data structure is specified by an ADT. 
+03:19 ADT is the blueprint, while data 
+structure is the implementation.
+03:22 We can say that, it provides a 
+level of abstraction. Right?
+03:25 The client program doesn't have 
+to worry about what is going inside.
+03:28 It just sees the ADT, just 
+the interface, nothing else.
+03:32 So, these are the advantages of
+03:34 data structures which we should remember. Okay.
+03:38 Okay friends, this is it for now.
+03:40 Thank you for watching this presentation.

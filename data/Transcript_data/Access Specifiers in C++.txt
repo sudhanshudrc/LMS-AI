@@ -1,0 +1,661 @@
+00:00 Hello everyone, welcome to Nesso
+00:03 
+
+00:03 Academy. In this lecture, we will
+00:05 
+
+00:05 understand excess specifiers in C++. So
+00:10 
+
+00:10 without any further delay, let's get
+00:11 
+
+00:11 started with this lecture and let's see
+00:14 
+
+00:14 what are the topics. The first topic is
+00:17 
+
+00:17 introduction to access specifiers. First
+00:20 
+
+00:20 I will introduce you to access
+00:21 
+
+00:21 specifiers. Then we will understand the
+00:25 
+
+00:25 public access specifier and the private
+00:28 
+
+00:28 access specifier. So these are the
+00:31 
+
+00:31 topics. Let's start with the first one
+00:33 
+
+00:33 that is introduction to access
+00:35 
+
+00:35 specifiers.
+00:37 
+
+00:37 So what are access specifiers?
+00:40 
+
+00:40 Access specifiers are keywords that
+00:43 
+
+00:43 define level of accessibility of members
+00:47 
+
+00:47 of a class.
+00:49 
+
+00:49 We already know about private and public
+00:52 
+
+00:52 keywords. These are access specifiers
+00:55 
+
+00:55 only. These are the keywords that define
+00:58 
+
+00:58 the level of accessibility of members of
+01:02 
+
+01:02 a specific class. They control who can
+01:05 
+
+01:05 access what in a program. This is the
+01:09 
+
+01:09 meaning of defining the level of
+01:11 
+
+01:11 accessibility of members.
+01:14 
+
+01:14 They control who can access what.
+01:19 
+
+01:19 This means they tell whether a specific
+01:22 
+
+01:22 member is accessible outside the class
+01:25 
+
+01:25 or not.
+01:28 
+
+01:28 We have three different types of access
+01:31 
+
+01:31 specifiers in C++. We have public,
+01:35 
+
+01:35 private and protected access specifiers.
+01:41 
+
+01:41 We already know the basics of public and
+01:43 
+
+01:43 private access specifiers from our
+01:45 
+
+01:45 previous discussions.
+01:47 
+
+01:47 We need to also understand the protected
+01:50 
+
+01:50 access specifier. But we will understand
+01:53 
+
+01:53 this specific access specifier later in
+01:56 
+
+01:56 this course when we will understand
+01:59 
+
+01:59 inheritance properly.
+02:01 
+
+02:01 In this lecture, our focus will be to
+02:04 
+
+02:04 understand public and private access
+02:07 
+
+02:07 specifiers properly. So that's the
+02:10 
+
+02:10 introduction to access specifiers. This
+02:13 
+
+02:13 means we are done with the first topic.
+02:16 
+
+02:16 Now let's move to the second topic to
+02:18 
+
+02:18 understand the public access specifier.
+02:22 
+
+02:22 The public access specifier allows
+02:25 
+
+02:25 members to be defined that are
+02:29 
+
+02:29 accessible from anywhere in the program
+02:32 
+
+02:32 both inside and outside the class. So
+02:36 
+
+02:36 with the help of public access specifier
+02:39 
+
+02:39 we can make some members of the class
+02:42 
+
+02:42 accessible even outside the class. That
+02:46 
+
+02:46 is we make them accessible from anywhere
+02:49 
+
+02:49 in the program. They are accessible
+02:52 
+
+02:52 inside and outside the class.
+02:57 
+
+02:57 Now to understand the significance of
+02:59 
+
+02:59 public access specifier and how to use
+03:02 
+
+03:02 it in programs, let's take one C++
+03:05 
+
+03:05 program.
+03:07 
+
+03:07 Here is the example C++ program. I have
+03:11 
+
+03:11 included IO stream and string header
+03:13 
+
+03:13 files. You will get to know why I have
+03:15 
+
+03:15 included the string header file. This is
+03:18 
+
+03:18 the class student and here I have
+03:20 
+
+03:20 defined these public members. Here you
+03:23 
+
+03:23 can observe that name and role number
+03:26 
+
+03:26 are defined here. These are data
+03:28 
+
+03:28 members. Name has the type std string.
+03:32 
+
+03:32 To use std string, we need to include
+03:34 
+
+03:34 the string header file. That's why I
+03:37 
+
+03:37 have included this header file. I hope
+03:39 
+
+03:39 this is clear to you.
+03:41 
+
+03:41 I have defined the name variable as a
+03:44 
+
+03:44 string variable. Therefore, this
+03:45 
+
+03:45 variable can hold a sequence of
+03:48 
+
+03:48 characters. Then we have this role
+03:50 
+
+03:50 number variable of type integer. It can
+03:53 
+
+03:53 hold an integer.
+03:55 
+
+03:55 Then we have this member function
+03:57 
+
+03:57 display. Its return type is void. It has
+04:00 
+
+04:00 the capability to display name and role
+04:03 
+
+04:03 number in a specific format on the
+04:06 
+
+04:06 screen.
+04:09 
+
+04:09 So these are all the members of this
+04:11 
+
+04:11 class and these members are public
+04:13 
+
+04:13 members.
+04:15 
+
+04:15 Therefore we can access these members
+04:17 
+
+04:17 even outside the class and we can access
+04:21 
+
+04:21 them through the object of this class.
+04:25 
+
+04:25 Here is the demonstration for the same.
+04:27 
+
+04:27 Inside the main function I have defined
+04:30 
+
+04:30 the object S1 of type student. This
+04:33 
+
+04:33 means I have defined object as one of
+04:36 
+
+04:36 class student. Now through this object
+04:40 
+
+04:40 we can access all the members of this
+04:43 
+
+04:43 class.
+04:45 
+
+04:45 This can be done by specifying the name
+04:47 
+
+04:47 of the object followed by the dot
+04:49 
+
+04:49 operator and then the name of the member
+04:52 
+
+04:52 which we want to access. Here I am
+04:55 
+
+04:55 trying to provide this string Bob to
+04:58 
+
+04:58 this name variable which is the data
+05:00 
+
+05:00 member of this class. In the same way I
+05:04 
+
+05:04 am providing this value 101 to this role
+05:07 
+
+05:07 number variable which is also the data
+05:10 
+
+05:10 member of this class and I'm doing this
+05:13 
+
+05:13 with the help of the S1 object.
+05:17 
+
+05:17 Here I'm calling the display function
+05:19 
+
+05:19 through the S1 object. As I'm calling
+05:21 
+
+05:21 this function through the S1 object,
+05:24 
+
+05:24 name will be replaced by Bob and RO
+05:27 
+
+05:27 number will be replaced by 101.
+05:32 
+
+05:32 This is because these values are
+05:34 
+
+05:34 provided to these variables with the
+05:36 
+
+05:36 help of S1 object.
+05:39 
+
+05:39 So if we call this function via the S1
+05:42 
+
+05:42 object then we would be able to see the
+05:45 
+
+05:45 output like this. We will see name as
+05:49 
+
+05:49 Bob and RO number as 101.
+05:53 
+
+05:53 I hope this is clear to you. So this is
+05:56 
+
+05:56 the use of public access specifier. With
+05:59 
+
+05:59 the help of public access specifier, we
+06:02 
+
+06:02 can access members of the class from
+06:05 
+
+06:05 anywhere in the program. So with this we
+06:09 
+
+06:09 have understood the public access
+06:10 
+
+06:10 specifier. This means we are done with
+06:13 
+
+06:13 the second topic also. Now let's move to
+06:15 
+
+06:15 the third topic to understand the
+06:17 
+
+06:17 private access specifier.
+06:20 
+
+06:20 The private access specifier allows
+06:23 
+
+06:23 members to be accessed only within the
+06:26 
+
+06:26 class.
+06:28 
+
+06:28 So if we put some members under the
+06:31 
+
+06:31 private access specifier, then those
+06:34 
+
+06:34 members are only accessible within the
+06:37 
+
+06:37 class. They are not accessible from
+06:40 
+
+06:40 outside the class. Even if we create an
+06:42 
+
+06:42 object of the class and through that
+06:45 
+
+06:45 object if we try to access the members
+06:48 
+
+06:48 that are private then we would not be
+06:50 
+
+06:50 able to do so.
+06:53 
+
+06:53 Also by default members of a class are
+06:57 
+
+06:57 private. If we do not specify the
+06:59 
+
+06:59 private keyword then the members are
+07:01 
+
+07:01 treated as private. I hope this is
+07:04 
+
+07:04 clear. Now let's take one example
+07:07 
+
+07:07 program to properly understand how to
+07:10 
+
+07:10 use the private access specifier in C++
+07:13 
+
+07:13 programs. Again I took the same class
+07:17 
+
+07:17 and this time name and role number are
+07:20 
+
+07:20 private members of this class and the
+07:23 
+
+07:23 only public member of this class is
+07:26 
+
+07:26 display. Inside the main function, I
+07:28 
+
+07:28 have created the object S1 of student.
+07:32 
+
+07:32 And through this S1 object, I am trying
+07:34 
+
+07:34 to access name and role number which is
+07:36 
+
+07:36 not allowed because these are private
+07:38 
+
+07:38 members. Therefore, we will get error
+07:41 
+
+07:41 from the compiler.
+07:44 
+
+07:44 Now, what if we want to provide values
+07:46 
+
+07:46 to these members via the S1 object and
+07:52 
+
+07:52 that two from the main function?
+07:55 
+
+07:55 This can be done by creating the member
+07:59 
+
+07:59 function that to a public member
+08:01 
+
+08:01 function and through that member
+08:04 
+
+08:04 function we can provide values to these
+08:06 
+
+08:06 private members. These private members
+08:09 
+
+08:09 are accessible within this class.
+08:12 
+
+08:12 Therefore we can create a public member
+08:14 
+
+08:14 function and through that member
+08:17 
+
+08:17 function we can provide values to these
+08:20 
+
+08:20 variables.
+08:22 
+
+08:22 Let's define the public member function
+08:25 
+
+08:25 set student. Here you can observe these
+08:28 
+
+08:28 parameters n and r. n represents name
+08:32 
+
+08:32 and r represents role number. Whatever
+08:36 
+
+08:36 the values we receive here are also
+08:38 
+
+08:38 provided to name and role number
+08:41 
+
+08:41 variables which are private in this
+08:43 
+
+08:43 class. We can access them here in this
+08:46 
+
+08:46 function because this is the member
+08:49 
+
+08:49 function of this class. These variables
+08:53 
+
+08:53 are accessible within this class. That's
+08:56 
+
+08:56 why providing name and role number in
+08:58 
+
+08:58 this function is perfectly valid.
+09:02 
+
+09:02 Now we can call this function and
+09:05 
+
+09:05 provide values to these parameters.
+09:08 
+
+09:08 For this purpose, we need to remove
+09:10 
+
+09:10 these two statements and write this
+09:13 
+
+09:13 specific statement.
+09:15 
+
+09:15 Here through the S1 object, I am calling
+09:18 
+
+09:18 the set student function and I am
+09:21 
+
+09:21 passing these values to these
+09:24 
+
+09:24 parameters.
+09:26 
+
+09:26 Now this means name will receive Bob and
+09:30 
+
+09:30 RO number will receive 101. So
+09:33 
+
+09:33 indirectly through the S1 object I am
+09:37 
+
+09:37 passing values to these private members.
+09:40 
+
+09:40 I hope this is clear to you. We cannot
+09:43 
+
+09:43 directly access these members outside
+09:46 
+
+09:46 the class. But through the member
+09:48 
+
+09:48 function we can provide values to these
+09:53 
+
+09:53 members.
+09:54 
+
+09:54 In this way we are providing restricted
+09:57 
+
+09:57 control to these members. And this is
+09:60 
+
+10:00 the usefulness of private access
+10:03 
+
+10:03 specifier. I hope this is clear to you.
+10:05 
+
+10:05 Now when we execute this program, we
+10:07 
+
+10:07 will get the output name as Bob and role
+10:10 
+
+10:10 number 101. So with this we have
+10:13 
+
+10:13 properly understood the private access
+10:15 
+
+10:15 specifier as well. This means we are
+10:18 
+
+10:18 done with the last topic as well and we
+10:21 
+
+10:21 are done with this lecture.
+10:24 
+
+10:24 Okay friends, this is it for now. Thank
+10:26 
+
+10:26 you for watching this lecture. I will
+10:28 
+
+10:28 see you in the next one.
+10:35 
+
+10:35 [music]

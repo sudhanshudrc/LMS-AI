@@ -1,0 +1,221 @@
+00:00 Hello everyone, welcome to Nesso
+Academy. In the previous lecture, we
+00:05 have understood static data members
+properly. Now in this lecture, we will
+00:11 understand static member functions. So
+without any further delay, let's get
+00:17 started with this lecture and let's see
+what are the topics. There is only one
+00:21 topic and the name of the topic is
+static member functions.
+00:27 Now let's understand static member
+functions properly. In order to
+00:32 understand static member functions and
+to understand what is their usefulness,
+00:39 let's take one simple example program.
+Here is the example program. IO stream
+00:45 header file is included and here is the
+class item. In this class, I have
+00:51 declared this static data member and it
+is declared as public. This means we can
+00:59 access this data member outside this
+class. Here I have defined this data
+01:05 member with value 10. And here is the
+definition of the main function. Within
+01:10 this function with the help of stdc out,
+I am trying to display the value of this
+01:17 specific variable. This is the static
+data member whose value I want to access
+01:23 here
+and I am accessing this value with the
+01:27 help of the class name and the scope
+resolution operator. When we execute
+01:33 this program, we will get the output as
+10. This is because the static data
+01:38 member has this value 10. Now here we
+can observe that public static data
+01:45 members can be accessed outside the
+class through the class name. This is
+01:51 the public static data member. We can
+access its value with the help of the
+01:58 class name and the scope resolution
+operator that do outside the class. This
+02:04 is possible with public static data
+members.
+02:10 But what if we make this private with
+the help of the private keyword like
+02:16 this? Now we have this private keyword
+over here. Because of this, now this is
+02:23 the private static data member. Now this
+line will not work and we will get error
+02:30 from the compiler. Int item value is
+private. we would not be able to access
+02:35 the value of this static data member
+because now it is declared as private.
+02:43 We know that private members can only be
+accessible within the class. They are
+02:48 not accessible outside the class. Now
+here if we want to get the value of this
+02:56 specific data member within the main
+function then we need to define some
+03:02 member function inside this class that
+would be able to access this static data
+03:07 member and return the value to us.
+So now let's define the public member
+03:14 function that has the capability to
+return the value of this static data
+03:20 member.
+Here is the definition of the function
+03:25 which is the public function. This is
+defined in this class. Therefore this is
+03:30 the member function. It can access this
+static data member. Here I'm directly
+03:36 accessing this member and I'm returning
+the value of this member. Now here
+03:40 inside the main function, we need to
+create the object of this class in order
+03:45 to call this function. This is the
+member function. Therefore, we need the
+03:50 object of the class to call this
+function. So now we need to create the
+03:54 object of this class. Let's say the
+object of the class is I.
+04:00 And now with the help of I and the dot
+operator, we can easily call this
+04:06 function. Now when we execute this
+program we will get the output as 10.
+04:14 I hope this is clear to you. We cannot
+directly access this static data member
+04:20 because it is private.
+But with the help of this function we
+04:25 can access its value that two inside the
+main function. We need to create the
+04:31 object of this class and through the
+object we would be able to call this
+04:35 function.
+Now I am a little curious about this
+04:41 whether we would be able to define a
+member function that can be called
+04:47 without the need of creating the object
+of the class just like a static data
+04:52 member.
+Is there a way to do this? Can we
+04:57 directly access the member function
+through the name of the class instead of
+05:04 calling it through the object of the
+class?
+05:08 Yes, this can be done by making the
+member function static and these member
+05:15 functions are called static member
+functions.
+05:19 We need to put the static keyword in
+front of the return type like this. Now
+05:26 we have the static member function
+defined inside this class. We can
+05:32 directly access this function without
+the need of creating the object of this
+05:37 class. We can access this function
+through the name of the class and the
+05:42 scope resolution operator.
+This is what I have mentioned here.
+05:46 Static member function does not need an
+object to call. We can directly call it
+05:52 through the class name.
+Now here we do not need this object and
+05:58 in place of i.f fun we can specify item
+then the scope resolution operator and
+06:07 then the call to the function fun. Here
+we are directly calling this function
+06:13 without the need of creating the object
+of this class.
+06:18 This can be done because now we have the
+static member function.
+06:24 Static member functions can be called
+directly.
+06:28 Now when we execute this program, we
+will get the output as 10. I hope this
+06:32 is clear to you. So this is the concept
+of static member functions. Just like
+06:38 static data members, we can call static
+member functions through the class name.
+06:46 That is the benefit we are getting.
+So we can say that static member
+06:52 function does not need an object to
+call. Also it can access only static
+06:58 data members. It cannot access normal
+data members. This is what we need to
+07:03 remember. Apart from this it can be
+called using either a class name or an
+07:09 object name. Although we can call the
+static member function through the
+07:14 object but it is not advisable to do so.
+It is better to call the function
+07:20 through the class name.
+Now let's see the syntax to declare a
+07:26 static member function. This is the
+syntax we can follow within the class.
+07:31 This is how we can declare a static
+member function. We need to specify the
+07:37 keyword static. then the return type
+then the name of the function after this
+07:43 parenthesis and then the semicolon.
+In this way we can just declare or
+07:49 create the prototype of the static
+member function inside the class. This
+07:55 is usually done when we want to define
+the function outside the class and we
+08:01 can easily define the static member
+function outside the class with the help
+08:06 of scope resolution operator.
+This is how we can do this. Here is how
+08:13 we can define the static member function
+outside the class.
+08:19 We need to specify the return type first
+then the name of the class then scope
+08:25 resolution operator and then the
+function
+08:29 within braces we can provide the code of
+the function. I hope this is clear to
+08:34 you. So this is how we can declare and
+define a static member function.
+08:42 Now let's take the same example and
+let's modify it to understand how we can
+08:48 define a static member function outside
+the class.
+08:53 Here is the same example I took. Here
+you can observe the static member
+08:57 function is defined inside the class.
+But what if we want to define this
+09:02 function outside the class? First we
+need to declare this function inside
+09:07 this class like this. We need to put the
+semicolon here. Now we can define this
+09:13 function outside the class like this
+with the help of the scope resolution
+09:19 operator. I have followed the same
+syntax. You can verify this on your own.
+09:25 Here you can observe the definition. We
+have just one statement return value.
+09:31 When we call this function, it will
+return the value of the static data
+09:36 member which is private and we would be
+able to get the value on the screen as
+09:42 well through stdc out. Here I'm calling
+the function through the class name and
+09:48 the scope resolution operator. We will
+get the value of the static data member
+09:54 which is private and we will get the
+output as 10.
+09:59 I hope this is completely clear to you.
+So through this example it is clear that
+10:05 we can define static member functions
+outside the class. Now we know what is
+10:10 the concept of static member functions
+and what we can do with it. So with this
+10:16 we are done with the topic static member
+functions and we are done with this
+10:22 lecture. Okay friends this is it for
+now. Thank you for watching this
+10:27 lecture. I will see you in the next one.
+[Applause]
+10:32 [Music]

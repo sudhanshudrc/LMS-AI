@@ -1,0 +1,511 @@
+00:01 foreign
+00:06 
+
+00:06 let's continue our discussion on basic
+00:09 
+
+00:09 data types in Python
+00:12 
+
+00:12 in this presentation we will discuss the
+00:14 
+
+00:14 following topics the first topic is
+00:16 
+
+00:16 Boolean data type and the second topic
+00:19 
+
+00:19 is string data type
+00:21 
+
+00:21 in the last presentation we have
+00:23 
+
+00:23 discussed integer data type and floating
+00:26 
+
+00:26 Point data type now we are ready to
+00:29 
+
+00:29 discuss what is Boolean data type and
+00:31 
+
+00:31 what is string data type so let's first
+00:34 
+
+00:34 try to understand what is Boolean data
+00:37 
+
+00:37 type
+00:38 
+
+00:38 so what is the meaning of Boolean data
+00:40 
+
+00:41 type
+00:42 
+
+00:42 Boolean data type is used to represent
+00:44 
+
+00:44 any one of the two values either true or
+00:48 
+
+00:48 false
+00:49 
+
+00:49 so Boolean data type represents two
+00:51 
+
+00:51 values either true or false
+00:54 
+
+00:54 now we need to understand the meaning of
+00:56 
+
+00:56 this
+00:57 
+
+00:57 in many situations we'll either get a
+00:60 
+
+00:60 true value or false value
+01:02 
+
+01:02 let's say we are checking a condition is
+01:05 
+
+01:05 5 less than 10. in that case we'll get a
+01:08 
+
+01:08 True Value because 5 is less than 10.
+01:11 
+
+01:11 what about if we check this condition is
+01:14 
+
+01:14 10 less than 5 no surely not because 10
+01:17 
+
+01:17 is greater than 5 not less than 5. in
+01:20 
+
+01:20 this case we'll get a false value
+01:22 
+
+01:22 so you can observe that whenever we
+01:25 
+
+01:25 check a condition we will get either
+01:27 
+
+01:27 true or false this means that condition
+01:30 
+
+01:30 checking always return a Boolean data
+01:33 
+
+01:33 hence we can say that whenever we check
+01:36 
+
+01:36 a condition we will always get either
+01:38 
+
+01:38 true or false value either the response
+01:41 
+
+01:41 will be true or false it totally depends
+01:44 
+
+01:44 upon the condition what we are checking
+01:46 
+
+01:46 in order to concrete this concept let's
+01:49 
+
+01:49 consider one simple example
+01:51 
+
+01:51 let's say we have this program where
+01:54 
+
+01:54 name is equal to sap this is variable
+01:57 
+
+01:57 name and we are assigning Sam the string
+01:60 
+
+01:60 to this variable name
+02:02 
+
+02:02 this is an assignment operator it is
+02:04 
+
+02:04 used to assign some value in the right
+02:07 
+
+02:07 hand side to the left hand side
+02:10 
+
+02:10 so here we have name as a label and this
+02:13 
+
+02:13 label is given to this string sap so in
+02:16 
+
+02:16 place of this string samp we can use
+02:18 
+
+02:18 this label name in our code and we are
+02:21 
+
+02:21 using it here while checking this
+02:22 
+
+02:22 condition
+02:23 
+
+02:23 this is an if else construct
+02:26 
+
+02:26 if else
+02:27 
+
+02:27 if you're not familiar with any other
+02:29 
+
+02:29 programming language then you might not
+02:32 
+
+02:32 know what is the meaning of if else
+02:34 
+
+02:34 if else is used to evaluate a piece of
+02:37 
+
+02:37 code based on some condition
+02:40 
+
+02:40 if this condition is satisfied then this
+02:44 
+
+02:44 piece of code will get evaluated
+02:46 
+
+02:46 otherwise or else this piece of code
+02:50 
+
+02:50 will get evaluated this is what if else
+02:53 
+
+02:53 means
+02:54 
+
+02:54 so if name is equal to Sam then we must
+02:58 
+
+02:58 print hello Sam otherwise we must print
+03:01 
+
+03:01 hello dude
+03:03 
+
+03:03 here we have this condition name equal
+03:06 
+
+03:06 to Sam understand this that this is not
+03:09 
+
+03:09 an assignment operator this is an
+03:11 
+
+03:11 equality operator
+03:13 
+
+03:13 equality operator always returns true if
+03:17 
+
+03:17 left hand side value is equal to the
+03:19 
+
+03:19 right hand side value
+03:21 
+
+03:21 here in this case we have name equal to
+03:25 
+
+03:25 Sam
+03:26 
+
+03:26 this means we are checking this
+03:27 
+
+03:27 condition is name equal to sum we know
+03:31 
+
+03:31 that name is the label given to this
+03:33 
+
+03:33 string samp
+03:35 
+
+03:35 So eventually this name variable or this
+03:39 
+
+03:39 label will get replaced by the string
+03:41 
+
+03:41 Sam
+03:43 
+
+03:43 so in reality we are checking this
+03:45 
+
+03:45 condition is sum equal to Sam
+03:48 
+
+03:48 yes this is true because here each and
+03:52 
+
+03:52 every character of this string is
+03:54 
+
+03:54 matching with each and every character
+03:56 
+
+03:56 of the string hence this string is equal
+03:59 
+
+03:59 to this string this means that we will
+04:02 
+
+04:02 get True Value as a result So eventually
+04:06 
+
+04:06 this will get replaced by true
+04:08 
+
+04:08 as we know if the condition is satisfied
+04:11 
+
+04:11 then we need to evaluate this piece of
+04:14 
+
+04:14 code which means that eventually print
+04:18 
+
+04:18 hello Sam will get evaluated and this
+04:21 
+
+04:21 means that the output of this program
+04:23 
+
+04:23 will be hello Sam and not hello dude
+04:26 
+
+04:26 note that either this code will get
+04:29 
+
+04:29 evaluated or this code will get
+04:32 
+
+04:32 evaluated any one of these will get
+04:34 
+
+04:34 evaluated based on the condition
+04:37 
+
+04:37 if let's say the condition becomes false
+04:40 
+
+04:40 then in that case this piece of code
+04:43 
+
+04:43 will get evaluated in that case we'll
+04:45 
+
+04:45 get this output hello dude on the screen
+04:48 
+
+04:48 and not hello Sam
+04:50 
+
+04:50 so as I have already told you if else is
+04:54 
+
+04:54 used to evaluate a piece of code based
+04:57 
+
+04:57 on the condition pass to it in this case
+04:59 
+
+04:59 the condition pass to it is true this
+05:02 
+
+05:02 means that this piece of code will get
+05:04 
+
+05:04 evaluated and hence we will get this
+05:06 
+
+05:06 output hello Sam on the screen note that
+05:10 
+
+05:10 we will not get single codes along with
+05:12 
+
+05:12 the string we'll only get the string as
+05:15 
+
+05:15 an output and not the single quotes
+05:18 
+
+05:18 now we know what is a Boolean data type
+05:21 
+
+05:21 let's try to understand what is a string
+05:25 
+
+05:25 data type
+05:28 
+
+05:28 a string is simply a sequence of
+05:30 
+
+05:30 characters so a string is a combination
+05:33 
+
+05:33 or a sequence of characters
+05:36 
+
+05:36 now in order to see string in action
+05:39 
+
+05:39 what happens when we try to print a
+05:41 
+
+05:41 string we need to get to our Command
+05:43 
+
+05:43 Prompt so let's open our Command Prompt
+05:46 
+
+05:46 and there we must type Python and hit
+05:50 
+
+05:50 enter in order to activate the python
+05:53 
+
+05:53 interactive shell so let's activate the
+05:55 
+
+05:55 python interactive Shell by typing this
+05:58 
+
+05:58 command Python and by hitting enter
+06:01 
+
+06:01 after this we will see these three
+06:03 
+
+06:03 arrows which means that python
+06:05 
+
+06:05 interactive shell is now active
+06:07 
+
+06:07 so now let's type this string hello
+06:10 
+
+06:10 world we must understand this that the
+06:13 
+
+06:13 string must be written within double
+06:15 
+
+06:15 quotes or single quotes both are correct
+06:18 
+
+06:18 so we can write a string within double
+06:21 
+
+06:21 quotes or single quotes it doesn't
+06:23 
+
+06:23 really matter
+06:24 
+
+06:24 here we have a string hello world and we
+06:28 
+
+06:28 have a space in between note that a
+06:30 
+
+06:30 string is a sequence of characters so we
+06:33 
+
+06:33 can say this that this is a string now
+06:35 
+
+06:35 when we hit enter we will get Hello
+06:38 
+
+06:38 World on the screen
+06:40 
+
+06:40 so this is what happens when we write a
+06:42 
+
+06:42 string and when we hit enter note that
+06:45 
+
+06:45 python will always result in a string
+06:48 
+
+06:48 which is enclosed within single quotes
+06:51 
+
+06:51 even though you have written the string
+06:53 
+
+06:53 within double quotes
+06:55 
+
+06:55 okay so that is why we are getting this
+06:57 
+
+06:57 output
+06:59 
+
+06:59 this string within single quotes and not
+07:02 
+
+07:02 within double quotes
+07:04 
+
+07:04 I hope these concepts are clear to you
+07:06 
+
+07:06 now we have learned what is Boolean data
+07:09 
+
+07:09 type and we have also learned what is
+07:11 
+
+07:11 string data type
+07:13 
+
+07:13 okay friends this is it for now thank
+07:15 
+
+07:15 you for watching this presentation
+07:17 
+
+07:17 [Music]
+07:18 
+
+07:18 [Applause]
+07:20 
+
+07:20 [Music]

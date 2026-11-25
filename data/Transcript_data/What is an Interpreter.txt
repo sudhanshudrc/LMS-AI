@@ -1,0 +1,589 @@
+00:01 foreign
+00:07 
+
+00:07 we saw what is a compiler now we are
+00:11 
+
+00:11 ready to understand what is an
+00:13 
+
+00:13 interpreter so without any further delay
+00:16 
+
+00:16 let's get started and let's see all the
+00:19 
+
+00:19 topics of this presentation one by one
+00:23 
+
+00:23 there is only one topic we need to cover
+00:25 
+
+00:25 in this presentation and that is what is
+00:29 
+
+00:29 an interpreter
+00:30 
+
+00:30 before understanding what is an
+00:32 
+
+00:32 interpreter we need to recall what is a
+00:35 
+
+00:35 compiler
+00:38 
+
+00:38 a compiler is a complex piece of
+00:40 
+
+00:40 software whose job is to convert source
+00:43 
+
+00:43 code to machine code in one code so
+00:47 
+
+00:47 compiler takes the source code and
+00:49 
+
+00:49 converts it to machine code or binary
+00:52 
+
+00:52 code in one code we have learned this
+00:55 
+
+00:55 statement already in the last
+00:57 
+
+00:57 presentation and we have understood it
+00:59 
+
+00:59 with the help of an example recall that
+01:02 
+
+01:02 we have assumed that this is my machine
+01:04 
+
+01:04 and this is my friend's machine
+01:07 
+
+01:07 in my machine I have written this code
+01:09 
+
+01:09 in C programming language and I have
+01:11 
+
+01:11 provided this code to compiler compiler
+01:15 
+
+01:15 in return has generated an executable
+01:17 
+
+01:17 which we can run on any machine because
+01:20 
+
+01:20 this is a machine understandable code
+01:23 
+
+01:23 I can provide this code to my friend and
+01:26 
+
+01:26 my friend is able to run this code
+01:28 
+
+01:28 eventually he will see this output 30.
+01:31 
+
+01:31 this is what we have seen in the last
+01:33 
+
+01:33 presentation
+01:34 
+
+01:34 we know that how compiler Works compiler
+01:37 
+
+01:38 translates the source code to machine
+01:40 
+
+01:40 code in one group now we are ready to
+01:43 
+
+01:43 understand what is an interpreter and
+01:46 
+
+01:46 how interpreter translate source code to
+01:49 
+
+01:49 machine code
+01:52 
+
+01:52 an interpreter is a software program
+01:54 
+
+01:54 written to translate source code to
+01:57 
+
+01:57 machine code but it does that line by
+01:59 
+
+01:59 line so interpreter translate source
+02:02 
+
+02:02 code to machine code line by line not in
+02:07 
+
+02:07 one code
+02:08 
+
+02:08 let's try to understand the meaning of
+02:10 
+
+02:10 this statement with the help of an
+02:12 
+
+02:12 example
+02:15 
+
+02:15 let's say this is my machine and this is
+02:18 
+
+02:18 my friend's machine
+02:20 
+
+02:20 in my machine I have written this code
+02:22 
+
+02:22 this code is a JavaScript code and I
+02:25 
+
+02:25 have chosen JavaScript programming
+02:27 
+
+02:27 language because JavaScript is an
+02:29 
+
+02:29 interpreted programming language
+02:31 
+
+02:32 here we have three variables X Y and Z
+02:34 
+
+02:34 we have the statement x equal to 5 y
+02:38 
+
+02:38 equal to 10 Z equal to X Plus y
+02:42 
+
+02:42 we know that X is 5 and Y is 10.
+02:45 
+
+02:45 therefore eventually this will get
+02:47 
+
+02:47 replaced by 5 plus 10 which gives us 15.
+02:51 
+
+02:51 so 15 will get stored in variable Z
+02:55 
+
+02:55 after this we have the statement
+02:57 
+
+02:57 document.getelement by ID
+03:00 
+
+03:00 para dot inner HTML
+03:04 
+
+03:04 document.getelementbyid allows us to get
+03:07 
+
+03:07 an element from the HTML document by its
+03:11 
+
+03:11 ID
+03:12 
+
+03:12 now idea of that element must be para
+03:14 
+
+03:14 let us assume there is already an HTML
+03:17 
+
+03:17 document available with us and in that
+03:19 
+
+03:20 HTML document we have an element called
+03:23 
+
+03:23 paragraph element or P element with ID
+03:26 
+
+03:26 para so we can access that element in
+03:30 
+
+03:30 this JavaScript code with the help of
+03:32 
+
+03:32 this line
+03:33 
+
+03:33 document.getelement by ID allows us to
+03:36 
+
+03:36 get an element from the HTML document by
+03:39 
+
+03:39 its ID in this case the ID of that
+03:42 
+
+03:42 element is Para
+03:44 
+
+03:44 after this we have this dot inner HTML
+03:47 
+
+03:47 which allows us to make changes to that
+03:49 
+
+03:49 element and here I want to provide this
+03:53 
+
+03:53 string or this text to that element
+03:56 
+
+03:56 the value of Z is plus Z Plus Dot
+04:01 
+
+04:01 here plus signs are used to concatenate
+04:04 
+
+04:04 the strings
+04:06 
+
+04:06 So eventually we will get this entire
+04:08 
+
+04:08 string that is the value of Z is 15 DOT
+04:12 
+
+04:12 concatenating strings means combining
+04:15 
+
+04:15 strings
+04:16 
+
+04:16 so the final result will be the value of
+04:18 
+
+04:18 Z is 15 DOT So eventually that element
+04:23 
+
+04:23 will receive the string
+04:25 
+
+04:25 now let's say I want to run this code
+04:27 
+
+04:27 and I don't want to run this on my
+04:30 
+
+04:30 machine but on my friends machine
+04:32 
+
+04:32 in order to do this I need to provide
+04:35 
+
+04:35 the copy of this code to my friend and
+04:40 
+
+04:40 my friend must have an interpreter
+04:41 
+
+04:41 installed on his machine in order to run
+04:45 
+
+04:45 this code
+04:46 
+
+04:46 so interpreter must be installed on my
+04:49 
+
+04:49 friend's machine
+04:51 
+
+04:51 it is not necessary that interpreter
+04:53 
+
+04:53 must be installed on my machine
+04:56 
+
+04:56 I am providing the copy of my code the
+04:59 
+
+04:59 source code to my friend and my friend
+05:02 
+
+05:02 must have an interpreter installed in
+05:05 
+
+05:05 order to run this code
+05:07 
+
+05:07 interpreter will take each line of this
+05:10 
+
+05:10 code and converts it to machine code on
+05:13 
+
+05:13 the Fly
+05:14 
+
+05:14 on the Fly means at runtime so
+05:18 
+
+05:18 interpreter translates this code line by
+05:21 
+
+05:21 line on the Fly and generates an output
+05:25 
+
+05:25 the value of Z is 15.
+05:27 
+
+05:27 so my friend would be able to see this
+05:30 
+
+05:30 output of course he must have an HTML
+05:33 
+
+05:33 document as well which consists of a
+05:36 
+
+05:36 paragraph element then only he would be
+05:38 
+
+05:38 able to see this output
+05:40 
+
+05:40 one thing you need to note is that
+05:42 
+
+05:42 interpreter translates this code line by
+05:45 
+
+05:45 line and that too at the time when we
+05:48 
+
+05:48 run the code and it generates this
+05:50 
+
+05:50 output on the screen
+05:52 
+
+05:52 second thing is that interpreter must be
+05:55 
+
+05:55 installed on my friend's machine
+05:57 
+
+05:57 it is not necessary that interpreter
+05:60 
+
+06:00 must be installed on my machine
+06:03 
+
+06:03 I will simply provide the copy of the
+06:05 
+
+06:05 source code to my friend and my friend
+06:07 
+
+06:07 must execute this code through
+06:10 
+
+06:10 interpreter
+06:11 
+
+06:11 this is not the case with compiler I
+06:15 
+
+06:15 need to compile the code from my side
+06:17 
+
+06:17 and generate an executable
+06:19 
+
+06:19 I can provide the executable to anyone
+06:22 
+
+06:22 So eventually my friend just needs to
+06:25 
+
+06:25 run the executable
+06:27 
+
+06:27 note that interpreter never generates an
+06:30 
+
+06:30 executable it translates each line of
+06:34 
+
+06:34 this code on the Fly
+06:36 
+
+06:36 we will never get an executable in
+06:38 
+
+06:38 response
+06:39 
+
+06:39 this is very important point
+06:42 
+
+06:42 compiler generates an executable but
+06:45 
+
+06:45 interpreter never generates an
+06:47 
+
+06:47 executable
+06:49 
+
+06:49 the job of interpreter is to translate
+06:51 
+
+06:51 each line of code at the time when we
+06:54 
+
+06:54 run the code and generate the output on
+06:57 
+
+06:57 the screen it will never generate an
+06:59 
+
+06:59 executable
+07:01 
+
+07:01 one such example of an interpreter is
+07:04 
+
+07:04 our browser we have Chrome Firefox these
+07:08 
+
+07:08 type of browsers whenever we ask a web
+07:11 
+
+07:11 page from a web server let's say we ask
+07:14 
+
+07:14 to load google.com
+07:16 
+
+07:16 in that case Google servers will return
+07:19 
+
+07:19 HTML CSS and JavaScript to our browser
+07:22 
+
+07:23 along with some other files
+07:25 
+
+07:25 Now browser is capable of understanding
+07:27 
+
+07:27 those files and in response it generates
+07:31 
+
+07:31 a web page
+07:32 
+
+07:32 so browser understands or interprets the
+07:35 
+
+07:35 code that is HTML CSS and JavaScript and
+07:39 
+
+07:39 in response it generates the output
+07:41 
+
+07:41 which is the web page
+07:44 
+
+07:44 so this is how interpreter works and now
+07:47 
+
+07:47 we know what is the difference between
+07:49 
+
+07:49 an interpreter and a compiler
+07:52 
+
+07:52 compiler translates the source code to
+07:55 
+
+07:55 machine code in one go on the other hand
+07:57 
+
+07:57 interpreter translate source code to
+07:60 
+
+07:60 machine code line by line but note that
+08:03 
+
+08:03 interpreter never generates an
+08:05 
+
+08:05 executable this means every time
+08:07 
+
+08:07 whenever we want to run the code we need
+08:10 
+
+08:10 to provide it to The Interpreter it is
+08:13 
+
+08:13 not the case with compiler we need to
+08:16 
+
+08:16 provide the code once to the compiler
+08:19 
+
+08:19 compiler in return generates the
+08:21 
+
+08:21 executable and every time whenever we
+08:24 
+
+08:24 want to run the code we need to run the
+08:26 
+
+08:26 executable only there is no need to
+08:29 
+
+08:29 compile the code again and again so now
+08:31 
+
+08:32 we know the difference between an
+08:33 
+
+08:33 interpreter and compiler and this means
+08:36 
+
+08:36 we are done with this presentation
+08:38 
+
+08:38 okay friends this is it for now thank
+08:41 
+
+08:41 you for watching this presentation
+08:43 
+
+08:43 [Music]
+08:44 
+
+08:44 [Applause]
+08:46 
+
+08:46 [Music]

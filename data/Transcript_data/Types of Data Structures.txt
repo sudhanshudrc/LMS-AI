@@ -1,0 +1,124 @@
+00:00 Here in this presentation, we will discuss
+00:02 different types of data structures.
+00:04 So, let's get started.
+00:07 Here, we have two types of data structures.
+00:09 One is linear data structures
+00:11 and the other one is non linear data structures.
+00:13 So, let's discuss them one by one.
+00:16 A data structure is linear when all the elements
+00:19 are arranged in a linear or sequential order.
+00:22 If the elements are arranged in a linear order
+00:25 or sequential order, then we can say that
+00:27 a data structure is a linear data structure.
+00:29 For example, we have arrays, 
+queues, linked lists and stacks.
+00:34 These data structures are 
+all linear data structures.
+00:38 There is one more way we can say that a
+00:40 particular data structure 
+is a linear data structure.
+00:43 When each element of the data structure
+00:45 has only one predecessor and one successor,
+00:48 then we can say that -- that data 
+structure is a linear data structure.
+00:52 We can see in this example that,
+00:53 each element is having only one 
+predecessor and one successor
+00:58 Here you can see this element has only
+01:01 one predecessor and one successor.
+01:03 Right? Although there is one exception also.
+01:05 The first element and the last 
+elements, you can see clearly.
+01:08 First element has no predecessor
+01:10 and last element has no successor.
+01:12 So, this is an exception,
+01:13 although each and every element
+01:15 of the data structure has this property,
+01:17 that is, each element has one 
+predecessor and one successor.
+01:20 Now, let's discuss non linear data structure.
+01:24 A data structure is non linear when
+01:26 all the elements are not arranged
+01:28 in a linear or sequential order.
+01:31 There is no linear 
+arrangement of the elements.
+01:33 For example, here we can take this data structure.
+01:36 This is a tree data structure, 
+as I have labeled over here.
+01:39 This data structure is not linear.
+01:42 Why we are saying that, this 
+data structure is non linear?
+01:45 You can see here that each node
+01:47 does not have one predecessor and one successor.
+01:50 You can see here that -- this node has
+01:52 one predecessor but it doesn't have one successor.
+01:55 It has two successors, right?
+01:57 So, it is clear from this fact that, this data structure
+01:60 is not a linear data structure.
+02:03 We have another example, that is graph.
+02:06 Graph is also a non linear data structure.
+02:08 After understanding the difference between 
+02:10 a linear data structure and 
+a non linear data structure,
+02:13 let's even go further.
+02:15 We can make even further distinction.
+02:17 We do have static data structures 
+and dynamic data structures.
+02:20 Let's discuss them one by one.
+02:22 In these type of data structure,
+02:24 the memory is allocated at compile time.
+02:26 So, static data structures 
+are those data structures
+02:29 where the memory is allocated at compile time.
+02:32 Therefore, maximum size is fixed.
+02:35 The advantage of such data structure is that,
+02:37 we can access data very fast.
+02:39 But on the other hand, disadvantage is that
+02:42 insertion and deletion operations are slower.
+02:44 We can take an example like this.
+02:46 Array data structure is a static data structure,
+02:48 here you can see that, we 
+have to fix the size beforehand.
+02:52 That is why, we are fixing the size at
+02:54 compilation time, that is when 
+we are creating the code.
+02:57 Maximum size is always fixed in the case of arrays.
+03:01 Advantage is obviously that, we 
+can access the elements very fast,
+03:04 but slower insertion and deletion.
+03:06 We will discuss this, why 
+this disadvantage is there
+03:09 and why this advantage is there later.
+03:12 Right now, you should understand this point,
+03:14 that with static data structures we have
+03:16 this advantage and this disadvantage.
+03:18 Now, let's see what are dynamic data structures.
+03:21 In these type of data structures,
+03:23 the memory is allocated at run time.
+03:26 Therefore, the maximum size is flexible.
+03:28 When the memory will be allocated at run time,
+03:31 then user will decide the size.
+03:32 In that case, the size is flexible. Okay.
+03:34 Advantage is of course, 
+faster insertion and deletion.
+03:37 But again the disadvantage is slower access.
+03:41 So, we can clearly see that, there is nothing like
+03:43 one data structure is better than the other.
+03:45 The advantage of one is the 
+disadvantage of the other.
+03:47 So, choice of data structures 
+purely depends upon the
+03:50 user requirement. According to that, 
+the data structure will get selected.
+03:54 So, there is nothing like that, one data 
+structure is better than the other. Okay.
+03:58 And let me give you an example 
+of a dynamic data structure.
+04:00 You can see, the linked list is the best example
+04:03 of a dynamic data structure.
+04:04 We will discuss this later that 
+how linked list can be created.
+04:07 What are the advantages and disadvantages.
+04:10 We will discuss all these in subsequent lectures.
+04:12 Okay friends, this is it for now.
+04:14 Thank you for watching this presentation.

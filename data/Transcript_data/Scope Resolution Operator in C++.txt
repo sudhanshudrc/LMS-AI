@@ -1,0 +1,276 @@
+00:00 Hello everyone, welcome to NESO Academy.
+In this presentation, we will understand
+00:06 the scope resolution operator. So
+without any further delay, let's get
+00:12 started with this lecture and let's see
+what are the topics. The first topic of
+00:16 this lecture is the scope resolution
+operator. First we will properly
+00:22 understand the scope resolution
+operator. Then we will move to the next
+00:26 topic where we will understand some use
+cases associated with the scope
+00:32 resolution operator. So these are the
+topics. Let's start with the first one
+00:37 that is the scope resolution operator.
+So what is the scope resolution
+00:44 operator?
+Scope resolution operator is the
+00:48 operator that allows us to access
+something outside the current scope.
+00:55 In order to understand this definition
+properly, first we need to understand
+00:59 the meaning of a scope. Now what is a
+scope? A scope is a region or area where
+01:07 we can define some entity. We can define
+a variable, function or some other
+01:13 entity in a scope and that specific
+entity is visible or accessible within
+01:22 that scope only. Now let's say we want
+to access that specific entity outside
+01:30 the scope where it is defined then we
+can use the scope resolution operator
+01:36 for this purpose. Normally we cannot
+access a specific entity which is
+01:42 defined in a scope outside that scope
+but with the help of the scope
+01:49 resolution operator we can access that
+entity outside its scope as well. So
+01:57 that's what this definition is saying.
+The scope resolution operator is the
+02:01 operator that allows us to access some
+entity outside the current scope where
+02:09 it is defined. I hope this is clear to
+you. Now this is how we can represent a
+02:16 scope resolution operator. It is
+represented by two colons and it also
+02:22 helps resolve which scope a name belongs
+to. That's why this operator is called
+02:30 the scope resolution operator. It helps
+resolving which scope a name belongs to.
+02:38 That is it tells the compiler where to
+look for to access a specific entity.
+02:47 So that's the scope resolution operator.
+Now let's see the syntax of the scope
+02:51 resolution operator.
+We first need to specify the name of the
+02:56 scope and then we specify the scope
+resolution operator and then the name of
+03:01 the entity which we want to access.
+Now to understand the syntax properly,
+03:08 let's imagine an example. Let's say we
+have defined a nameace.
+03:13 Now within that nameace, we have defined
+a function as well. In the last lecture,
+03:18 we already learned how to define a
+namespace and how to define some entity
+03:24 within a name space. Now, when we define
+an entity within a namespace, then that
+03:31 entity will have the scope of the name
+space where it is defined.
+03:38 Here we are imagining that some name
+space is defined and within that name
+03:42 space some entity let's say a function
+is defined. So that function is
+03:48 accessible within the name space only.
+Now if we want to access that function
+03:55 outside the name space then we need to
+use the scope resolution operator.
+04:02 Before the scope resolution operator we
+need to specify the name of the scope
+04:07 where the entity is available. This
+means we need to provide the name of the
+04:12 name space first.
+Then after this we need to provide the
+04:16 scope resolution operator. And after the
+scope resolution operator we need to
+04:22 provide the name of the entity which we
+want to access from a specific name
+04:28 space.
+I hope this is clear to you. So in this
+04:33 way we would be able to access a
+specific entity which belongs to a
+04:37 specific scope.
+And this is how the scope resolution
+04:42 operator works.
+So with this we have understood the
+04:47 first topic that is the scope resolution
+operator properly. Now let's move to the
+04:53 second topic to understand some use
+cases associated with the scope
+04:58 resolution operator.
+Here comes the first use case. Accessing
+05:04 global variables. If a local variable
+hides a global one, use scope resolution
+05:11 operator to access the global variable.
+So if there is some local variable which
+05:19 we have defined within an entity and
+there is some global variable which is
+05:24 defined in the program which is defined
+outside of any entity with the same name
+05:30 as the local variable. then the local
+variable will hide the global variable
+05:37 and therefore we would not be able to
+access the global variable within the
+05:42 entity where the local variable is
+defined.
+05:47 But if we want to access the global
+variable then we need to use the scope
+05:52 resolution operator. Now this can be
+better understood with the help of an
+05:57 example. Here I have included the IO
+stream header file because I'm using
+06:02 stdc out here. And here I have defined
+variable x of type integer with value
+06:09 10. This is the global variable x
+because this variable is defined in the
+06:16 program and it is outside of any
+function or any other entity.
+06:24 This variable is accessible to all the
+entities we defined in this program.
+06:31 So this variable is also accessible
+within this main function.
+06:37 So that's why we call this variable a
+global variable. It is not defined
+06:42 within a function or an entity. It is
+defined in the program itself.
+06:49 Now here is the main function. Within
+this main function, I have defined this
+06:54 variable x of type integer with value
+five.
+06:60 This is the local variable. Now, why am
+I calling this a local variable?
+07:06 This is because this variable is defined
+within the main function.
+07:12 This variable has the scope of the main
+function and therefore this variable is
+07:18 accessible within this main function
+only. Whenever we define a variable
+07:23 within a function that variable is
+called a local variable.
+07:29 So this variable is local to this
+function. It has the scope of this
+07:34 function.
+Now you can observe that the name of the
+07:39 global variable and the name of the
+local variable is same. So now the
+07:44 question arises that if we try to access
+x in our main function then which
+07:51 variable will be accessed will it be a
+global variable or a local variable?
+07:58 Here in this std see out statement I am
+trying to access the value of x. I have
+08:05 specified X here. Now my question is
+will this value will be accessed or this
+08:12 value will be accessed. There is a clash
+between these two variables. These
+08:17 variables have the same name.
+Which variable will be accessed? Will it
+08:23 be a global variable or a local
+variable?
+08:26 The answer to this question is the local
+variable will be accessed because the
+08:32 local variable takes priority over the
+global variable. It is always the case.
+08:39 Whenever there is such clash always the
+local variable wins. Here I have
+08:45 specified the name X. So clearly we will
+get value five here because the local
+08:51 variable wins over the global variable.
+So now we know the value of the local
+08:57 variable X will be displayed by this std
+seeout statement. I hope this is clear
+09:03 to you. Now let's say we want to access
+this global variable X. Then how do we
+09:09 access this variable? We know that this
+local variable is hiding this global
+09:14 variable. Whenever we specify X, the
+local variable wins over the global
+09:20 variable. Now the question is how do we
+access this global variable?
+09:25 We can access this global variable with
+the help of the scope resolution
+09:31 operator. Here I have done this job.
+Here we have this stdcout statement and
+09:37 here I have specified the scope
+resolution operator along with the
+09:42 variable x.
+Here I'm trying to access the global
+09:48 variable X.
+From here also it is clear that if a
+09:52 local variable hides a global one, use
+scope resolution operator to access the
+09:58 global variable. Here I'm using the
+scope resolution operator to access this
+10:04 global variable. Here we know we get
+value 10.
+10:08 So we will get the expected outcome from
+this program. we'll get this output
+10:14 local x5 then global x10 first we are
+getting the value of the local variable
+10:20 that's what we can see and then we are
+getting the value of the global variable
+10:27 so that's the concept of the scope
+resolution operator it allows us to
+10:31 access the global variable if it is
+hidden by the local variable
+10:37 now let's say if we do not have the
+local variable x Then if we specify x we
+10:44 will get the access of the global
+variable because there is no such local
+10:48 variable available in the function. But
+if we have the local variable which is
+10:53 hiding the global variable then we need
+to use the scope resolution operator to
+10:59 access the global variable. I hope this
+idea is clear to you. So we are done
+11:04 with the first use case. Now let's move
+to the second use case.
+11:09 The second use case is accessing name
+spaces.
+11:14 When using names from a name space, use
+scope resolution operator to access the
+11:21 name.
+As I have mentioned this already, if
+11:26 some name or an entity is defined within
+a name space and if we want to access
+11:33 that entity outside the name space then
+we need to use the scope resolution
+11:40 operator.
+Here is the example to demonstrate the
+11:44 same. I have included the IO stream
+header file inside this main function
+11:49 with the help of stdc out. I'm trying to
+display hello nesso on the screen. Now
+11:56 here you can observe that std is the
+name of the name space where see out
+12:03 object is available. To access this
+object outside the std name space that
+12:10 is within this main function we need to
+use the scope resolution operator like
+12:16 this. So it is following the syntax
+which we have already seen. Here
+12:22 we are accessing see out in the std name
+space through the scope resolution
+12:28 operator. See out object is available in
+the std name space. We are trying to
+12:33 access it. I hope this is clear to you.
+So we have been using stdc out without
+12:40 realizing that we have the scope
+resolution operator between the two and
+12:46 this operator is helping us to access
+this object available in the std name
+12:53 space.
+We know the syntax is correct. We will
+12:56 get the correct output. We will get
+hello nesso as the output. So with this
+13:02 we have understood the second use case
+as well. This means we are done with all
+13:07 the use cases of scope resolution
+operator and this means we are done with
+13:15 the second topic as well.
+Okay friends, this is it for now. Thank
+13:21 you for watching this lecture. I will
+see you in the next one.
+13:26 [Applause]
+[Music]

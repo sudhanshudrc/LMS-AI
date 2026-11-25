@@ -1,0 +1,230 @@
+00:00 In our journey towards 
+learning data structures,
+00:02 we first have to understand 
+the difference between
+00:05 data types and abstract data types.
+00:07 So, let's get started.
+00:09 What is a data type?
+00:10 We have already discussed what a data type is
+00:12 in our C programming lectures.
+00:14 But let's discuss it one more time because
+00:16 there are certain points which 
+I haven't discussed there.
+00:19 There are two important 
+things, that I haven't told you
+00:21 about data types. Although there is one point
+00:23 which is already clear. 
+But there is more important
+00:26 point which I haven't told about data type.
+00:29 First is, it defines a certain domain of values.
+00:32 You already know that a data type defines
+00:34 a certain domain of values. Right?
+00:36 But there is one more 
+important point which says that,
+00:39 it defines operations 
+allowed on those values.
+00:42 So, not only it is defining certain domain of values
+00:45 but it also defines what operations 
+are allowed on those values.
+00:48 For example, we can think of integer type.
+00:52 Here, we can take only integer values.               
+00:54 You already know that integer 
+allows only integer values.
+00:57 Right? But the operations allowed are
+00:59 addition, subtraction, multiplication, 
+bitwise operations et cetera.
+01:03 We can perform almost every 
+operation with integer type.
+01:06 For the sake of understanding,
+01:08 let's take another type, that is float type.
+01:10 It takes only floating point values.
+01:12 We already know that, the domain of values allowed
+01:14 in the case of float type 
+are only floating point values.
+01:18 But the operations which we can perform on
+01:20 float types are addition, subtraction,
+01:21 multiplication, division but we cannot perform
+01:24 bitwise and mod operations on them.
+01:26 This should be well noted.                                                                   
+01:28 So, it is clearly understandable that
+01:30 a data type not only defines a 
+certain domain of values,
+01:33 but is also defines operations 
+allowed on those values.
+01:36 Right? Now let's discuss what 
+is a user defined data type.
+01:41 Before moving on to abstract data type,
+01:43 we should understand what 
+is a user defined data type.
+01:46 In contrast to primitive data types,
+01:48 there is a concept of user defined data types.
+01:51 You already know primitive data types
+01:52 like integer, character, float. Right?
+01:55 But there is a concept of user defined 
+data type which we should also know.
+01:58 The operations and values 
+of user defined data types
+02:01 are not specified in the language itself,
+02:03 but is specified by the user.
+02:06 Here the user is defining the operations
+02:08 as well as the values.
+02:10 It is not pre defined in the language itself.
+02:12 Okay. Now, here are the examples.
+02:14 Structure, union and enumeration 
+which we have already discussed.
+02:17 By defining structures, 
+we are defining our own type
+02:20 by combining other data types.
+02:22 By using structures, we are defining our own type,
+02:25 by combining other primitive types.
+02:28 For example, here in this case,
+02:29 we have combined these two integers
+02:31 to form a new type, that is point.
+02:33 So, it's a user defined data type.
+02:35 This is our understanding 
+about user defined data types.
+02:39 Now, let's try to understand 
+what are abstract data types.
+02:43 ADTs or Abstract data types are 
+like user defined data types
+02:47 which defines operations on values
+02:50 using functions without specifying
+02:53 what is there inside the function and
+02:55 how the operations are performed.
+02:58 First of all, we are defining 
+operations, that is true.
+03:02 But we are defining operations on values, 
+03:04 that is also true, using functions.
+03:07 It should be well noted that, we are defining
+03:09 operations using functions,                         
+03:11 without specifying what is 
+there inside the function.
+03:14 And we are not specifying anything inside,
+03:16 what is there inside the function. Okay,
+03:18 and how the operations are performed.
+03:20 Let's take an example of a stack ADT.
+03:23 A stack consists of elements of same 
+type arranged in a sequential order.
+03:28 So, what types of elements are allowed in a stack?
+03:30 The elements of same type.
+03:32 And that too, they are arranged in a sequential order, 
+03:35 we already know that right?
+03:36 Now, the operations allowed on them could be
+03:38 initialize- we can define an initialize 
+function which initializes the stack
+03:42 to be empty actually. We can 
+perform a push operation
+03:45 that is, insert an element into the stack.
+03:48 We can perform pop operation that is, 
+delete an element from the stack.
+03:51 We can check is stack empty or
+03:53 we can check is stack full.
+03:55 So, these are the operations which we can 
+define and we can perform on stack.
+03:58 These are functions, as you can see.
+04:00 Here, we are specifying function but
+04:02 we are not saying anything, 
+how they can be implemented.
+04:06 We are just specifying them.
+04:08 That is called abstract data type.
+04:10 We know that, what type of elements are allowed
+04:14 and we also know that what operations
+04:16 we can perform, but we don't 
+know what is there inside. Okay.
+04:20 Think of ADT as a black box which hides 
+04:22 the inner structure and design 
+of the data type from the user.
+04:26 We can think of it like, it hides all
+04:28 the implementation details from us.
+04:30 This is very important which 
+we will understand later.
+04:33 There are multiple ways to implement an ADT.
+04:36 Let me tell you, this is very important.
+04:38 There are multiple ways to implement an ADT.
+04:41 For example, a stack ADT can be 
+implemented using arrays or linked lists.
+04:46 It should be well noted that 
+stack itself is a data structure,
+04:49 we can implement this data structure using
+04:51 other data structures like arrays or linked lists.
+04:54 Okay. So, a stack ADT, which we 
+know is right now is a skeleton,
+04:58 can be implemented using arrays or linked lists.
+05:01 Now, the question that immediately arises
+05:04 that why do we even need ADTs?
+05:06 Why do we need skeletons?
+05:08 Why can't we simply implement things, 
+you know display it to the user.
+05:11 Why ADT?
+05:13 Before moving further, we should 
+understand some terminology.
+05:16 The program which uses data 
+structure is called a client program.
+05:20 You should note this very clearly,
+05:22 that the program which uses data structure
+05:24 is called a client program. It has access to the ADT
+05:27 that is the interface, nothing else. Just abstract.
+05:30 And the program which implements the 
+05:32 data structure is known as the implementation.
+05:34 So, we have two programs, one is client program,
+05:37 the other one is implementation.
+05:38 Implementation is the one which implements the
+05:40 data structure and the client program is the one
+05:43 which just uses the interface, that is the 
+outside details, nothing inside. Okay.
+05:47 Now, let's discuss the advantage.
+05:49 Let's say, if someone wants to use the stack
+05:51 in the program, then he can simply use
+05:53 push and pop operations without 
+knowing its implementation.
+05:57 A user doesn't have to worry about
+05:59 how the operations are performed.
+06:01 Okay. If someone wants to use the stack program,
+06:04 we know that, program which uses the data structure
+06:06 is called the client program.
+06:07 It has access to the interface only
+06:09 and nothing inside. So, he can 
+simply use push and pop operations
+06:13 without knowing its implementation.
+06:15 Apart from this, if in future, the implementation
+06:18 of stack is changed from array to linked list,
+06:21 let's say, previously the stack 
+was implemented using arrays,
+06:24 right? But know, let's say it is changed to linked list.
+06:28 Then the client program will work in the 
+06:30 same way without being affected.
+06:31 There is nothing to discuss with client program.
+06:34 Client program has nothing to do with it.
+06:36 It can simply use the interface,
+06:38 without knowing what is going on inside.
+06:40 So, if the implementation is 
+changed from array to linked list,
+06:43 nothing will be affected in the client program.
+06:45 This is one of the biggest advantages 
+of using abstract data types.
+06:49 Now, it should be clear that, why we are using it.
+06:51 Because, with the help of abstract data types,
+06:53 we are actually separating the two worlds.
+06:55 We are just providing the user, an interface.
+06:57 The rest of the details, 
+the implementation part
+07:00 is done in the back end.
+07:01 User doesn't have to worry about it.
+07:03 The implementation can go on
+07:05 without affecting the client program.
+07:07 That is why, the need of abstract data type came.
+07:11 Now, here is the conclusion of this lecture.
+07:13 Abstract data type provides abstraction.
+07:16 We should understand this, 
+that abstract data type
+07:18 provides abstraction 
+which means hiding details
+07:21 from the user and it is very important because
+07:23 user doesn't bother about how that particular
+07:26 thing is implemented. He just 
+have to use that thing.
+07:28 That's it. So, this separation is required.
+07:31 That's why abstract data type 
+is very useful concept. 
+07:35 Okay friends, this is it for now.
+07:37 Thank you for watching this presentation.

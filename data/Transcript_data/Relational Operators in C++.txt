@@ -1,0 +1,574 @@
+00:00 Hello everyone, welcome to Nesso
+00:03 
+
+00:03 Academy. In the previous lecture, we
+00:05 
+
+00:05 understood conditional operator in C++.
+00:09 
+
+00:09 We learned that conditional operator is
+00:12 
+
+00:12 a turnary operator because it accepts
+00:15 
+
+00:15 three operants.
+00:17 
+
+00:17 Now in this lecture we will understand
+00:20 
+
+00:20 relational operators. The focus of this
+00:23 
+
+00:23 lecture is to properly understand
+00:25 
+
+00:25 relational operators in C++.
+00:29 
+
+00:29 So without any further delay, let's get
+00:32 
+
+00:32 started with this lecture and let's see
+00:34 
+
+00:34 what are the topics.
+00:37 
+
+00:37 There is only one topic and the name of
+00:39 
+
+00:39 the topic is relational operators. So
+00:43 
+
+00:43 let's proceed further and let's
+00:44 
+
+00:44 understand what are relational
+00:47 
+
+00:47 operators.
+00:49 
+
+00:49 A relational operator is the operator
+00:53 
+
+00:53 through which we can compare two
+00:56 
+
+00:56 operants.
+00:58 
+
+00:58 So with the help of relational operator
+01:00 
+
+01:00 we can compare two operants. This means
+01:04 
+
+01:04 a relational operator is a binary
+01:07 
+
+01:07 operator. It can act on two operants.
+01:12 
+
+01:12 Now here is the second point. It returns
+01:14 
+
+01:14 either one or zero as the result. So
+01:18 
+
+01:18 there are only two possible outcomes. We
+01:21 
+
+01:21 will either get one or zero as the
+01:24 
+
+01:24 result. where one represents true and
+01:28 
+
+01:28 zero represents false. I hope this is
+01:31 
+
+01:31 clear to you. Now here is the third
+01:33 
+
+01:33 point. It is mostly used in conditionals
+01:36 
+
+01:36 and loops. A relational operator is
+01:40 
+
+01:40 mostly used in conditionals and loops.
+01:43 
+
+01:43 With the help of a relational operator,
+01:46 
+
+01:46 we can check a specific condition. That
+01:49 
+
+01:49 is we can compare two operants and based
+01:52 
+
+01:52 on the comparison we will either get
+01:54 
+
+01:54 true or false as the result. If we get
+01:57 
+
+01:57 true as the result then a specific task
+01:59 
+
+01:59 will get executed.
+02:01 
+
+02:01 This is something we will learn when we
+02:03 
+
+02:03 understand conditionals and loops. Later
+02:06 
+
+02:06 in this course we will understand
+02:08 
+
+02:08 conditionals and loops. For now, we just
+02:11 
+
+02:11 need to remember that with the help of a
+02:13 
+
+02:13 relational operator, we can compare two
+02:17 
+
+02:17 operants. And this means we can check a
+02:20 
+
+02:20 specific condition and perform task
+02:23 
+
+02:23 based on that condition.
+02:26 
+
+02:26 So I hope these points are clear to you
+02:28 
+
+02:28 about relational operators. Now with the
+02:31 
+
+02:31 help of an example program, let's try to
+02:34 
+
+02:34 understand how to use a relational
+02:36 
+
+02:36 operator in C++. Here
+02:40 
+
+02:40 in this example program, I have included
+02:43 
+
+02:43 the IO stream header file because here
+02:46 
+
+02:46 I'm using stdc out. Inside this main
+02:49 
+
+02:49 function, I have defined these variables
+02:51 
+
+02:51 A and B. Variable A is initialized with
+02:55 
+
+02:55 value 10 and variable B is initialized
+02:58 
+
+02:58 with value 20. These are integer
+03:00 
+
+03:00 variables. This is what we can observe.
+03:04 
+
+03:04 Then we have this integer variable
+03:06 
+
+03:06 result. And to this variable I'm trying
+03:09 
+
+03:09 to assign the result of a greater than
+03:12 
+
+03:12 b. Here I'm checking this specific
+03:15 
+
+03:15 condition. Is a greater than b? We know
+03:19 
+
+03:19 the value of a is 10 and value of b is
+03:22 
+
+03:22 20. So I'm comparing 10 and 20 with the
+03:26 
+
+03:26 help of this relational operator
+03:29 
+
+03:29 greater than. I hope this is clear to
+03:32 
+
+03:32 you. We know that 10 is not greater than
+03:35 
+
+03:35 20. So we will get zero as the result
+03:38 
+
+03:38 which is same as false. I have already
+03:41 
+
+03:41 mentioned this that with the help of a
+03:44 
+
+03:44 relational operator we either get zero
+03:47 
+
+03:47 or one as the result where zero
+03:50 
+
+03:50 represents false and one represents
+03:53 
+
+03:53 true. Here in this example we will get
+03:56 
+
+03:56 zero as the result. So clearly we know
+03:59 
+
+03:59 that variable result will hold value
+04:02 
+
+04:02 zero. Now we can display this value on
+04:05 
+
+04:05 the screen with the help of stdc out.
+04:08 
+
+04:08 When we execute this program, we will
+04:10 
+
+04:10 get zero as the output. I hope this is
+04:14 
+
+04:14 clear to you. We are getting zero
+04:16 
+
+04:16 because this condition is not satisfied
+04:20 
+
+04:20 or we can say this condition has turned
+04:23 
+
+04:23 out to be false.
+04:26 
+
+04:26 So with this we have learned how to use
+04:29 
+
+04:29 a relational operator in a C++ program.
+04:33 
+
+04:33 Later we will understand its actual
+04:36 
+
+04:36 usage. We will understand how to use
+04:38 
+
+04:38 relational operators in conditionals and
+04:42 
+
+04:42 loops. For now we know how to use a
+04:45 
+
+04:45 relational operator in a C++ program. In
+04:49 
+
+04:49 this program I have used this greater
+04:51 
+
+04:51 than operator which is a relational
+04:54 
+
+04:54 operator. But this is not the only
+04:56 
+
+04:56 relational operator available in C++. We
+04:60 
+
+04:60 have many relational operators. Now
+05:03 
+
+05:03 let's see those relational operators and
+05:05 
+
+05:05 let's try to understand their working.
+05:09 
+
+05:09 Here in this table I will list down
+05:11 
+
+05:11 different operations we have and
+05:14 
+
+05:14 corresponding to those operations I will
+05:16 
+
+05:16 also list down symbols examples and
+05:20 
+
+05:20 results.
+05:22 
+
+05:22 Here is the first operation less than
+05:24 
+
+05:24 symbol is less than and example is three
+05:28 
+
+05:28 less than six. Here I'm checking is
+05:31 
+
+05:31 three less than six. We know three is
+05:33 
+
+05:33 less than six. Therefore we will get one
+05:35 
+
+05:35 as the result which represents true. The
+05:39 
+
+05:39 second operation is greater than. Symbol
+05:42 
+
+05:42 is greater than and example is 3 greater
+05:45 
+
+05:45 than 6. We know three is not greater
+05:48 
+
+05:48 than six. So we will get zero as the
+05:50 
+
+05:50 result which represents false. The third
+05:54 
+
+05:54 operation is less than or equal to.
+05:57 
+
+05:57 symbol is less than combined with equal
+06:01 
+
+06:01 to. Here we have the example 3 less than
+06:05 
+
+06:05 equal to 6.
+06:08 
+
+06:08 Here I'm checking two conditions at the
+06:10 
+
+06:10 same time. I'm checking whether 3 is
+06:13 
+
+06:13 less than 6 and 3 is equal to 6. In
+06:18 
+
+06:18 other words, I'm checking two conditions
+06:20 
+
+06:20 at the same time. If any one of the
+06:23 
+
+06:23 conditions gets satisfied that is if we
+06:26 
+
+06:26 get true out of any of the conditions
+06:29 
+
+06:29 then the entire less than equal to will
+06:32 
+
+06:32 turn out to be true. This means from
+06:35 
+
+06:35 this condition we will get true as the
+06:38 
+
+06:38 result. We know that 3 is less than 6.
+06:42 
+
+06:42 Although 3 is not equal to 6 but at
+06:46 
+
+06:46 least 3 is less than six as one of the
+06:50 
+
+06:50 conditions is satisfied. So we will get
+06:53 
+
+06:53 one as the result. I hope this is clear
+06:56 
+
+06:56 to you.
+06:58 
+
+06:58 We are getting one as the result of this
+07:01 
+
+07:01 less than or equal to operator.
+07:05 
+
+07:05 So with this we have understood the
+07:06 
+
+07:06 third operation. Now let's move to the
+07:08 
+
+07:08 fourth operation. The fourth operation
+07:11 
+
+07:11 is greater than or equal to. Symbol is
+07:14 
+
+07:14 greater than combined with equal to.
+07:16 
+
+07:16 Example is three greater than or equal
+07:19 
+
+07:19 to 6. Here I'm checking whether 3 is
+07:24 
+
+07:24 greater than 6 or 3 is equal to 6.
+07:29 
+
+07:29 We know that 3 is not equal to 6 and 3
+07:33 
+
+07:33 is not greater than six. This means none
+07:36 
+
+07:36 of the conditions are satisfied. Not
+07:38 
+
+07:38 even a single condition is satisfied and
+07:41 
+
+07:41 therefore we will get zero as the
+07:44 
+
+07:44 result. I hope this makes sense to you.
+07:47 
+
+07:47 If in place of six we have three then we
+07:51 
+
+07:51 will get true as the result because at
+07:53 
+
+07:53 least one condition is satisfied. We
+07:56 
+
+07:56 know that three is equal to three.
+07:58 
+
+07:58 Therefore we will get one as the result.
+08:02 
+
+08:02 Now here comes the fifth operation is
+08:05 
+
+08:05 equal to symbol is double equals sign.
+08:09 
+
+08:09 We have double equal as the symbol for
+08:11 
+
+08:11 is equal to. Example is 3= 6. We know 3
+08:16 
+
+08:16 is not equal to 6. So we will get zero
+08:19 
+
+08:19 as the result. Now here is the last
+08:21 
+
+08:21 operation. The sixth operation which is
+08:24 
+
+08:24 not equal to symbol for not equal to is
+08:28 
+
+08:28 exclamation mark with equal symbol. And
+08:32 
+
+08:32 here is the example 3 not= 6. Here I'm
+08:36 
+
+08:36 checking whether 3 is not equal to 6. We
+08:39 
+
+08:39 know 3 is not equal to 6. So we will get
+08:42 
+
+08:42 one as the result.
+08:45 
+
+08:45 I hope these operators are clear to you.
+08:47 
+
+08:47 These are all the relational operators
+08:50 
+
+08:50 we have in C++.
+08:52 
+
+08:52 So with this we have understood what are
+08:54 
+
+08:54 relational operators. What are the
+08:56 
+
+08:56 different types of relational operators
+08:58 
+
+08:58 we have and with the help of these
+09:01 
+
+09:01 examples we have understood how these
+09:04 
+
+09:04 relational operators work. So with this
+09:07 
+
+09:07 we have understood the topic relational
+09:11 
+
+09:11 operators and this means we are done
+09:13 
+
+09:13 with this lecture.
+09:16 
+
+09:16 Okay friends this is it for now. Thank
+09:18 
+
+09:18 you for watching this lecture. I will
+09:20 
+
+09:20 see you in the next one.
+09:23 
+
+09:23 [Applause]
+09:25 
+
+09:25 [Music]

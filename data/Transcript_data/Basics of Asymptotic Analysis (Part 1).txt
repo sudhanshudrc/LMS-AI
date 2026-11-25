@@ -1,0 +1,200 @@
+00:00 In this presentation and in the 
+subsequent presentations
+00:03 I am going to discuss about the
+00:05 basics of asymptotic analysis.
+00:07 And this is just part one of that.
+00:09 So, let's get started.
+00:10 i am going to discuss the definition 
+of data structure once again.
+00:14 A data structure is the organization of the data
+00:16 in a way so that it can be used efficiently.
+00:19 We want to use our data efficiently.
+00:22 And we want to perform some operations on it.
+00:24 For this purpose, we are using the data structure
+00:26 which is efficient in terms of storing the data
+00:30 and if we want to use our data,
+00:32 we would be able to use it efficiently.
+00:34 This is the definition I have 
+taken from the previous lecture.
+00:37 Right? Now, this efficiently term is very important.
+00:40 In order to use data efficiently, 
+we have to store it efficiently.
+00:43 There is no doubt about it.
+00:45 We have to store our data efficiently,
+00:47 if we really want to use our data efficiently.
+00:50 Now, let's discuss the efficiency in more details.
+00:53 Efficiency of data structure is always
+00:55 measured in terms of time and space.
+00:57 Let me tell you, when efficiency comes,
+00:59 it is always measured in terms of time and space.
+01:03 So, what is the picture of an ideal data structure?
+01:05 An ideal data structure could be the one that takes
+01:07 the least possible time for all its operations
+01:11 and consumes the least memory space.
+01:13 Both these things should be less.
+01:15 It should take the less amount
+ of time for all its operations
+01:18 and it should consume the
+ least memory space as well.
+01:20 Then I can say, a data structure 
+would be an ideal data structure.
+01:23 Isn't that so?
+01:24 Now, our focus will be on finding
+01:26 the time complexity and not the 
+space complexity, let me tell you.
+01:29 We are not interested in finding the space,
+01:31 that how much space a 
+data structure will consume.
+01:33 We are right now, interested 
+in finding the time complexity
+01:36 for easing our task. Okay.
+01:38 So, by finding the time complexity,
+01:41 we would be able to guess which
+01:43 data structure would be the best. Okay.
+01:46 Now, there is one question.
+01:47 On what basis, we could compare the 
+time complexity of the data structures?
+01:51 Let me tell you, this is a very important question.
+01:54 We are going to compare the data structures, right?
+01:56 Now, how we can compare the 
+time complexity of the data structure?
+01:59 On what basis will be compare it?
+02:01 We will compare the data structures
+02:03 on the basis of operations performed on them.
+02:06 Now, let me give you an example and
+02:08 the whole concept will be clear to you.
+02:09 Let's take an example of an array. Okay.
+02:12 Let's say, we have these many elements in our array.
+02:14 Right now, the size is not defined.
+02:16 But just think of this that, this array
+ is capable of storing 100 elements.
+02:19 And right now, we have eight elements in this array.
+02:22 Let's say our target is to add 
+data at the beginning of the list.
+02:25 We want to perform this operation on this array.
+02:28 Array is a data structure, we 
+want to perform this operation,
+02:30 that is adding data at the beginning of the list.
+02:33 And I want to know, that how much time will it take.
+02:35 Let's study this properly.
+02:37 Let's say, we want to add this particular 
+element at the beginning of the list.
+02:41 Now, obviously this element is trying to
+02:42 reach this particular place slowly.
+02:44 There is already an element 
+at the beginning of the list.
+02:47 Isn't that so?
+02:47 There must be an empty 
+slot available in the array.
+02:50 As I have already told you,
+02:51 my array is capable of storing 100 elements.
+02:54 So, obviously there is an empty slot over here.
+02:56 Now, what we will do is,
+02:57 we will shift all the elements towards right.
+03:00 We will shift these elements towards right,
+03:03 so that there should be an empty slot over here.
+03:05 Then, we can easily add our element
+03:07 at the beginning of the list.
+03:09 Oh my god! there is so much hard work, right?
+03:11 If we want to add an element 
+at the beginning of the list,
+03:14 and that too an array, it 
+would be very difficult task.
+03:17 We have to shift our elements towards right,
+03:19 and then, we can add our element.
+03:21 Let's take another type of a data 
+structure, that is, linked list.
+03:24 Linked list is nothing but sequence 
+of nodes connected with each other.
+03:28 Here we have this node, which contains some data
+03:30 and it also contains the 
+address of the next node. Okay.
+03:34 Now the difference is that, an array 
+is stored in a contiguous fashion.
+03:37 That is obviously, if the address of this
+03:39 particular element is 1000, then the address
+03:41 of the element will be 1004,
+03:42 if I am assuming that size of integer is four bytes.
+03:45 Right? But here, it is not important.
+03:47 It might be possible that the 
+address of the one node is 1000
+03:50 and the address of the next node is 2000.
+03:52 It could be any address.
+03:54 It just stores the address of next particular node
+03:57 so that, it can be linked to the next node.
+03:59 So, this is what a linked list is all about.
+04:01 And obviously, there is a head pointer
+04:03 which is pointing to the first element of the list
+And obviously, there is a head pointer
+04:03 which is pointing to the first element of the list
+04:05 so that we can reach the first element
+04:07 and then after that, we can 
+reach the other elements as well.
+04:09 This is what a linked list is. Okay.
+04:11 Now, let's say we want to add this 
+particular data, in the beginning of the list
+04:15 Now, how do we do that?
+04:17 We definitely have to store the address
+04:19 of this particular node over here. Right?
+04:21 So, let's replace this by 1000.
+04:23 Now, by adding this address it will
+04:25 point to this particular location.
+04:27 Now, this node is linked to this node.
+04:30 After that, we just change the head pointer
+04:32 and it will now point to this particular location.
+04:34 With this idea, we would be able to add
+04:37 our element at the beginning of the list.
+04:39 Previously, the head pointer was 
+pointing to this particular node.
+04:42 Now, it is pointing to this node.
+04:44 This is the new node which has 
+been added at the beginning of the list.
+04:47 Isn't that so?
+04:48 Is this operation tedious?
+04:50 No, not at all. This data structure is much efficient
+04:52 in adding data at the beginning of the list
+04:54 in comparison to the array. Isn't that so?
+04:57 So, what is the conclusion?
+04:59 Inserting an element at the beginning of the list
+05:01 is way faster in the linked list than arrays.
+05:03 If you want to add data at the beginning of the list,
+05:06 then it is much faster in the 
+case of linked list than arrays.
+05:10 In this way, we can compare data structures
+05:13 and this will ultimately give 
+the idea to select the best
+05:16 possible data structure for a 
+particular operation. Right?
+05:19 Obviously, in this way we would be able to
+05:21 compare data structures and then we can select the
+05:24 best possible data structure 
+for a particular operation.
+05:26 Here, we are performing an operation that is,
+05:28 adding the data at the beginning of the list.
+05:30 It is clear that, linked list is performing
+05:32 better than array. Right?
+05:34 So definitely, we will choose linked list.
+05:36 So, this way we can compare the data structures
+05:39 and this will ultimately give the best
+05:41 possible data structure 
+for a particular operation.
+05:43 That is why, we are studying time complexity.
+05:46 Because, with time complexity 
+we would be able to know
+05:49 that which operation on which 
+data structure will take less time.
+05:52 In the subsequent lectures, we will learn
+05:54 more about the time complexity, 
+how to find the time complexity,
+05:58 how do we able to compare the data structures.
+05:60 Obviously, the previous example 
+was a very simple example.
+06:03 Sometimes it is difficult to understand
+06:05 which particular data structure is 
+better than the other data structure.
+06:08 That is why, studying time complexity
+06:10 is very important. This will help us in determining
+06:13 which data structure is better 
+for a particular operation.
+06:16 Okay friends, this is it for now.
+06:19 Thank you for watching this presentation.

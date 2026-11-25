@@ -1,0 +1,237 @@
+00:00 Hello everyone. Welcome to Nesso
+Academy. In the previous lecture, we
+00:05 have understood what is a machine
+learning model. And now, from this
+00:10 lecture onwards, we are going to
+understand some important terminologies
+00:14 in machine learning, which will be used
+frequently in this course.
+00:19 This is the very first lecture on
+important terminologies of machine
+00:24 learning. And the name of the lecture is
+data set fundamentals. In this lecture,
+00:30 we are going to understand about four
+important terms related to data set in
+00:35 machine learning. So, the topic for this
+lecture is
+00:39 data set fundamentals. Let's get
+started.
+00:44 As you can see, the very first term
+inside the data set fundamentals is data
+00:49 set itself.
+So, what is a data set?
+00:53 Data set is the collection of data
+examples used to train and test an ML
+00:60 model.
+What does that mean?
+01:02 It simply means that data set is simply
+the collection of related data examples
+01:09 that are used for training as well as
+testing of a machine learning model.
+01:15 Like in the previous lecture, we had the
+data set of multiple images of cats and
+01:20 dogs that we have used to train and test
+our image classification model. So, that
+01:27 was the data set. That is why we can say
+data set is the collection of all the
+01:32 data examples that we have. And those
+data examples are used for training as
+01:38 well as testing of our machine learning
+model.
+01:42 For example,
+a house price data set containing
+01:46 information such as size, location, age,
+and price of different houses.
+01:53 Suppose we have data of different
+houses, like size of the house, location
+01:58 of the house, age of the house, and
+prices of the house. Now, the collection
+02:04 of all these data
+will form a house price data set.
+02:09 So, this is the house price data set
+that we have. And in this particular
+02:13 data set, you can see there are multiple
+columns. The first column is house ID.
+02:19 House ID basically means the house
+number. House number one, house number
+02:24 two, house number three, and so on.
+Size sq ft means the size of the house
+02:30 in square feet. 1800 sq ft, 2200 sq ft,
+1500 sq ft, and so on.
+02:39 Bedrooms means the number of bedrooms in
+the house. Like house number one has
+02:44 three bedrooms, house number two has
+four bedrooms, house number three has
+02:50 three bedrooms, and so on.
+Now, what is location? Location means
+02:55 where the house is located. Like house
+number one is located at Manhattan,
+03:00 house number two is located at Tokyo,
+house number three is located at London,
+03:06 and so on.
+Age years means the age of the house in
+03:10 years. That means how old the house is.
+House number one is 5 years old. House
+03:17 number two is minus 3 years old. House
+number three is 12 years old, and so on.
+03:24 Now, garage means whether the house has
+a garage or not.
+03:29 House number one has a garage? Yes.
+House number two has a garage? Yes.
+03:35 House number three has a garage? No. And
+so on.
+03:39 Now, finally price USD means the price
+of the house in US dollars.
+03:45 Like for house number one, the price is
+950,000
+03:49 US dollars.
+So, this is the example of a house price
+03:53 data set.
+Now, if you observe carefully in this
+03:57 particular data set, there are many
+errors.
+03:60 Like, the size of the house cannot be
+zero.
+04:04 The size of the house cannot be
+negative, also.
+04:07 There is a missing value in the bedrooms
+column.
+04:11 Also, if we see,
+age in years cannot be negative.
+04:15 Also, in this column, that is price USD,
+this value is very large as compared to
+04:21 other values, which is not practically
+possible.
+04:24 So, these are some errors in our house
+price data set.
+04:28 So, that means it is not necessary that
+we always get a perfect data set. There
+04:33 can be some errors in our data set. And
+these errors we have to fix. We
+04:38 generally fix these errors during the
+data preprocessing and data cleaning
+04:42 stages. We will learn more about data
+cleaning and data preprocessing later
+04:47 on.
+So, I hope you now understand what is a
+04:50 data set. Let's move towards the second
+term under data set fundamentals, that
+04:55 is instance or sample. Now, what is an
+instance?
+04:60 A single data example in a data set is
+called instance.
+05:04 So, in this particular data set, you can
+see we have multiple data examples. This
+05:10 entire row is a data example. This
+entire row is also a data example. This
+05:16 entire row is also a data example, and
+so on. That means we have multiple data
+05:22 examples in this particular data set.
+So, this means that individually all the
+05:29 data examples, or we can say all the
+rows, are the instances of this data
+05:34 set.
+For example,
+05:36 information about one house in a house
+price data set is an instance. If we
+05:42 consider any one house at a time, then
+the information about that particular
+05:47 house will be the instance of the data
+set. Suppose we take the house number
+05:52 two, then this entire row, or we can say
+this entire data example, will be one
+05:58 particular instance of this data set.
+And this instance is described by these
+06:05 features.
+House number two is the house ID. 2200
+06:11 is the size of the house. Four is the
+number of bedrooms in the house. Tokyo
+06:16 is the location of the house, and so on.
+That means house ID, size sq ft,
+06:23 bedrooms, location, age years, garage,
+are all the features of the house.
+06:30 So, this is how we have understood
+instance or sample of a data set.
+06:35 Now, we will move towards the third term
+inside the data set fundamentals, which
+06:40 is feature or attribute. Now, what is a
+feature?
+06:45 An input variable or characteristic that
+describes an instance and is used by the
+06:51 model for learning.
+What does that mean?
+06:55 It means that feature is an input
+variable. Now, what is input variable?
+07:00 Input variable is the data that is given
+to the machine learning model as an
+07:05 input. So, feature is the data that is
+given to the machine learning model as
+07:11 input.
+Feature is the characteristic that
+07:15 describes describes an instance. We have
+just understood that features are the
+07:19 characteristics that describe an
+instance. Like, these all are the
+07:25 instances of this data set, and these
+are the features that are used to
+07:29 describe an instance. So, the houses are
+described by the features like house ID,
+07:36 size sq ft, bedrooms, location, age
+years, and garage.
+07:42 Now, feature is used by the model for
+learning. That means during the training
+07:48 process of a machine learning model, the
+model learns the features.
+07:53 For example, size, location, age, etc.
+of the house are the features of the
+07:59 house.
+That means house ID, size sq ft,
+08:04 bedrooms, location, age years, and
+garage are all the features of the
+08:09 houses.
+Now, why price USD is not the feature of
+08:13 the house?
+Because as per the definition, feature
+08:17 is an input variable.
+But price USD is an output variable.
+08:23 In this particular machine learning
+problem, that is house price prediction,
+08:28 the price of the house is to be
+predicted by the machine learning model.
+08:32 That means price USD is the output
+variable. It is not the input variable.
+08:38 That is why only these are the features
+of the houses.
+08:41 I hope you have understood what is a
+feature or an attribute. Now, let's move
+08:46 towards the fourth term, that is label
+or target variable.
+08:51 Label is the output variable that the
+model is expected to predict. Now, this
+08:57 label or the target variable is the
+output variable that the model is
+09:02 expected to predict. That means in this
+house price data set, this price USD is
+09:08 the output variable, that is the label
+or the target variable. Because our
+09:13 model will predict the price of the
+house on the basis of these features of
+09:18 the house.
+For example, the price of the house, as
+09:22 we have just understood, the price of
+the house in this particular data set is
+09:26 the output variable. That is why the
+price USD is the label or the target
+09:32 variable in this particular data set.
+And in this way, we are done with the
+09:36 label or target variable as well.
+So, we have understood total four terms
+09:41 related to data set in machine learning.
+Data set itself, instance, feature, and
+09:48 target variable. So, in this way, we are
+done with our topic data set
+09:53 fundamentals. This was all from my side
+for this lecture. Thank you, and I'll
+09:58 see you in the next lecture.
+10:03 >> [music]
+10:09 [music]

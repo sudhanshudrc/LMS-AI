@@ -1,0 +1,1063 @@
+00:00 Hello everyone, welcome to Nesso
+00:03 
+
+00:03 Academy. In the previous lecture, we
+00:05 
+
+00:05 have understood well-defined learning
+00:08 
+
+00:08 problem. And now in this lecture, we
+00:10 
+
+00:10 will understand machine learning model.
+00:14 
+
+00:14 And this lecture is going to be very
+00:16 
+
+00:16 interesting because in this lecture we
+00:19 
+
+00:19 will not only understand what is a
+00:21 
+
+00:21 machine learning model but we will also
+00:24 
+
+00:24 train our own machine learning model
+00:27 
+
+00:27 from scratch which will perform the
+00:29 
+
+00:29 image classification task. So basically
+00:33 
+
+00:33 I will also show you the practical
+00:35 
+
+00:35 demonstration of a machine learning
+00:37 
+
+00:37 model in this lecture. So the topic for
+00:40 
+
+00:40 this lecture is machine learning model.
+00:44 
+
+00:44 Let's get started.
+00:46 
+
+00:46 Now before we formally define what is a
+00:49 
+
+00:49 machine learning model, let's first
+00:51 
+
+00:51 understand the concept of an ML model
+00:54 
+
+00:54 with the help of a real life example.
+00:57 
+
+00:57 Suppose there is a student who is having
+00:59 
+
+00:59 his mathematics examination tomorrow. So
+01:03 
+
+01:03 today he practices lots of mathematical
+01:06 
+
+01:06 problems.
+01:07 
+
+01:07 These practice problems will act as
+01:10 
+
+01:10 examples from which the student learns
+01:14 
+
+01:14 the patterns and underlying concepts of
+01:17 
+
+01:17 these problems. Now after practicing all
+01:20 
+
+01:20 these mathematical problems, the student
+01:23 
+
+01:23 finally understands the patterns and
+01:26 
+
+01:26 underlying concepts of these practice
+01:29 
+
+01:29 problems.
+01:30 
+
+01:30 This understanding is known as the
+01:33 
+
+01:33 learned knowledge. This learned
+01:35 
+
+01:35 knowledge will be stored inside the
+01:38 
+
+01:38 student's brain. Now tomorrow on the day
+01:42 
+
+01:42 of examination, the student gets a
+01:44 
+
+01:44 question paper which contains the new
+01:48 
+
+01:48 unseen problems. That means the question
+01:51 
+
+01:51 paper does not contain any problem from
+01:54 
+
+01:54 these practice problems. All the
+01:57 
+
+01:57 problems are new and unseen problems.
+02:01 
+
+02:01 Now do you think this student will be
+02:03 
+
+02:03 able to solve these unseen problems
+02:06 
+
+02:06 correctly?
+02:08 
+
+02:08 Yes, the student will be able to solve
+02:10 
+
+02:10 these problems correctly. Why? Because
+02:14 
+
+02:14 student has understood the underlying
+02:17 
+
+02:17 patterns and concepts behind the
+02:20 
+
+02:20 practice problems. This understanding or
+02:23 
+
+02:23 we can say this learned knowledge will
+02:26 
+
+02:26 help the student to solve even the
+02:28 
+
+02:28 unseen problems because these unseen
+02:31 
+
+02:31 problems are also based on the same
+02:34 
+
+02:34 patterns of these practice problems.
+02:37 
+
+02:37 So I hope this example is now clear to
+02:39 
+
+02:39 you and our machine learning model also
+02:44 
+
+02:44 works the same way. So now we can define
+02:47 
+
+02:47 our machine learning model.
+02:49 
+
+02:49 A machine learning model is a program
+02:53 
+
+02:53 that learns patterns from data and uses
+02:56 
+
+02:56 those patterns to make predictions or
+02:59 
+
+02:59 decisions on new data. What does that
+03:02 
+
+03:02 mean? It means that the machine learning
+03:06 
+
+03:06 model is a computer program that learns
+03:09 
+
+03:09 patterns from the data. Which means we
+03:12 
+
+03:12 have to provide our machine learning
+03:14 
+
+03:14 model with lots of data and then our
+03:17 
+
+03:17 machine learning model will learn the
+03:19 
+
+03:19 patterns and features from that data.
+03:22 
+
+03:22 Now after learning the patterns from
+03:24 
+
+03:24 that data, machine learning model will
+03:27 
+
+03:27 use those patterns to make predictions
+03:30 
+
+03:30 or decisions on new and unseen data. If
+03:34 
+
+03:34 I relate this definition with this
+03:37 
+
+03:37 example, I can say that machine learning
+03:40 
+
+03:40 model is a program that learns patterns
+03:44 
+
+03:44 from the data and then uses those
+03:47 
+
+03:47 patterns to make predictions on the new
+03:50 
+
+03:50 unseen data. Now I hope you have
+03:53 
+
+03:53 understood this definition and this
+03:56 
+
+03:56 example clearly. Let's see the next
+03:59 
+
+03:59 point. Machine learning model is the
+04:03 
+
+04:03 stored learned knowledge obtained after
+04:06 
+
+04:06 training. It means after the process of
+04:09 
+
+04:09 training whatever the learned knowledge
+04:12 
+
+04:12 is obtained that is the knowledge of
+04:14 
+
+04:14 patterns and features from the data that
+04:17 
+
+04:17 knowledge is stored inside the machine
+04:20 
+
+04:20 in the form of mathematical
+04:22 
+
+04:22 relationships and that stored learned
+04:25 
+
+04:25 knowledge inside the machine is called
+04:27 
+
+04:27 as the machine learning model. Let's
+04:31 
+
+04:31 understand this point with a simple
+04:33 
+
+04:33 example. I hope you all remember this
+04:35 
+
+04:35 example that we have taken in our very
+04:38 
+
+04:38 first lecture.
+04:40 
+
+04:40 There we have trained our machine using
+04:43 
+
+04:43 the multiple images of cats and dogs
+04:46 
+
+04:46 so that our machine will be able to
+04:48 
+
+04:48 distinguish between the images of cats
+04:51 
+
+04:51 and dogs.
+04:53 
+
+04:53 Now during the process of training our
+04:56 
+
+04:56 machine learns the features and patterns
+04:59 
+
+04:59 of dogs and cats. Now these features and
+05:03 
+
+05:03 patterns of dogs and cats is called as
+05:06 
+
+05:06 the learned knowledge and this learned
+05:09 
+
+05:09 knowledge is stored inside the trained
+05:12 
+
+05:12 machine which is called as the machine
+05:15 
+
+05:15 learning model. So this point is simply
+05:18 
+
+05:18 depicting this idea that the stored
+05:21 
+
+05:21 learned knowledge inside the machine
+05:24 
+
+05:24 that is called as the machine learning
+05:26 
+
+05:26 model. So I hope the second point is
+05:29 
+
+05:29 also clear to you.
+05:31 
+
+05:31 Now as I have already explained to you
+05:34 
+
+05:34 that machine learning model is actually
+05:36 
+
+05:36 a computer program. So do you want to
+05:39 
+
+05:39 see how a machine learning program looks
+05:42 
+
+05:42 like?
+05:44 
+
+05:44 This is how a machine learning program
+05:46 
+
+05:46 looks like. Now just by observing this
+05:49 
+
+05:49 code, can you tell me what is the
+05:52 
+
+05:52 machine learning problem considered in
+05:54 
+
+05:54 this particular code segment?
+05:58 
+
+05:58 The machine learning problem taken in
+06:00 
+
+06:00 this particular code is house price
+06:03 
+
+06:03 prediction. We already know what is
+06:06 
+
+06:06 house price prediction. I have explained
+06:08 
+
+06:08 you in the previous lecture. It means
+06:10 
+
+06:10 that our machine learning model needs to
+06:13 
+
+06:13 predict the prices of the houses on the
+06:16 
+
+06:16 basis of the features of the houses. Now
+06:19 
+
+06:19 let's understand the basic working of
+06:22 
+
+06:22 this machine learning program. So first
+06:24 
+
+06:24 we have defined the training data. Then
+06:28 
+
+06:28 we have created the machine learning
+06:29 
+
+06:29 model. Then we have trained the machine
+06:32 
+
+06:32 learning model using this training data.
+06:35 
+
+06:35 And after that we are using the machine
+06:37 
+
+06:37 learning model to predict the prices of
+06:40 
+
+06:40 the new houses.
+06:43 
+
+06:43 First of all we have defined the
+06:44 
+
+06:44 training data. X and Y are the variables
+06:48 
+
+06:48 used to represent the training data. As
+06:50 
+
+06:50 you can see, X represents the sizes of
+06:54 
+
+06:54 the houses and Y represents the
+06:57 
+
+06:57 corresponding prices of the houses. So
+06:59 
+
+06:59 these are the house sizes and these are
+07:02 
+
+07:02 the house prices and this overall is the
+07:05 
+
+07:05 training data. Now we will create the
+07:08 
+
+07:08 machine learning model. For creating the
+07:10 
+
+07:10 machine learning model, first we have to
+07:12 
+
+07:12 write the name of the model and then we
+07:15 
+
+07:15 have to write the name of the machine
+07:16 
+
+07:16 learning algorithm. So here I have
+07:19 
+
+07:19 written the name of the model as model
+07:21 
+
+07:21 only. Then I have written linear
+07:24 
+
+07:24 regression. Linear regression is a type
+07:27 
+
+07:27 of machine learning algorithm. Don't
+07:29 
+
+07:29 worry we will understand what is linear
+07:32 
+
+07:32 regression algorithm in detail in our
+07:34 
+
+07:34 second chapter. For now just keep in
+07:37 
+
+07:37 mind that this model is trained on
+07:40 
+
+07:40 linear regression algorithm. By this we
+07:43 
+
+07:43 have created our machine learning model.
+07:46 
+
+07:46 Now we have our training data. We have
+07:48 
+
+07:48 our machine learning model. So the next
+07:50 
+
+07:50 step is to train this machine learning
+07:52 
+
+07:52 model using this training data. So as
+07:55 
+
+07:55 you can see we have written model.fit
+07:58 
+
+07:58 x y. Now what is x y? x y is the
+08:03 
+
+08:03 training data and model is our machine
+08:06 
+
+08:06 learning model that we have just
+08:08 
+
+08:08 created. So according to this line we
+08:11 
+
+08:11 are training our machine learning model
+08:14 
+
+08:14 using this training data. We are fitting
+08:17 
+
+08:17 the training data into our machine
+08:19 
+
+08:19 learning model. After this line, our
+08:22 
+
+08:22 machine learning model will be trained
+08:24 
+
+08:24 on this training data of house sizes and
+08:28 
+
+08:28 house prices. Now the next step is to
+08:31 
+
+08:31 predict the price for a new house. So
+08:34 
+
+08:34 here you can see I have taken 1,800 as
+08:38 
+
+08:38 the house size. In the training data, we
+08:41 
+
+08:41 are not able to see 1,800, which means
+08:44 
+
+08:44 1,800 is the size of a new house. Now,
+08:48 
+
+08:48 we want our model to predict the price
+08:51 
+
+08:51 of this new house having the size 1,800.
+08:56 
+
+08:56 The resulting prediction of the house
+08:58 
+
+08:58 price will be stored inside the variable
+09:00 
+
+09:00 prediction. And finally, we are printing
+09:03 
+
+09:03 the prediction obtained by our model. So
+09:06 
+
+09:06 this is the basic working of our machine
+09:09 
+
+09:09 learning model for predicting the house
+09:11 
+
+09:11 prices on the basis of house features. I
+09:15 
+
+09:15 know few things are left unclear to
+09:17 
+
+09:17 explain but the agenda was not to
+09:20 
+
+09:20 explain you each and every line of this
+09:23 
+
+09:23 code snippet. I just wanted you to have
+09:25 
+
+09:25 a look at how machine learning program
+09:28 
+
+09:28 looks like. So I hope now the machine
+09:31 
+
+09:31 learning model is very much clear to
+09:33 
+
+09:33 you. Now comes the most exciting part of
+09:37 
+
+09:37 this lecture, the practical
+09:38 
+
+09:38 demonstration of our machine learning
+09:40 
+
+09:40 model in which we will train our own
+09:43 
+
+09:43 machine learning model to classify the
+09:46 
+
+09:46 images of cats and dogs. So let's come
+09:49 
+
+09:49 to my computer screen.
+09:52 
+
+09:52 So now we are on my computer system and
+09:55 
+
+09:55 as you can see I have already opened a
+09:58 
+
+09:58 web browser. Now we will go to the
+10:00 
+
+10:00 search bar and we will type teachable
+10:04 
+
+10:04 machine and then we will click enter.
+10:08 
+
+10:08 This will give us multiple search
+10:11 
+
+10:11 results out of which we will click the
+10:14 
+
+10:14 first result.
+10:16 
+
+10:16 This will take us to the website
+10:18 
+
+10:18 teachablemachine.withgoogle.com.
+10:22 
+
+10:22 Now, Teachable Machine is a platform by
+10:25 
+
+10:25 Google which is used to train and test
+10:27 
+
+10:27 machine learning models. So, here we
+10:30 
+
+10:30 will click the get started button. And
+10:33 
+
+10:33 now you can see that we are on the new
+10:36 
+
+10:36 project section. As our task is to
+10:39 
+
+10:39 classify the images of cats and dogs.
+10:42 
+
+10:42 So, we will select an image project, a
+10:45 
+
+10:45 standard image model. Now, here you can
+10:48 
+
+10:48 see there are two classes. class one and
+10:52 
+
+10:52 class two. In class one, we will upload
+10:54 
+
+10:54 the images of dogs and in class two we
+10:58 
+
+10:58 will upload the images of cats. So let's
+11:00 
+
+11:00 rename our classes as dogs and cats. So
+11:04 
+
+11:04 first we will click on the class one and
+11:07 
+
+11:07 we will change its name to dogs and then
+11:11 
+
+11:11 we will click the class two and we will
+11:14 
+
+11:14 rename it as cats. So now we have
+11:17 
+
+11:17 successfully renamed our two classes as
+11:20 
+
+11:20 dogs and cats. I repeat in the class
+11:24 
+
+11:24 dogs we will upload the images of dogs
+11:27 
+
+11:27 and in class cats we will upload the
+11:30 
+
+11:30 images of cats. Now let's talk about the
+11:33 
+
+11:33 next section which is training. After
+11:36 
+
+11:36 uploading the images of dogs and cats,
+11:38 
+
+11:38 we will click this button that is train
+11:41 
+
+11:41 model. This will train our model on the
+11:44 
+
+11:44 images of dogs and cats. And after
+11:47 
+
+11:47 training our model, we will go to the
+11:49 
+
+11:49 preview section. In preview section, we
+11:52 
+
+11:52 will test our machine learning model by
+11:55 
+
+11:55 uploading the two different images. We
+11:58 
+
+11:58 will upload two entirely different
+12:00 
+
+12:00 images to test the performance of our
+12:03 
+
+12:03 machine learning model. So now let's
+12:05 
+
+12:05 start uploading our images. First we
+12:08 
+
+12:08 will upload the images of dogs. So here
+12:11 
+
+12:11 we will click the upload button then
+12:13 
+
+12:13 this button
+12:15 
+
+12:15 and now you can see in the image
+12:17 
+
+12:17 classification cat dog folder I have one
+12:20 
+
+12:20 more folder called as 01 dogs. In this
+12:25 
+
+12:25 we have 10 images of dogs. So I will
+12:28 
+
+12:28 select all the images of dogs and then I
+12:30 
+
+12:30 will click the open button and in this
+12:33 
+
+12:33 way I have uploaded all the 10 images of
+12:36 
+
+12:36 dogs in the dogs class. Similarly, we
+12:40 
+
+12:40 will upload the images of cats. So, we
+12:42 
+
+12:42 will click the upload button. Then this
+12:45 
+
+12:45 button. And now in the same image
+12:48 
+
+12:48 classification folder, I have the second
+12:50 
+
+12:50 folder called as 02 cat. I will select
+12:54 
+
+12:54 all the images of cats. Then I will
+12:56 
+
+12:56 click the open button. And this will
+12:59 
+
+12:59 upload all the 10 images of cats. Now
+13:03 
+
+13:03 you can see in the dogs class I have 10
+13:06 
+
+13:06 sample images of dogs. And in the cats
+13:08 
+
+13:08 class, I have 10 sample images of cats
+13:11 
+
+13:11 entirely different from each other. Now,
+13:14 
+
+13:14 as I have already explained you, now we
+13:16 
+
+13:16 will click the train model button. So
+13:18 
+
+13:18 here I'm clicking the train model
+13:20 
+
+13:20 button. And you can see our model is
+13:23 
+
+13:23 getting trained on this data. And now
+13:26 
+
+13:26 you can see our model is trained on
+13:29 
+
+13:29 these two categories of images. Now we
+13:32 
+
+13:32 will close this popup. And now you can
+13:35 
+
+13:35 see since the model is already trained
+13:38 
+
+13:38 this means now our model can distinguish
+13:41 
+
+13:41 the images of dogs and cats. Model has
+13:45 
+
+13:45 learned the patterns and features of
+13:47 
+
+13:47 dogs and cats. Now we will move towards
+13:50 
+
+13:50 our preview section. Now in the preview
+13:53 
+
+13:53 section we will change this webcam into
+13:55 
+
+13:55 file because we are going to upload an
+13:58 
+
+13:58 image file. Now we will click this
+13:60 
+
+14:00 button.
+14:02 
+
+14:02 And now you can see in the image
+14:04 
+
+14:04 classification folder there is one more
+14:06 
+
+14:06 folder called as testing folder. In this
+14:09 
+
+14:09 testing folder I have kept two images.
+14:12 
+
+14:12 One is of a cat and one is of a dog.
+14:15 
+
+14:15 These two images are entirely different
+14:18 
+
+14:18 from the images that we have used while
+14:21 
+
+14:21 training the model because these two
+14:23 
+
+14:23 images will be used for testing our
+14:26 
+
+14:26 model. So let's click the first image
+14:29 
+
+14:29 and now we will click the open button.
+14:32 
+
+14:32 Now you can see our image is uploaded in
+14:35 
+
+14:35 the preview section. Let's check the
+14:37 
+
+14:37 result.
+14:41 
+
+14:41 Here you can see the probability of dogs
+14:44 
+
+14:44 is 0% and the probability of cats is
+14:47 
+
+14:47 100%. Which means our model has
+14:50 
+
+14:50 correctly predicted this animal as a
+14:53 
+
+14:53 cat. Let's check for another image.
+14:57 
+
+14:57 Again we have to click this button.
+14:60 
+
+14:60 Now we will select the image of a dog
+15:02 
+
+15:02 and we will click the open button. The
+15:05 
+
+15:05 image of dog is also uploaded. Let's
+15:07 
+
+15:07 check the results.
+15:10 
+
+15:10 This time the probability of dogs is
+15:12 
+
+15:12 100% and the probability of cats is 0%.
+15:16 
+
+15:16 Which means our model has correctly
+15:18 
+
+15:18 predicted this image as an image of a
+15:20 
+
+15:20 dog. In this way we are done with the
+15:23 
+
+15:23 training as well as the testing of our
+15:26 
+
+15:26 model. Now if you remember I have
+15:29 
+
+15:29 explained you every machine learning
+15:31 
+
+15:31 model is associated with a computer
+15:34 
+
+15:34 program. That means every machine
+15:36 
+
+15:36 learning model is actually a computer
+15:38 
+
+15:38 program. That means this trained model
+15:42 
+
+15:42 should also have a code behind it. Let's
+15:45 
+
+15:45 check in the preview section. We will
+15:48 
+
+15:48 click the export model button and we
+15:50 
+
+15:50 will click the tensorflow.
+15:52 
+
+15:52 Now you can see this is the code that is
+15:56 
+
+15:56 behind our machine learning model. So
+15:59 
+
+15:59 actually machine learning model is a
+16:01 
+
+16:01 computer program. So in this way we are
+16:04 
+
+16:04 done with our practical demonstration of
+16:06 
+
+16:06 the machine learning model and we are
+16:08 
+
+16:08 done with the image classification task.
+16:11 
+
+16:11 Now let's get back to our presentation.
+16:14 
+
+16:14 So now I hope you have understood the
+16:17 
+
+16:17 machine learning model. Also we have
+16:19 
+
+16:19 trained as well as tested our own
+16:22 
+
+16:22 machine learning model for the image
+16:24 
+
+16:24 classification task. And in this way we
+16:27 
+
+16:27 are done with our topic machine learning
+16:29 
+
+16:29 model. So this was all from my side for
+16:32 
+
+16:32 this lecture. Thank you and I'll see you
+16:34 
+
+16:34 in the next lecture.

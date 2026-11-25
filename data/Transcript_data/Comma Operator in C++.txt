@@ -1,0 +1,181 @@
+00:00 Hello everyone. Welcome to Neso Academy.
+In the previous lecture, we understood
+00:06 increment and decrement operators. Now
+we are in this lecture and the name of
+00:11 this lecture is comma operator. In this
+lecture, we will understand the concept
+00:17 of comma operator in C++. So without any
+further delay, let's get started and
+00:23 let's see what are the topics.
+There is only one topic and the name of
+00:27 the topic is the comma operator.
+Let's proceed further and let's
+00:32 understand the comma operator.
+The comma operator is used to combine
+00:38 multiple expressions in the same line.
+With the help of the comma operator, we
+00:44 can combine multiple expressions that
+too in the same line. By expression, I
+00:50 mean something that evaluates down to a
+value. So an expression always gives us
+00:56 a value in return.
+I hope the meaning of expression is
+01:01 clear to you and I hope the meaning of
+comma operator is also clear to you.
+01:07 Comma operator is used to combine
+multiple expressions in the same line.
+01:14 Apart from this, it evaluates
+expressions from left to right and
+01:18 returns the result of the last
+expression. Comma operator evaluates all
+01:23 the expressions from left to right and
+it also returns the result of the last
+01:30 expression.
+Now to understand this point better,
+01:34 let's take one simple example program.
+Here in this example program, I have
+01:39 included the iostream header file
+because in the main function, I'm using
+01:44 std::cout.
+Inside this main function, I have
+01:47 defined these two variables X and Y.
+Variable Y is initialized to two here.
+01:54 After this, we have this line X equal to
+within parentheses y plus plus comma 20
+02:00 comma 30.
+Here, I'm trying to store the result of
+02:06 y plus plus comma 20 comma 30 in
+variable x.
+02:12 Now, if you observe this, this is an
+expression because it evaluates down to
+02:16 a value.
+This expression is formed from multiple
+02:20 expressions. Here, we have a total of
+three expressions and they are all
+02:24 combined with the help of comma
+operators.
+02:28 We know with the help of comma operator,
+we can combine multiple expressions in
+02:33 the same line. This is exactly what I am
+doing here.
+02:38 Here, we have this expression y plus
+plus and I'm calling this an expression
+02:42 because it evaluates down to a value. We
+already know this is the post increment
+02:48 operator. It gives us some value.
+Then, we have 20 and 30. These are
+02:53 values themselves. We can call them
+expressions, too.
+02:58 So, we have a total of three
+expressions. Now, we need to evaluate
+03:02 this entire expression and this will be
+evaluated by evaluating all these
+03:08 expressions from left to right. So,
+first we need to evaluate y plus plus.
+03:14 We know this is post increment operator.
+With the help of this operator, we will
+03:19 get value three in the variable y
+and here, we will get the old value of
+03:25 y, which is two. So, here in place of y
+plus plus, we will get two.
+03:32 Then, we have value 20. This will be
+evaluated down to 20. Then, we have 30.
+03:36 This will be evaluated down to 30.
+So, we know what's the result of the
+03:41 last expression. The result of the last
+expression is 30 and this result will be
+03:47 returned to variable x.
+This is what I have mentioned here.
+03:52 With the help of comma operator, all the
+expressions will be evaluated from left
+03:58 to right. We have evaluated expressions
+from left to right.
+04:02 But, the result of the last expression
+will be returned. We know the result of
+04:07 the last expression is 30. This will be
+returned. So, we can say this expression
+04:13 will be evaluated down to 30. So, we can
+say that this expression is equivalent
+04:19 to 30 and hence X is equal to 30.
+I hope this is clear to you.
+04:25 So, we learned the purpose of the comma
+operator here. We are using comma
+04:29 operator to combine multiple
+expressions.
+04:33 After this, with the help of std::cout,
+I'm trying to display the value of X. We
+04:38 know X is holding 30, so 30 will be
+displayed on the screen.
+04:43 Because of this std::endl, we will move
+to the next line. And then we have
+04:47 std::cout with Y. We know the value of Y
+is three. This is the current value.
+04:55 Because of Y++, we got three here.
+That's why three will be displayed in
+04:60 the next line. So, when we execute this
+program, we will get output as 30 and
+05:06 three. These two are in the separate
+lines.
+05:09 Now, I hope it is clear to you how to
+use the comma operator and why it is so
+05:14 useful.
+I would like to mention that here the
+05:18 comma is not acting as the operator, but
+it is acting as the separator. This is
+05:24 exactly what I have mentioned here. For
+variable declarations, comma acts as the
+05:30 separator.
+It does not act as the operator. These
+05:35 are not expressions which will get
+evaluated. Here we have variable
+05:39 declarations.
+These variables are separated by this
+05:44 comma. I hope this is clear to you.
+So, comma plays different roles in
+05:50 different situations. Here, comma is
+acting as the separator. Here, these two
+05:55 commas are acting as the operators. I
+hope this is clear to you.
+05:60 Now, you might be thinking, where do we
+use comma operator?
+06:05 Here, I've mentioned this. Comma
+operator is mainly used in loops.
+06:11 You may already know what loops are if
+you have already studied C programming
+06:16 language or some other programming
+language, then you might know about
+06:21 while loop, for loop. In case of for
+loop, sometimes we may need multiple
+06:27 expressions as the update expression. We
+may want to update multiple loop
+06:34 variables. For this purpose, we may need
+to combine multiple expressions, and for
+06:40 this we can use the comma operator. In
+the for loop, let's say we have two
+06:45 variables, I and J. These are loop
+variables, and we may want to increment
+06:50 these variables. For this purpose, we
+can write the update expression as I++ ,
+06:56 J++. If you want to update these two
+variables in the same line, then we need
+07:03 to write I++ , J++ as the update
+expression of the for loop.
+07:09 So, with the help of this update
+expression, clearly we would be able to
+07:12 increment the two variables.
+So, this is the main use case of the
+07:17 comma operator. With the help of the
+comma operator, we can combine
+07:21 expressions like I++ and J++.
+And therefore, we can form a single
+07:27 expression from multiple expressions.
+So, with this we have learned the comma
+07:32 operator properly. Now, we know what is
+the comma operator, how to use the comma
+07:37 operator, and where it is used. So, with
+this we have learned the topic the comma
+07:44 operator. Now, we are done with this
+lecture.
+07:47 Okay, friends. This is it for now. Thank
+you for watching this lecture. I will
+07:52 see you in the next one.

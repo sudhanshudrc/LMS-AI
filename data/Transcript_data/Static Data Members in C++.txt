@@ -1,0 +1,277 @@
+00:01 Hello everyone, welcome to Nesso
+Academy. In the previous lectures, we
+00:05 have understood the concept of classes
+and objects and we have also understood
+00:11 how to define member functions of a
+class. Now we are in this lecture and
+00:17 the name of this lecture is static data
+members. In this lecture we will
+00:23 properly understand what are static data
+members and how we can define them. So
+00:30 without any further delay, let's get
+started with this lecture and let's see
+00:34 what are the topics. The first topic is
+introduction to static data members.
+00:40 First I will introduce you to static
+data members. Then through an example we
+00:46 will understand how to declare, use and
+define a static data member. So these
+00:53 are the topics. Let's start with the
+first one that is introduction to static
+00:58 data members.
+So what are static data members? A
+01:04 static data member is a member of the
+class that can be declared using the
+01:10 keyword static inside the class. So
+within the class we can only declare a
+01:17 static data member and we can declare
+the static data member with the help of
+01:24 the static keyword.
+If we want to define the static data
+01:30 member then we can only define it
+outside the class. This is what I have
+01:36 written as the second point. It must be
+defined outside the class
+01:42 also. it is shared by all the objects of
+the class. It is not the case that each
+01:48 object will receive its own copy of the
+static data member. Every object has to
+01:54 share the same copy of the static data
+member. So it is shared by all the
+02:01 objects of the class. Also if we want to
+access a static data member then it is
+02:09 possible through the class name not the
+object name. So it can be accessed using
+02:16 the class name because it is created on
+a class basis not on an object basis. It
+02:24 is not associated with an object. It is
+associated with the class. I hope these
+02:31 points are clear to you. Now let's see
+how to declare a static data member
+02:37 inside the class. Let's see the syntax
+for the same. This is the syntax we can
+02:42 follow to declare a static data member
+inside the class. We need to specify the
+02:48 keyword static. Then we need to provide
+the data type of the data member. And
+02:53 then after this we need to provide the
+variable name or the data member name.
+02:58 So in this way we can declare a static
+data member. Now what about its
+03:05 definition? How we can define a static
+data member outside the class? This is
+03:11 the syntax we can follow. First we need
+to specify the data type. Then after
+03:17 this the name of the class to which it
+belongs. After this with the help of
+03:23 scope resolution operator we can define
+our static data member. We need to
+03:29 provide the name of the static data
+member after the scope resolution
+03:35 operator. So this is how we can define a
+static data member. We can also
+03:41 initialize the static data member. At
+this moment we can use the list
+03:47 initialization or copy initialization or
+other forms of initialization.
+03:52 I hope this is clear to you. Now let's
+see how to use a static data member.
+03:59 This is the usage of static data member.
+We need to specify the name of the
+04:04 class. Then after this the scope
+resolution operator and then the name of
+04:09 the static data member. Now here you can
+observe that we are using the scope
+04:16 resolution operator to define a static
+data member and to use the data member
+04:23 outside the class.
+This is the use case of the scope
+04:28 resolution operator. We already know
+that with the help of the scope
+04:32 resolution operator we can access global
+variables inside the function. Also with
+04:38 the help of scope resolution operator we
+can define member functions outside the
+04:45 class. In the same way we can define
+static data members outside the class
+04:52 with the help of scope resolution
+operator and this operator is also
+04:56 useful in accessing the static data
+member outside the class. I hope this is
+05:03 clear to you. Also I would like to
+mention that by default static data
+05:09 members are initialized to zero.
+So all static members are initialized to
+05:16 zero.
+If we do not provide any initialization
+05:22 value to the static data member then it
+will be initialized to zero by default.
+05:29 So these are the points about static
+data members. And now we know how to
+05:34 declare, define and use a static data
+member. We at this moment only know the
+05:42 syntax.
+Now let's implement this. For this
+05:46 purpose, we need to move to the next
+topic. And through the example, we will
+05:51 learn how to declare, define, and use a
+static data member. For now, we are done
+05:58 with the introduction to static data
+members. Let's move to the second topic
+06:04 to understand through an example how to
+declare, define and use static data
+06:10 members.
+Here is the example program. I have
+06:14 included IO stream header file and here
+is the definition of the class student.
+06:20 Within this class, I have declared this
+public keyword. This means the code
+06:26 following it is meant to be public. This
+means it is accessible to all the
+06:32 functions outside the class. Now here is
+the normal count variable and it is
+06:39 initialized to zero. This is the normal
+data member and therefore whenever we
+06:46 create an object of this class then the
+object will receive its own copy of this
+06:52 data member. This is what we need to
+remember and this is what we have
+06:56 already learned as well.
+After this I have defined this static
+07:02 data member as well.
+After this I have declared this static
+07:08 data member as well. I have followed the
+same syntax. First I have specified the
+07:14 data type as static int and then the
+name of the variable which is static
+07:20 count.
+This is just the declaration not the
+07:25 definition. Also we must remember this
+that this variable will be shared by all
+07:31 the objects of this class.
+Here is the definition of the static
+07:36 count variable. Here you can observe the
+same syntax being followed. First the
+07:42 data type is specified. Then the name of
+the class. Then after this the scope
+07:46 resolution operator and then the name of
+the static data member which is static
+07:53 count. and it is initialized to zero.
+Even though we do not initialize it to
+07:59 zero, it will be automatically
+initialized to zero. So now we know this
+08:05 static count variable has been defined
+and it is initialized to zero. After
+08:12 this we have this constructor called
+student.
+08:16 I'm calling this the constructor and we
+already know what a constructor is. I
+08:21 gave you the brief idea about what a
+constructor is. A constructor is a
+08:26 special type of function which gets
+called whenever the object of the class
+08:31 is created. So it will be called
+automatically when an object of this
+08:37 specific class will be created.
+Here we have this code and with the help
+08:42 of this code I am incrementing both
+normal count and static count by one.
+08:50 Now here is the definition of the main
+function. In this definition we have
+08:55 these three objects s_sub_1, s_sub_2 and
+s_sub_3 and these objects are of type
+09:02 student. So these are the objects of
+class student. As the object s1 is
+09:07 created, the constructor is called and
+normal count is incremented by one. We
+09:14 know that s1 has its own copy of this
+variable normal count. it will be
+09:19 incremented by one. Therefore, s1 dotn
+normal count is equal to one because it
+09:25 has been initialized to zero. Now it is
+equal to one. I hope this is clear to
+09:30 you. Now what about s_ub_2? Because
+s_ub_2 is also created. Constructor is
+09:36 called again and normal count is
+incremented by one. But s_ub_2 has its
+09:40 own copy of this normal count variable.
+It will be incremented by one. So s_ub_2
+09:46 do.normal normal count is equal to 1. It
+has to do nothing with S1 dot normal
+09:53 count. S_ub_2 has its own copy of the
+normal count variable and it has updated
+09:60 normal count to one because of this
+constructor.
+10:05 Now what happens in case of S3 because
+this object is created constructor is
+10:10 called normal count is incremented. S3
+dot normal count is also equal to one.
+10:16 So we know at this moment s_sub_1 dotn
+normal count is equal to 1. s_ub_2
+10:21 dotnormal count is equal to 1 and
+s_sub_3 dotnormal count is also equal to
+10:27 1.
+Now what happens in case of static count
+10:33 variable? What about this specific
+variable?
+10:38 We know s1 object is created. Therefore
+the constructor is called and static
+10:42 count variable is incremented by one. We
+also know this that static count
+10:47 variable does not belong to an object.
+The same copy of the static count
+10:52 variable will be shared by all the
+objects because of S1 static count will
+10:58 receive value one. This happens because
+of this line. I hope this is clear to
+11:05 you. So now static count variable has
+value one. What about s_ub_2?
+11:11 Because of s_ub_2 constructor is called.
+static count is incremented by one. Now
+11:16 it has value two. Please note that S2
+does not have its own copy of static
+11:22 count variable. The same copy of static
+count variable is incremented and
+11:27 therefore we are getting value two
+inside this variable. I hope this is
+11:32 clear to you.
+The same thing happens for S3 as well.
+11:37 Again static count is incremented by one
+and we will get value three in this
+11:42 variable. So we now know that static
+count is equal to three.
+11:47 And with the help of these std see out
+statements I am trying to display the
+11:52 results of s_ub_1 dotn normal count,
+s_ub_2 dotn normal count, s3 dotnormal
+11:58 count and student static count. Here you
+can observe that I am using the syntax
+12:05 of accessing the static data member
+within this main function. First I am
+12:12 specifying the name of the class, then
+the scope resolution operator and then
+12:16 the name of the static data member.
+In this way we can access this static
+12:22 count variable. Now when we execute this
+program we will get the output s1.normal
+12:29 count equal 1, s_ub_2 dotnormal count
+equal to 1, s3 dotnormal count equal to
+12:35 1 and shared static count equal to
+three. Here
+12:41 we can observe what we have expected. So
+from this example it is clear what is
+12:48 the difference between normal data
+member and static data member. Each
+12:54 object get its own copy of the normal
+data member. But each object has to
+13:01 share the same copy of the static data
+member. That is why we are seeing this
+13:07 output.
+So with this we are done with this
+13:10 example and this means we are done with
+the last topic as well and therefore we
+13:16 are done with this lecture. Okay friends
+this is it for now. Thank you for
+13:21 watching this lecture. I will see you in
+the next one.
+13:28 [music]

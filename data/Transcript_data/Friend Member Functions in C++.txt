@@ -1,0 +1,808 @@
+00:01 Hello everyone, welcome to Nesso
+00:03 
+
+00:03 Academy. In the previous lecture, we
+00:05 
+
+00:05 understood friend classes. We got to
+00:08 
+
+00:08 know that we can define a class that can
+00:11 
+
+00:11 access private and protected members of
+00:15 
+
+00:15 some other class. We call that class the
+00:18 
+
+00:18 friend class of the other class.
+00:22 
+
+00:22 Now in this presentation, we will
+00:23 
+
+00:23 understand the concept of friend member
+00:26 
+
+00:26 functions. So without any further delay,
+00:29 
+
+00:29 let's get started with this lecture and
+00:32 
+
+00:32 let's see what are the topics.
+00:34 
+
+00:34 There is only one topic and the name of
+00:36 
+
+00:36 the topic is friend member functions.
+00:39 
+
+00:39 Now let's understand what are friend
+00:41 
+
+00:41 member functions.
+00:44 
+
+00:44 A friend member function is a member
+00:46 
+
+00:46 function that can access private and
+00:49 
+
+00:49 protected members of some other class.
+00:53 
+
+00:53 First of all, it is a member function of
+00:55 
+
+00:55 some class.
+00:57 
+
+00:57 and it can access private and protected
+01:00 
+
+01:00 members of the other class. That is why
+01:04 
+
+01:04 it is called friend member function.
+01:07 
+
+01:07 Also, it is useful when we don't want
+01:10 
+
+01:10 the entire class to have access.
+01:15 
+
+01:15 We know that when we define a friend
+01:17 
+
+01:17 class, then the entire class have access
+01:21 
+
+01:21 to the private and protected members of
+01:24 
+
+01:24 the other class.
+01:26 
+
+01:26 But what if we want that only the
+01:29 
+
+01:29 specific member functions of the class
+01:32 
+
+01:32 should be able to access private and
+01:34 
+
+01:34 protected members of the other class. If
+01:38 
+
+01:38 we want this then we should not define
+01:40 
+
+01:40 the class as friend class. Instead we
+01:43 
+
+01:43 can define some member functions the
+01:46 
+
+01:46 friend member functions. In this way, we
+01:49 
+
+01:49 will allow access to the private and
+01:52 
+
+01:52 protected members of the other class to
+01:55 
+
+01:55 some member functions only, not all the
+01:58 
+
+01:58 member functions of the class. I hope
+02:00 
+
+02:00 this idea is clear to you. Now to make
+02:02 
+
+02:02 this more clear, let's take the same
+02:05 
+
+02:05 example program we took in the last
+02:08 
+
+02:08 lecture. Here is the example program we
+02:11 
+
+02:11 have understood in the last lecture.
+02:13 
+
+02:13 Here we have the class diary which
+02:16 
+
+02:16 mimics the real life diary that allows
+02:18 
+
+02:18 us to set the secret message via this
+02:21 
+
+02:21 function set secret.
+02:24 
+
+02:24 Through this function we can provide
+02:26 
+
+02:26 some string to this variable secret
+02:28 
+
+02:28 which is the private member of this
+02:31 
+
+02:31 class. Here we have defined the class
+02:34 
+
+02:34 best friend which mimics the best friend
+02:37 
+
+02:37 and this class can access the private
+02:41 
+
+02:41 member secret. And here through this
+02:44 
+
+02:44 read secret function we can read the
+02:46 
+
+02:46 secret message. This is what we can
+02:48 
+
+02:48 observe. And this is what we saw in the
+02:50 
+
+02:50 last lecture as well.
+02:53 
+
+02:53 And this is possible because this class
+02:56 
+
+02:56 is defined as the friend class of this
+02:58 
+
+02:58 class. That is why it can access private
+03:02 
+
+03:02 and protected members of this class
+03:04 
+
+03:04 diary. Therefore in this member function
+03:08 
+
+03:08 we can access the private member secret.
+03:11 
+
+03:11 Apart from this inside the main function
+03:14 
+
+03:14 I have set the secret message. I have a
+03:17 
+
+03:17 crush on coding. This is what we have
+03:18 
+
+03:18 done before and through read secret we
+03:21 
+
+03:21 have read the secret message as well.
+03:24 
+
+03:24 Now here you can observe that I have
+03:26 
+
+03:26 added this function talk. This is the
+03:29 
+
+03:29 function I have added just now. It is
+03:32 
+
+03:32 not the case that this function was
+03:34 
+
+03:34 available in the code that we saw in the
+03:36 
+
+03:36 previous class.
+03:39 
+
+03:39 This is also the member function and
+03:41 
+
+03:41 because this class is defined as the
+03:44 
+
+03:44 friend class of this class, this member
+03:46 
+
+03:46 function can access private and
+03:49 
+
+03:49 protected members of this class.
+03:51 
+
+03:51 Therefore, this member function can also
+03:54 
+
+03:54 access the secret message. But let's say
+03:57 
+
+03:57 we do not want this. We only want this
+04:00 
+
+04:00 member function to access the secret
+04:04 
+
+04:04 member variable. Now if we want this
+04:07 
+
+04:07 then we should not define this class as
+04:10 
+
+04:10 the friend class of this class. Instead
+04:13 
+
+04:13 we should define this function as the
+04:16 
+
+04:16 friend function.
+04:18 
+
+04:18 I hope this makes sense to you. This is
+04:20 
+
+04:20 what I have mentioned here. Friend
+04:23 
+
+04:23 member functions are useful when we
+04:25 
+
+04:25 don't want the entire class to have
+04:27 
+
+04:27 access. Here we do not want this
+04:29 
+
+04:29 function to have access to the private
+04:31 
+
+04:31 member secret. For this purpose, we only
+04:35 
+
+04:35 define this function as the friend
+04:37 
+
+04:37 function of this class. Now, how we can
+04:40 
+
+04:40 do this? This can be done by replacing
+04:43 
+
+04:43 this line with this line. Here I'm
+04:46 
+
+04:46 mentioning that read secret is the
+04:49 
+
+04:49 function which is the member function of
+04:52 
+
+04:52 the class best friend and I am doing
+04:55 
+
+04:55 this with the help of scope resolution
+04:57 
+
+04:57 operator. This is the declaration of the
+04:59 
+
+04:59 read secret function and its return type
+05:02 
+
+05:02 is void. Here I am using the keyword
+05:05 
+
+05:05 friend to declare it as the friend
+05:07 
+
+05:07 function of this class.
+05:10 
+
+05:10 Now this function can access the private
+05:13 
+
+05:13 member of this class. No other function
+05:17 
+
+05:17 of this class can access this private
+05:19 
+
+05:19 member. I hope this idea is clear to
+05:21 
+
+05:21 you. Now it seems like this program will
+05:25 
+
+05:25 work as expected just like before and we
+05:29 
+
+05:29 will get the output on the screen. But
+05:32 
+
+05:32 here we will get error from the
+05:35 
+
+05:35 compiler.
+05:37 
+
+05:37 Now you might be thinking why are we
+05:38 
+
+05:38 getting error here? We are doing
+05:40 
+
+05:40 everything right. We have made this
+05:42 
+
+05:42 member function the friend function of
+05:45 
+
+05:45 this class. Now this function can access
+05:49 
+
+05:49 the variable secret and this function is
+05:52 
+
+05:52 not using the secret variable. Therefore
+05:54 
+
+05:54 we should not get error from the
+05:55 
+
+05:55 compiler but we are getting error and we
+05:59 
+
+05:59 are getting error because of the read
+06:02 
+
+06:02 secret function.
+06:04 
+
+06:04 This function is currently not visible
+06:06 
+
+06:06 to the compiler.
+06:08 
+
+06:08 I mean to say that the definition of
+06:10 
+
+06:10 this function is not visible to the
+06:13 
+
+06:13 compiler at this point. This is because
+06:16 
+
+06:16 compiler reads the code from top to
+06:18 
+
+06:18 bottom and when it encounters this line
+06:22 
+
+06:22 it will throw the error because the
+06:24 
+
+06:24 definition of this function is not
+06:26 
+
+06:26 available before this declaration.
+06:31 
+
+06:31 Its definition is available after its
+06:34 
+
+06:34 declaration that is over here in this
+06:36 
+
+06:36 class. This is the problem.
+06:41 
+
+06:41 Now to resolve this problem, we want
+06:43 
+
+06:43 this definition to be available before
+06:46 
+
+06:46 this class.
+06:48 
+
+06:48 We can do this by bringing this class to
+06:52 
+
+06:52 the top and by bringing this class to
+06:54 
+
+06:54 the bottom. That is we need to shift the
+06:56 
+
+06:56 order of these classes.
+07:01 
+
+07:01 Here is how we can shift the order. Now
+07:03 
+
+07:03 we have the class best friend at the top
+07:06 
+
+07:06 and the class diary at the bottom. The
+07:09 
+
+07:09 code is exactly the same. We have just
+07:11 
+
+07:11 changed the order. Now there will be no
+07:14 
+
+07:14 problem. When compiler read the code, it
+07:18 
+
+07:18 will read the code from top to bottom
+07:20 
+
+07:20 and it will encounter the definition of
+07:23 
+
+07:23 the read secret function first. Then it
+07:25 
+
+07:25 will encounter the declaration. So there
+07:28 
+
+07:28 is no problem at all.
+07:30 
+
+07:30 Now compiler will not throw the error
+07:32 
+
+07:32 because of read secret function. But
+07:35 
+
+07:35 again when we execute this program we
+07:37 
+
+07:37 will get error from the compiler. Now
+07:39 
+
+07:39 why are we getting error this time?
+07:42 
+
+07:42 There are two reasons why we are getting
+07:45 
+
+07:45 error at this moment. Understand this
+07:48 
+
+07:48 properly that this read secret function
+07:52 
+
+07:52 is using the object D which is of type
+07:54 
+
+07:54 diary. This means this is the object of
+07:59 
+
+07:59 class diary. But the definition of the
+08:02 
+
+08:02 class diary is available over here. And
+08:04 
+
+08:04 there is no declaration of this class
+08:07 
+
+08:07 before this usage.
+08:10 
+
+08:10 That is why we are getting error. This
+08:12 
+
+08:12 is reason number one.
+08:14 
+
+08:14 There is one more reason why we are
+08:16 
+
+08:16 getting error from the compiler. Here we
+08:19 
+
+08:19 are using the variable secret.
+08:22 
+
+08:22 Now this variable is declared over here
+08:25 
+
+08:25 in this class diary. We are using this
+08:28 
+
+08:28 variable before its declaration.
+08:32 
+
+08:32 This will cause error from the compiler.
+08:35 
+
+08:35 Now how we can resolve these errors? We
+08:38 
+
+08:38 can see two reasons why we are getting
+08:41 
+
+08:41 error. This issue can easily be
+08:43 
+
+08:43 resolved. We need to just declare this
+08:46 
+
+08:46 class over here. Here in place of this
+08:49 
+
+08:49 declaration we want the declaration of
+08:51 
+
+08:51 the class diary like this. Now we have
+08:54 
+
+08:54 the forward declaration of the class
+08:56 
+
+08:56 diary. There will be no problem.
+08:58 
+
+08:58 Compiler will not throw error because of
+08:60 
+
+09:00 this object definition.
+09:04 
+
+09:04 Now what about the usage of the secret
+09:06 
+
+09:06 variable?
+09:08 
+
+09:08 This variable can only be used when it
+09:11 
+
+09:11 is declared first.
+09:13 
+
+09:13 So for this purpose we need to define
+09:17 
+
+09:17 this function after this class somehow
+09:22 
+
+09:22 we already know this that it is possible
+09:25 
+
+09:25 to define the function outside the
+09:28 
+
+09:28 class. We just need to use the scope
+09:30 
+
+09:30 resolution operator to tell the compiler
+09:33 
+
+09:33 that the function belongs to a specific
+09:36 
+
+09:36 class.
+09:37 
+
+09:37 Now here we just need to declare this
+09:40 
+
+09:40 function and then after this we can
+09:43 
+
+09:43 define this function after this class
+09:46 
+
+09:46 definition then there will be no
+09:48 
+
+09:48 problem.
+09:50 
+
+09:50 So let's do this. Let's declare this
+09:52 
+
+09:52 function over here. Now we have the
+09:55 
+
+09:55 declaration of the function read secret.
+09:58 
+
+09:58 And after this class we need to define
+10:01 
+
+10:01 our read secret function. And this can
+10:05 
+
+10:05 be done like this. I have defined this
+10:07 
+
+10:07 function over here because of lack of
+10:09 
+
+10:09 space. This function is defined after
+10:13 
+
+10:13 this class definition. Here you can
+10:15 
+
+10:15 observe this is the definition of the
+10:17 
+
+10:17 read secret function.
+10:19 
+
+10:19 Here I'm using the scope resolution
+10:21 
+
+10:21 operator to tell the compiler that this
+10:24 
+
+10:24 function is the member function of the
+10:26 
+
+10:26 best friend class. This is what we can
+10:29 
+
+10:29 observe
+10:31 
+
+10:31 and this is the definition of the read
+10:33 
+
+10:33 secret function. Now we can use this
+10:37 
+
+10:37 variable secret via the object of the
+10:41 
+
+10:41 class diary. There will be no problem.
+10:44 
+
+10:44 Now when we execute this program, we
+10:47 
+
+10:47 will get the output as expected. Reading
+10:49 
+
+10:49 diary secret. I have a crush on coding.
+10:53 
+
+10:53 We are getting the same output as before
+10:55 
+
+10:55 in the last lecture.
+10:58 
+
+10:58 There's only one difference
+11:01 
+
+11:01 here. We have not defined this entire
+11:04 
+
+11:04 class as the friend class of this class
+11:07 
+
+11:07 diary. Instead, we have just defined
+11:11 
+
+11:11 this function as the friend member
+11:13 
+
+11:13 function of this class diary. Here you
+11:17 
+
+11:17 can observe the same thing. I hope this
+11:20 
+
+11:20 idea is clear to you.
+11:23 
+
+11:23 Now here I have defined this function
+11:25 
+
+11:25 talk as well. I want you to use the
+11:29 
+
+11:29 variable secret over here. somehow and I
+11:33 
+
+11:33 want you to check whether you would be
+11:35 
+
+11:35 able to use the variable secret over
+11:38 
+
+11:38 here or not. In this way, you will get
+11:41 
+
+11:41 to know whether this function would be
+11:43 
+
+11:43 able to access this private member or
+11:46 
+
+11:46 not. Please note that this function is
+11:48 
+
+11:48 not defined as the friend member
+11:50 
+
+11:50 function of this class. Therefore, this
+11:54 
+
+11:54 member is not accessible within this
+11:56 
+
+11:56 function. I want you to check the same
+11:58 
+
+11:58 thing. So this is your homework. So with
+12:02 
+
+12:02 this we have learned friend member
+12:05 
+
+12:05 functions properly and this means we are
+12:07 
+
+12:07 done with the topic friend member
+12:09 
+
+12:09 functions and we are done with this
+12:12 
+
+12:12 lecture. Okay friends this is it for
+12:15 
+
+12:15 now. Thank you for watching this
+12:16 
+
+12:16 lecture. I will see you in the next one.
+12:23 
+
+12:23 [music]

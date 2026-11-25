@@ -1,0 +1,799 @@
+00:01 foreign
+00:06 
+
+00:06 let's discuss the complete process of
+00:09 
+
+00:09 how to install Python and visual studio
+00:11 
+
+00:11 code on our computers
+00:15 
+
+00:15 in this presentation we will cover the
+00:17 
+
+00:17 following topics the first topic is need
+00:20 
+
+00:20 of installing the python interpreter the
+00:23 
+
+00:23 second topic is steps to install the
+00:25 
+
+00:25 python interpreter the third topic is
+00:27 
+
+00:27 steps to install the visual studio code
+00:30 
+
+00:30 and the last topic is writing your first
+00:32 
+
+00:32 program in Visual Studio code
+00:35 
+
+00:35 we will now learn why we need to install
+00:38 
+
+00:38 python interpreter on our computers
+00:42 
+
+00:42 we need to install python interpreter
+00:44 
+
+00:44 because python interpreter is capable of
+00:48 
+
+00:48 manipulating and understanding bytecode
+00:50 
+
+00:50 which we will get from the compilation
+00:52 
+
+00:52 step
+00:53 
+
+00:53 we have already learned in the last
+00:55 
+
+00:55 lecture that source code must be
+00:57 
+
+00:57 provided to compiler and compiler in
+01:00 
+
+01:00 turn generates bytecode which is the
+01:03 
+
+01:03 intermediate code
+01:04 
+
+01:04 we can run this intermediate code on any
+01:07 
+
+01:07 machine it can be Windows Linux or Mac
+01:10 
+
+01:10 but the only condition is that we need
+01:14 
+
+01:14 to install pvm on these machines
+01:18 
+
+01:18 pvm stands for python virtual machine
+01:21 
+
+01:21 and python interpreter is part of pvm so
+01:25 
+
+01:25 pvm could be thought of as a complete
+01:27 
+
+01:27 package which is capable of running
+01:29 
+
+01:29 bytecode and converting it to machine
+01:32 
+
+01:32 code on the Fly
+01:33 
+
+01:33 this is what we have learned in the last
+01:35 
+
+01:35 lecture
+01:36 
+
+01:36 python virtual machine must be installed
+01:39 
+
+01:39 on Windows in order to run bytecode on
+01:42 
+
+01:42 Windows if we want to run byte code on
+01:45 
+
+01:45 Linux then python virtual machine must
+01:47 
+
+01:47 be installed on Linux machine
+01:49 
+
+01:49 if we want to run bytecode on Mac
+01:52 
+
+01:52 machine then python virtual machine must
+01:55 
+
+01:55 be installed on Mac machine
+01:57 
+
+01:57 so python virtual machine must be
+01:59 
+
+01:59 installed and this means that python
+02:02 
+
+02:02 interpreter will automatically get
+02:04 
+
+02:04 installed and eventually we would be
+02:06 
+
+02:06 able to run our codes
+02:08 
+
+02:08 so now we know why we need to install
+02:10 
+
+02:10 python interpreter let's see the steps
+02:13 
+
+02:13 to install python interpreter on our
+02:16 
+
+02:16 computers
+02:17 
+
+02:17 we need to follow the following steps
+02:19 
+
+02:19 the first step is to visit the download
+02:22 
+
+02:22 section of the official website which is
+02:25 
+
+02:25 python.org downloads then we need to
+02:29 
+
+02:29 download the latest version of python
+02:31 
+
+02:31 from the website and finally we need to
+02:34 
+
+02:34 open the executable and follow the
+02:36 
+
+02:36 instructions as shown
+02:38 
+
+02:38 after following all these steps we'd be
+02:41 
+
+02:41 able to install python on our computers
+02:44 
+
+02:44 so let's first open the official website
+02:47 
+
+02:47 which is python.org we need to visit the
+02:50 
+
+02:50 download section for this we need to
+02:52 
+
+02:52 type in
+02:53 
+
+02:53 python.org downloads
+02:56 
+
+02:56 let's open this website
+02:59 
+
+02:59 for this we need to open our browser
+03:01 
+
+03:01 first
+03:02 
+
+03:02 we can either type python in the Google
+03:04 
+
+03:04 search bar to visit the official website
+03:07 
+
+03:07 or we can type the URL directly in the
+03:10 
+
+03:10 search bar here
+03:11 
+
+03:11 I'm going to type the URL python .org
+03:18 
+
+03:18 slash downloads
+03:24 
+
+03:24 now we are in python.org downloads and
+03:28 
+
+03:28 we are now ready to download the latest
+03:30 
+
+03:30 version for Windows if you are on Mac
+03:32 
+
+03:32 machine then you will observe download
+03:35 
+
+03:35 the latest version for Mac or if you're
+03:37 
+
+03:37 on Linux then you will observe download
+03:39 
+
+03:39 the latest version for Linux right now
+03:42 
+
+03:42 I'm in my Windows machine that's why I'm
+03:45 
+
+03:45 seeing this line
+03:46 
+
+03:46 now I need to download python
+03:49 
+
+03:49 3.11.1 which is the latest version of
+03:52 
+
+03:52 python let's click on this
+03:56 
+
+03:56 the download is successful I now need to
+03:59 
+
+03:59 click on this executable this is python
+04:02 
+
+04:02 3.1 1.1 setup window
+04:05 
+
+04:05 we can either click on this install now
+04:07 
+
+04:07 or click on customize installation but
+04:10 
+
+04:10 before that we need to check this check
+04:12 
+
+04:12 box
+04:13 
+
+04:13 and then we need to click on this
+04:15 
+
+04:15 customize installation
+04:17 
+
+04:17 then we need to click on next
+04:20 
+
+04:20 we need to click on this install python
+04:23 
+
+04:23 3.11 for all users this is recommended
+04:26 
+
+04:26 so let's check this
+04:28 
+
+04:28 and then click on install
+04:49 
+
+04:49 the setup was successful let's click on
+04:52 
+
+04:52 this close button now we need to check
+04:54 
+
+04:54 whether python is installed successfully
+04:57 
+
+04:57 or not for this we need to open the
+04:59 
+
+04:59 command prompt and here we will type
+05:01 
+
+05:01 python
+05:03 
+
+05:03 space hyphen hyphen version
+05:07 
+
+05:07 to check whether python has been
+05:09 
+
+05:09 installed successfully or not
+05:11 
+
+05:11 this will give python
+05:13 
+
+05:13 3.11.1 which is the latest version of
+05:16 
+
+05:16 python and it means that we have
+05:19 
+
+05:19 installed python
+05:20 
+
+05:20 3.11.1 successfully on our computer
+05:24 
+
+05:24 this means that we have installed the
+05:26 
+
+05:26 python interpreter successfully now we
+05:29 
+
+05:29 are ready to understand the steps to
+05:31 
+
+05:31 install the visual studio code Visual
+05:33 
+
+05:33 Studio code is the IDE or the integrated
+05:36 
+
+05:36 development environment where we will
+05:39 
+
+05:39 write all our python programs
+05:41 
+
+05:41 this is advantageous to us because if we
+05:44 
+
+05:44 install Visual Studio code we will see a
+05:47 
+
+05:47 lot of features which we will need
+05:48 
+
+05:48 throughout in order to write our
+05:50 
+
+05:50 programs so let's install Visual Studio
+05:53 
+
+05:53 code and for this we need to follow the
+05:56 
+
+05:56 following steps the first step is we
+05:59 
+
+05:59 need to visit the official website
+06:01 
+
+06:01 code.visualstudio.com then we need to
+06:04 
+
+06:04 download the latest version of Visual
+06:06 
+
+06:06 Studio code from the website after the
+06:09 
+
+06:09 download we need to open the executable
+06:11 
+
+06:11 and follow the instructions as shown
+06:14 
+
+06:14 let's first visit the official website
+06:17 
+
+06:17 code.visualstudio.com and again we need
+06:20 
+
+06:20 to open our browser
+06:21 
+
+06:21 let's type
+06:23 
+
+06:23 code.visualstudio.com here
+06:26 
+
+06:26 this will open the visual studio code
+06:28 
+
+06:28 website
+06:30 
+
+06:30 now we need to click on this download
+06:31 
+
+06:31 for Windows
+06:34 
+
+06:34 and the download is started
+06:38 
+
+06:38 we then need to click on this executable
+06:44 
+
+06:44 we need to accept the agreement
+06:47 
+
+06:47 click on next next
+06:49 
+
+06:49 create a desktop icon next install
+06:57 
+
+06:57 we don't want to launch the visual
+06:59 
+
+06:59 studio code for now
+07:00 
+
+07:00 let's uncheck this and let's click on
+07:03 
+
+07:03 finish
+07:04 
+
+07:04 the visual studio code has been
+07:05 
+
+07:05 installed successfully
+07:07 
+
+07:07 up to now we have discussed the need of
+07:09 
+
+07:09 installing the python interpreter we
+07:12 
+
+07:12 have seen the steps to install the
+07:13 
+
+07:13 python interpreter and we have installed
+07:16 
+
+07:16 python interpreter after this we have
+07:18 
+
+07:18 seen the steps to install the visual
+07:19 
+
+07:19 studio code and we have installed the
+07:22 
+
+07:22 visual studio code as well now we are
+07:24 
+
+07:24 ready to write our first program in
+07:26 
+
+07:26 Visual Studio code so let's go ahead and
+07:29 
+
+07:29 write our first program in Visual Studio
+07:31 
+
+07:31 code for this we need to open our Visual
+07:34 
+
+07:34 Studio code this is the visual studio
+07:37 
+
+07:37 code ID and here we will create a new
+07:39 
+
+07:39 file and for this we need to click on
+07:42 
+
+07:42 this file and click on new file
+07:45 
+
+07:45 in this dialog box we have been asked to
+07:48 
+
+07:48 create a text file or python file or
+07:51 
+
+07:51 jupyter notebook I'll choose this text
+07:53 
+
+07:53 file for now
+07:54 
+
+07:54 and I'll click on this selected language
+07:56 
+
+07:56 which will help me to select the
+07:58 
+
+07:58 language
+07:60 
+
+07:60 I'll type python here
+08:03 
+
+08:03 this will create a new python file and
+08:06 
+
+08:06 the name of this file is Untitled one as
+08:09 
+
+08:09 I have not selected any name
+08:11 
+
+08:11 I'll now write a very simple program
+08:13 
+
+08:13 which will add two numbers
+08:15 
+
+08:15 first I'll declare a variable num1 and
+08:19 
+
+08:19 assign it to value 10 then I'll create
+08:22 
+
+08:22 new variable num2 and assign it value
+08:25 
+
+08:25 20. these two are variables num1 and
+08:29 
+
+08:29 num2
+08:30 
+
+08:30 num1 is label given to value 10 and num2
+08:34 
+
+08:34 is another label given to value 20. then
+08:37 
+
+08:37 after this I want to create a new
+08:39 
+
+08:39 variable sum and I want to assign num1
+08:42 
+
+08:42 plus num2 to it
+08:46 
+
+08:46 now I want to write this command print
+08:49 
+
+08:49 within parentheses sum
+08:52 
+
+08:52 this will help in printing the sum which
+08:55 
+
+08:55 is 30 on the screen
+08:57 
+
+08:57 why we'll get sum as 30 because sum is
+08:60 
+
+08:60 equal to num1 plus num2 num1 is 10 and
+09:03 
+
+09:03 num2 is 20 therefore num1 plus num2
+09:06 
+
+09:06 gives 30 and sum is now pointing to 30.
+09:10 
+
+09:10 so this means that 30 will get printed
+09:12 
+
+09:12 on the screen we need to save this file
+09:14 
+
+09:14 now
+09:16 
+
+09:16 and I want to save this file with name
+09:19 
+
+09:19 add dot pi
+09:21 
+
+09:21 you can save this file on your desktop
+09:23 
+
+09:23 or you can save it in a different folder
+09:26 
+
+09:26 I have created a folder python programs
+09:29 
+
+09:29 already on my desktop this is desktop
+09:32 
+
+09:32 python programs in this python programs
+09:34 
+
+09:35 folder I want to store this add dot Pi
+09:37 
+
+09:37 file so I'll click on save button to
+09:40 
+
+09:40 save this file add dot Pi in this python
+09:43 
+
+09:43 programs folder I would recommend that
+09:46 
+
+09:46 you should also create python programs
+09:48 
+
+09:48 folder and from now we'll store all our
+09:51 
+
+09:51 python programs in this python programs
+09:53 
+
+09:53 folder which is available in the desktop
+09:55 
+
+09:55 so let's save this
+09:57 
+
+09:57 now we are ready to run this program for
+10:00 
+
+10:00 this we will click on this terminal and
+10:02 
+
+10:02 click on new terminal
+10:05 
+
+10:05 terminal window is now open we are in
+10:08 
+
+10:08 this python programs folder
+10:10 
+
+10:10 we need to type here python
+10:14 
+
+10:14 space add dot pi
+10:17 
+
+10:17 and press enter
+10:19 
+
+10:19 the output that we are getting here is
+10:21 
+
+10:21 30 and that is what we have expected
+10:23 
+
+10:23 there is one more way to run this
+10:25 
+
+10:25 program and for this we need to download
+10:27 
+
+10:27 some extensions we can click on this
+10:30 
+
+10:30 extensions button
+10:32 
+
+10:32 and we need to type here python
+10:36 
+
+10:36 we first need to install python
+10:38 
+
+10:38 extension we need to click on this
+10:41 
+
+10:41 and we need to click on install button
+10:43 
+
+10:43 right now it is showing uninstall
+10:45 
+
+10:45 because I have already installed python
+10:48 
+
+10:48 in my visual studio code but first time
+10:50 
+
+10:50 you will observe install button instead
+10:53 
+
+10:53 of uninstall so click on install and it
+10:56 
+
+10:56 will automatically install python in
+10:58 
+
+10:58 your Visual Studio code
+10:60 
+
+10:60 after installing this python extension
+11:02 
+
+11:02 we need to install one more extension
+11:04 
+
+11:04 which is code Runner
+11:10 
+
+11:10 then we need to click on this and again
+11:12 
+
+11:12 we need to install code Runner after
+11:15 
+
+11:15 installing code Runner you will observe
+11:17 
+
+11:17 this button this run button
+11:19 
+
+11:19 you can then click on this run button to
+11:22 
+
+11:22 see the output the output is 30.
+11:25 
+
+11:25 in this way we can directly run our
+11:27 
+
+11:27 python programs without the need of
+11:30 
+
+11:30 typing the commands
+11:32 
+
+11:32 okay friends this is it for now thank
+11:35 
+
+11:35 you for watching this presentation I'll
+11:37 
+
+11:37 see you in the next one
+11:38 
+
+11:38 [Music]
+11:39 
+
+11:39 [Applause]
+11:41 
+
+11:41 [Music]
+11:48 
+
+11:48 thank you

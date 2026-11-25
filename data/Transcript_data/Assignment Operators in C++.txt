@@ -1,0 +1,538 @@
+00:00 Hello everyone, welcome to Nesso
+00:03 
+
+00:03 Academy. In the previous lectures, we
+00:05 
+
+00:05 have understood bitwise operators in
+00:08 
+
+00:08 C++.
+00:10 
+
+00:10 We have successfully covered all the
+00:12 
+
+00:12 bitwise operators in C++. Now we are in
+00:16 
+
+00:16 this lecture and the name of this
+00:17 
+
+00:17 lecture is assignment operators. In this
+00:21 
+
+00:21 lecture we will understand assignment
+00:23 
+
+00:23 operators available in C++. So without
+00:27 
+
+00:27 any further delay, let's get started
+00:29 
+
+00:29 with this lecture and let's see what are
+00:31 
+
+00:31 the topics. The first topic of this
+00:34 
+
+00:34 lecture is assignment operators. First
+00:37 
+
+00:37 we will understand what are assignment
+00:39 
+
+00:39 operators and what are the different
+00:41 
+
+00:41 types of assignment operators we have.
+00:44 
+
+00:44 Then we will move to the second topic
+00:47 
+
+00:47 where we will understand some important
+00:49 
+
+00:49 points associated with assignment
+00:52 
+
+00:52 operators.
+00:54 
+
+00:54 So these are the topics. Let's start
+00:56 
+
+00:56 with the first one. Assignment
+00:58 
+
+00:58 operators.
+01:00 
+
+01:00 So what are assignment operators?
+01:03 
+
+01:03 Assignment operators are those operators
+01:07 
+
+01:07 that are used to assign value in the RHS
+01:10 
+
+01:10 to the variable in the LHS.
+01:14 
+
+01:14 So with the help of an assignment
+01:15 
+
+01:15 operator we can assign value which is
+01:19 
+
+01:19 available in the right hand side of the
+01:22 
+
+01:22 assignment operator to the variable in
+01:25 
+
+01:25 the left hand side of the assignment
+01:28 
+
+01:28 operator.
+01:30 
+
+01:30 We already know about simple assignment
+01:32 
+
+01:32 operator which is represented by single
+01:36 
+
+01:36 equals sign.
+01:38 
+
+01:38 We know that with the help of that
+01:40 
+
+01:40 operator we can assign value which is
+01:44 
+
+01:44 available in the right hand side to the
+01:46 
+
+01:46 variable in the left hand side.
+01:49 
+
+01:49 But the simple assignment operator is
+01:52 
+
+01:52 not the only assignment operator we have
+01:55 
+
+01:55 in C++.
+01:57 
+
+01:57 We have more assignment operators and we
+01:60 
+
+01:60 call them compound assignment operators
+02:03 
+
+02:03 because they are formed from two
+02:05 
+
+02:05 operators not one. We have the
+02:08 
+
+02:08 assignment operator and one more
+02:11 
+
+02:11 operator which is either an arithmetic
+02:14 
+
+02:14 operator or a bitwise operator.
+02:17 
+
+02:17 Let's see what those operators are one
+02:20 
+
+02:20 by one.
+02:23 
+
+02:23 In this table, I will list down all the
+02:25 
+
+02:25 assignment operators. I will provide
+02:28 
+
+02:28 examples associated with those operators
+02:32 
+
+02:32 and I will also mention what they are
+02:35 
+
+02:35 equivalent to. Now, here comes the first
+02:38 
+
+02:38 assignment operator which is the simple
+02:40 
+
+02:40 assignment operator. Example is A gets
+02:44 
+
+02:44 B. This is how you can read it. A gets
+02:48 
+
+02:48 B. This is because variable A will get
+02:52 
+
+02:52 the value B
+02:54 
+
+02:54 and this expression is equivalent to A
+02:57 
+
+02:57 gets B. So there is no difference.
+03:01 
+
+03:01 Now here comes the second assignment
+03:04 
+
+03:04 operator which is plus equals. Example
+03:07 
+
+03:07 is a += b. This is how you can read it.
+03:12 
+
+03:12 A += b. And this expression is same as a
+03:17 
+
+03:17 gets a + b. I hope this is clear to you.
+03:21 
+
+03:21 So here I have combined the addition
+03:25 
+
+03:25 operator with the assignment operator.
+03:28 
+
+03:28 This is the compound assignment operator
+03:31 
+
+03:31 I was talking about. We do not have just
+03:34 
+
+03:34 this assignment operator. We have other
+03:36 
+
+03:36 assignment operators as well. We call
+03:38 
+
+03:38 them compound assignment operators. The
+03:41 
+
+03:41 third assignment operator is minus
+03:44 
+
+03:44 equals. Example is a minus equals b and
+03:49 
+
+03:49 this is equivalent to a gets a minus b.
+03:53 
+
+03:53 The fourth one is time equals example is
+03:58 
+
+03:58 a * b and this is equivalent to a gets a
+04:03 
+
+04:03 * b. The fifth operator in this list is
+04:08 
+
+04:08 divides equals. Example is a divides
+04:11 
+
+04:11 equals b and this is equivalent to a
+04:15 
+
+04:15 gets a divided by b. The sixth operator
+04:20 
+
+04:20 in this list is mod equals. Example is a
+04:24 
+
+04:24 mod equals b and this is equivalent to a
+04:29 
+
+04:29 gets a mod b.
+04:33 
+
+04:33 I hope these compound assignment
+04:35 
+
+04:35 operators are clear to you. They are
+04:37 
+
+04:37 formed from an arithmetic operator and
+04:40 
+
+04:40 the assignment operator which is the
+04:43 
+
+04:43 simple assignment operator.
+04:46 
+
+04:46 Now here comes the seventh assignment
+04:49 
+
+04:49 operator which is the bitwise and
+04:52 
+
+04:52 equals.
+04:54 
+
+04:54 Example is a bitwise and equals b and
+04:58 
+
+04:58 this is equivalent to a gets a bitwise
+05:03 
+
+05:03 and b.
+05:05 
+
+05:05 Now here comes the eth operator which is
+05:08 
+
+05:08 the bitwise or equals. Example is a
+05:12 
+
+05:12 bitwise or equals b and this is
+05:15 
+
+05:15 equivalent to a gets a bit wise or b.
+05:19 
+
+05:19 The ninth operator is bitwise xor equals
+05:23 
+
+05:23 example is a bitwise xor equals b and
+05:27 
+
+05:27 this is equivalent to a gets a bitwise
+05:30 
+
+05:30 exor b. The 10th operator in this list
+05:33 
+
+05:33 is bitwise left shift equals example is
+05:37 
+
+05:37 a bitwise left shift equals b and this
+05:41 
+
+05:41 is equivalent to a gets a bitwise left
+05:45 
+
+05:45 shift b. The last operator, the 11th
+05:49 
+
+05:49 operator in this list is bitwise right
+05:52 
+
+05:52 shift equals. Example is a bitwise right
+05:56 
+
+05:56 shift equals b and this is equivalent to
+06:01 
+
+06:01 a gets a bitwise right shift b.
+06:05 
+
+06:05 So these are all the assignment
+06:07 
+
+06:07 operators we have in C++. Here we can
+06:11 
+
+06:11 observe that these compound assignment
+06:13 
+
+06:13 operators are formed from bitwise
+06:16 
+
+06:16 operator and the simple assignment
+06:19 
+
+06:19 operator. So we have understood
+06:22 
+
+06:22 assignment operators. This means we are
+06:24 
+
+06:24 done with the first topic. Now let's
+06:26 
+
+06:26 move to the second topic to understand
+06:29 
+
+06:29 some important points associated with
+06:31 
+
+06:31 assignment operators.
+06:34 
+
+06:34 Here is the first point. All assignment
+06:36 
+
+06:36 operators return the assigned value.
+06:40 
+
+06:40 No matter what assignment operator we
+06:42 
+
+06:42 consider, they not only assign value in
+06:47 
+
+06:47 the right hand side to the variable in
+06:49 
+
+06:49 the left hand side, they also return the
+06:53 
+
+06:53 assigned value. Now let's take an
+06:55 
+
+06:55 example to understand this properly.
+06:58 
+
+06:58 Here we have this std out statement. We
+07:01 
+
+07:01 have this expression. This value will be
+07:04 
+
+07:04 assigned to variable X because this is
+07:06 
+
+07:06 the simple assignment operator. Not only
+07:10 
+
+07:10 this, we will get 10 from this
+07:12 
+
+07:12 expression as the result.
+07:15 
+
+07:15 So clearly this assignment operator is
+07:18 
+
+07:18 not only assigning the value in the
+07:20 
+
+07:20 right hand side to the left hand side
+07:22 
+
+07:22 variable, it is also returning this
+07:25 
+
+07:25 value as the result.
+07:27 
+
+07:27 So we know that std see out will display
+07:30 
+
+07:30 value 10 on the screen.
+07:33 
+
+07:33 And I hope it is also clear to you why
+07:36 
+
+07:36 am I calling this an expression? because
+07:39 
+
+07:39 it is returning some value. We can see
+07:42 
+
+07:42 the value is 10. Now here is the second
+07:45 
+
+07:45 point. Evaluation order is right to
+07:48 
+
+07:48 left. Assignment operators are always
+07:51 
+
+07:51 evaluated right to left. If you have
+07:54 
+
+07:54 multiple assignment operators in an
+07:56 
+
+07:56 expression, then those will be evaluated
+07:59 
+
+07:59 from right to left. Now let's take an
+08:02 
+
+08:02 example. Here we have this stdc out
+08:05 
+
+08:05 statement and this expression. In this
+08:08 
+
+08:08 expression we have two assignment
+08:11 
+
+08:11 operators. These operators will be
+08:13 
+
+08:13 evaluated from right to left not left to
+08:17 
+
+08:17 right. So first this expression will be
+08:21 
+
+08:21 evaluated value 10 will be assigned to
+08:24 
+
+08:24 variable y and this value will also be
+08:27 
+
+08:27 returned and this means we will get x
+08:31 
+
+08:31 gets 10. 10 will be assigned to x and
+08:34 
+
+08:34 after this 10 will be returned. So
+08:37 
+
+08:37 clearly with the help of stdc out we
+08:39 
+
+08:39 will see the output 10 on the screen.
+08:44 
+
+08:44 So with this I hope these points are
+08:46 
+
+08:46 completely clear to you. With this we
+08:49 
+
+08:49 are done with the second topic also and
+08:52 
+
+08:52 we are done with this lecture. Okay
+08:55 
+
+08:55 friends this is it for now. Thank you
+08:57 
+
+08:57 for watching this lecture. I will see
+08:59 
+
+08:59 you in the next one.
+09:02 
+
+09:02 [Applause]
+09:04 
+
+09:04 [Music]
