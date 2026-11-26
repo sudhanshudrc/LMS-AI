@@ -1,7 +1,6 @@
 """Application core module."""
 
 from app.core.config import Settings, get_settings
-from app.core.dependencies import DbSession
 from app.core.exceptions import (
     AppError,
     AuthenticationError,
@@ -28,7 +27,6 @@ __all__ = [
     "AuthenticationError",
     "ConflictError",
     "CourseNotFoundError",
-    "DbSession",
     "FeatureDisabledError",
     "InvalidRequestError",
     "LLMOutputError",

@@ -6,6 +6,8 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.api.health import router as health_router
+from app.api.v1.router import router as api_v1_router
 from app.core.exceptions import register_exception_handlers
 from app.core.logging import get_logger, setup_logging
 
@@ -40,8 +42,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
-@app.get("/health", tags=["Health"])
-async def health_check() -> dict[str, str]:
-    """Basic health check endpoint."""
-    return {"status": "healthy", "service": "lms-ai-api"}
+# Mount Routes
+app.include_router(health_router)
+app.include_router(api_v1_router)

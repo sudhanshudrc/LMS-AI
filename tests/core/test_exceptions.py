@@ -36,7 +36,10 @@ def app_with_exceptions() -> FastAPI:
 
     @test_app.get("/test/invalid-request")
     async def trigger_invalid_request() -> None:
-        raise InvalidRequestError("Invalid parameters provided", errors=[{"field": "limit", "issue": "must be > 0"}])
+        raise InvalidRequestError(
+            "Invalid parameters provided",
+            errors=[{"field": "limit", "issue": "must be > 0"}],
+        )
 
     @test_app.get("/test/permission-denied")
     async def trigger_permission_denied() -> None:
@@ -68,7 +71,9 @@ def test_authentication_error_handler(app_with_exceptions: FastAPI) -> None:
     assert data["message"] == messages.INVALID_SERVICE_TOKEN
 
 
-def test_not_found_error_handler_default_and_custom(app_with_exceptions: FastAPI) -> None:
+def test_not_found_error_handler_default_and_custom(
+    app_with_exceptions: FastAPI,
+) -> None:
     """Verify 404 response for CourseNotFoundError with default and custom messages."""
     client = TestClient(app_with_exceptions)
 

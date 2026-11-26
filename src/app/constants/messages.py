@@ -12,7 +12,9 @@ RATE_LIMIT_EXCEEDED: Final = "Too many requests. Please wait a minute and try ag
 # Authentication & Authorization Errors
 INVALID_CREDENTIALS: Final = "Invalid email or password."
 INVALID_SERVICE_TOKEN: Final = "Invalid or expired authentication token."
-UNAUTHORIZED_ACCESS: Final = "Authentication credentials were not provided or are invalid."
+UNAUTHORIZED_ACCESS: Final = (
+    "Authentication credentials were not provided or are invalid."
+)
 PERMISSION_DENIED: Final = "You do not have permission to perform this action."
 USER_INACTIVE: Final = "User account is inactive."
 USER_ALREADY_EXISTS: Final = "A user with this email address already exists."
@@ -35,8 +37,12 @@ LLM_OUTPUT_INVALID: Final = "The AI model returned an unexpected or malformed re
 LLM_CONTEXT_WINDOW_EXCEEDED: Final = (
     "The course content is too large to process in a single request."
 )
-LLM_QUOTA_EXCEEDED: Final = "The AI service quota has been exceeded. Please try again later."
-EMBEDDING_GENERATION_FAILED: Final = "Failed to generate vector embeddings for the content."
+LLM_QUOTA_EXCEEDED: Final = (
+    "The AI service quota has been exceeded. Please try again later."
+)
+EMBEDDING_GENERATION_FAILED: Final = (
+    "Failed to generate vector embeddings for the content."
+)
 
 # SchedulAI Feature Errors (F1)
 INVALID_DATE_RANGE: Final = "`start_date` must be on or before `end_date`."
@@ -52,16 +58,22 @@ NO_CONTENT_FOR_FLASHCARDS: Final = (
 
 # Pictorial Feature Errors (F3)
 DIAGRAM_GENERATION_FAILED: Final = "Failed to generate visual diagram for this concept."
-MISCONCEPTION_ANALYSIS_FAILED: Final = "Unable to analyze learner misconception at this time."
+MISCONCEPTION_ANALYSIS_FAILED: Final = (
+    "Unable to analyze learner misconception at this time."
+)
 
 # Podcast Feature Errors (F4)
 PODCAST_GENERATION_FAILED: Final = "Failed to generate podcast dialogue."
 TTS_SYNTHESIS_FAILED: Final = "Audio voice synthesis failed for the podcast script."
-EMPTY_TRANSCRIPT_FOR_PODCAST: Final = "Cannot generate a podcast from an empty transcript."
+EMPTY_TRANSCRIPT_FOR_PODCAST: Final = (
+    "Cannot generate a podcast from an empty transcript."
+)
 
 # Slide Deck Feature Errors (F5)
 SLIDEDECK_GENERATION_FAILED: Final = "Failed to generate presentation slides."
-SLIDE_PARSE_FAILED: Final = "Failed to parse slide deck structure from generated output."
+SLIDE_PARSE_FAILED: Final = (
+    "Failed to parse slide deck structure from generated output."
+)
 
 # Progress Tracking Errors
 INVALID_PLAYBACK_POSITION: Final = "Playback position must be a non-negative number."
