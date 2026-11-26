@@ -15,8 +15,11 @@ from app.core.exceptions import (
     PermissionDeniedError,
     UserInactiveError,
 )
+from app.core.logging import get_logger
 from app.db.repositories.user_repository import find_user_by_id
 from app.db.session import get_db_session
+
+logger = get_logger(__name__)
 
 
 class Caller(BaseModel):
@@ -66,18 +69,22 @@ async def get_current_caller(
         UserInactiveError: If user account is inactive.
     """
     if not x_user_id:
+        logger.warning("auth_header_missing", header="X-User-Id")
         raise AuthenticationError(messages.UNAUTHORIZED_ACCESS)
 
     try:
         user_uuid = uuid.UUID(x_user_id)
     except ValueError as exc:
+        logger.warning("auth_invalid_uuid", x_user_id=x_user_id)
         raise AuthenticationError(messages.INVALID_SERVICE_TOKEN) from exc
 
     user = await find_user_by_id(session, user_id=user_uuid)
     if not user:
+        logger.warning("auth_user_not_found", user_id=str(user_uuid))
         raise AuthenticationError(messages.INVALID_SERVICE_TOKEN)
 
     if not user.is_active:
+        logger.warning("auth_user_inactive", user_id=str(user.id), email=user.email)
         raise UserInactiveError(messages.USER_INACTIVE)
 
     return Caller(
@@ -100,6 +107,12 @@ def require_role(*allowed_roles: UserRole) -> Callable[[Caller], Caller]:
 
     def role_checker(caller: Annotated[Caller, Depends(get_current_caller)]) -> Caller:
         if caller.role not in allowed_roles:
+            logger.warning(
+                "permission_denied",
+                user_id=str(caller.user_id),
+                user_role=caller.role.value,
+                allowed_roles=[r.value for r in allowed_roles],
+            )
             raise PermissionDeniedError(messages.PERMISSION_DENIED)
         return caller
 

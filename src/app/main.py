@@ -8,8 +8,10 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.health import router as health_router
 from app.api.v1.router import router as api_v1_router
+from app.core.config import get_settings
 from app.core.exceptions import register_exception_handlers
 from app.core.logging import get_logger, setup_logging
+from app.core.middleware import RequestLoggingMiddleware
 
 logger = get_logger(__name__)
 
@@ -17,8 +19,10 @@ logger = get_logger(__name__)
 @asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     """Application startup and shutdown lifespan events."""
-    setup_logging()
-    logger.info("Starting LMS-AI Platform API...")
+    settings = get_settings()
+    is_production = settings.app_env == "production"
+    setup_logging(log_level="INFO", json_format=is_production)
+    logger.info("Starting LMS-AI Platform API...", app_env=settings.app_env)
     yield
     logger.info("Shutting down LMS-AI Platform API...")
 
@@ -33,7 +37,8 @@ app = FastAPI(
 # Global Exception Handlers
 register_exception_handlers(app)
 
-# CORS Middleware
+# Middlewares
+app.add_middleware(RequestLoggingMiddleware)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],

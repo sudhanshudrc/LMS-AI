@@ -20,6 +20,7 @@ from app.api.v1.schemas.courses import (
     SectionTreeResponse,
 )
 from app.core.exceptions import CourseNotFoundError
+from app.core.logging import get_logger
 from app.db.models.course import Course
 from app.db.repositories.course_repository import (
     find_course_by_code,
@@ -28,6 +29,8 @@ from app.db.repositories.course_repository import (
     list_published_courses,
 )
 from app.db.repositories.curriculum_repository import get_course_tree
+
+logger = get_logger(__name__)
 
 
 async def list_courses(
@@ -102,7 +105,10 @@ async def get_course_detail(
         course = await find_course_by_code(session, course_code=identifier)
 
     if not course:
+        logger.warning("course_not_found", identifier=identifier)
         raise CourseNotFoundError()
+
+    logger.info("course_retrieved", course_id=course.course_id, id=str(course.id))
 
     prereq_courses: Sequence[Course] = await list_course_prerequisites(
         session, course_id=course.id

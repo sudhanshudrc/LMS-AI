@@ -190,11 +190,10 @@ def _handle_http_error(_: Request, error: Exception) -> JSONResponse:
 
 def _handle_unexpected_error(request: Request, error: Exception) -> JSONResponse:
     """Handle uncaught exceptions with structured server-side logging."""
-    logger.error(
-        "unhandled_exception path=%s error=%s",
-        request.url.path,
-        str(error),
-        exc_info=error,
+    logger.exception(
+        "unhandled_exception",
+        path=request.url.path,
+        error=str(error),
     )
     return JSONResponse(
         status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,

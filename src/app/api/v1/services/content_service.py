@@ -14,12 +14,15 @@ from app.api.v1.schemas.content import (
 from app.constants import messages
 from app.constants.enums import ContentComponentType
 from app.core.exceptions import NotFoundError, TranscriptNotFoundError
+from app.core.logging import get_logger
 from app.db.repositories.content_repository import (
     get_text_content_by_item,
     get_transcript_by_language,
     get_video_content_by_item,
     search_transcripts_fulltext,
 )
+
+logger = get_logger(__name__)
 
 
 async def get_item_content(
@@ -43,6 +46,7 @@ async def get_item_content(
     text = await get_text_content_by_item(session, section_item_id=item_id)
 
     if not video and not text:
+        logger.warning("item_content_not_found", item_id=str(item_id))
         raise NotFoundError(messages.CONTENT_NOT_FOUND)
 
     if video:
@@ -97,12 +101,19 @@ async def get_item_transcript(
     """
     video = await get_video_content_by_item(session, section_item_id=item_id)
     if not video:
+        logger.warning("transcript_video_not_found", item_id=str(item_id))
         raise TranscriptNotFoundError(messages.TRANSCRIPT_NOT_FOUND)
 
     transcript = await get_transcript_by_language(
         session, video_content_id=video.id, language_code=language_code
     )
     if not transcript:
+        logger.warning(
+            "transcript_language_not_found",
+            item_id=str(item_id),
+            video_id=str(video.id),
+            language=language_code,
+        )
         raise TranscriptNotFoundError(messages.TRANSCRIPT_NOT_FOUND)
 
     return TranscriptResponse(
@@ -135,6 +146,12 @@ async def search_transcripts(
     """
     matches = await search_transcripts_fulltext(
         session, query_text=query, course_id=course_id, limit=limit
+    )
+    logger.info(
+        "transcript_search_executed",
+        query=query,
+        course_id=str(course_id) if course_id else None,
+        results_count=len(matches),
     )
 
     results: list[TranscriptSearchResult] = []
