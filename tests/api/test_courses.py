@@ -92,7 +92,9 @@ async def test_get_course_tree_endpoint(db_session: AsyncSession) -> None:
         async with httpx.AsyncClient(
             transport=httpx.ASGITransport(app=app), base_url="http://test"
         ) as async_client:
-            response = await async_client.get(f"/api/v1/courses/{target_course.id}/tree")
+            response = await async_client.get(
+                f"/api/v1/courses/{target_course.id}/tree"
+            )
             assert response.status_code == 200
             tree = response.json()["data"]
             assert tree["id"] == str(target_course.id)

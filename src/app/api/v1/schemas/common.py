@@ -10,12 +10,32 @@ T = TypeVar("T")
 class ApiResponse(BaseModel, Generic[T]):
     """Standard unified API response envelope."""
 
-    success: bool = Field(True, description="Whether the request succeeded.")
     data: T = Field(..., description="Payload data returned by the operation.")
-    message: str = Field("Success", description="Human-readable response message.")
-    errors: list[Any] | None = Field(
-        None, description="Detailed validation or business errors."
+    success: bool = Field(default=True, description="Whether the request succeeded.")
+    message: str = Field(
+        default="Success", description="Human-readable response message."
     )
+    errors: list[Any] | None = Field(
+        default=None, description="Detailed validation or business errors."
+    )
+
+    def __init__(
+        self,
+        data: T,
+        *,
+        success: bool = True,
+        message: str = "Success",
+        errors: list[Any] | None = None,
+        **kwargs: Any,
+    ) -> None:
+        """Initialize the API response envelope."""
+        super().__init__(
+            data=data,
+            success=success,
+            message=message,
+            errors=errors,
+            **kwargs,
+        )
 
     model_config = {
         "json_schema_extra": {

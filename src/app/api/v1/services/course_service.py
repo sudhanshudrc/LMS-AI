@@ -20,6 +20,7 @@ from app.api.v1.schemas.courses import (
     SectionTreeResponse,
 )
 from app.core.exceptions import CourseNotFoundError
+from app.db.models.course import Course
 from app.db.repositories.course_repository import (
     find_course_by_code,
     find_course_by_id,
@@ -103,12 +104,13 @@ async def get_course_detail(
     if not course:
         raise CourseNotFoundError()
 
-    prereq_rows: Sequence[tuple[uuid.UUID, str, str]] = await list_course_prerequisites(
+    prereq_courses: Sequence[Course] = await list_course_prerequisites(
         session, course_id=course.id
     )
 
     prerequisites = [
-        PrerequisiteResponse(course_id=p[0], code=p[1], title=p[2]) for p in prereq_rows
+        PrerequisiteResponse(course_id=p.id, code=p.course_id, title=p.title)
+        for p in prereq_courses
     ]
 
     return CourseDetailResponse(
