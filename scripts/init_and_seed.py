@@ -3,7 +3,7 @@
 LMS Database Setup & Data Ingestion Engine
 ============================================================================
 Performs complete, end-to-end database initialization:
-1. Applies PostgreSQL schema DDL (plan/schema.sql)
+1. Applies PostgreSQL schema DDL (scripts/schema.sql)
 2. Parses raw course data from data/LMSxAI.xlsx
 3. Parses timestamped transcripts from data/Transcript_data/*.txt
 4. Synthesizes Markdown study guides from study materials & video summaries
