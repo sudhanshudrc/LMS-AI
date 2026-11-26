@@ -2,9 +2,9 @@
 
 from fastapi import APIRouter
 
+from app.api.v1.routes.courses import router as courses_router
+
 router = APIRouter(prefix="/api/v1")
 
-# Sub-routers for Phase 2-4 will be mounted here
-# e.g., router.include_router(courses.router)
-# e.g., router.include_router(content.router)
-# e.g., router.include_router(progress.router)
+# Mount course catalog and curriculum endpoints
+router.include_router(courses_router)

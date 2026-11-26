@@ -49,21 +49,30 @@ async def list_published_courses(
     session: AsyncSession,
     *,
     org: str | None = None,
+    offset: int = 0,
+    limit: int | None = None,
 ) -> Sequence[Course]:
     """List all published courses sorted by title.
 
     Args:
         session: Active database session.
         org: Optional organization filter.
+        offset: Number of items to skip.
+        limit: Optional maximum number of courses to return.
 
     Returns:
         Sequence of published Course entities.
     """
     stmt = (
-        select(Course).where(Course.is_published.is_(True)).order_by(Course.title.asc())
+        select(Course)
+        .where(Course.is_published.is_(True))
+        .order_by(Course.title.asc())
+        .offset(offset)
     )
     if org is not None:
         stmt = stmt.where(Course.org == org)
+    if limit is not None:
+        stmt = stmt.limit(limit)
     result = await session.scalars(stmt)
     return result.all()
 
